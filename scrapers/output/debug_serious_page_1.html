@@ -1,0 +1,1808 @@
+<!DOCTYPE html><html lang="en"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js" nonce="73af9778-b8ff-49ae-88cc-7cb5510827b2"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-LMJ836SQ1R&amp;cx=c&amp;gtm=4e5a80" nonce="73af9778-b8ff-49ae-88cc-7cb5510827b2"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/javascript"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" type="text/javascript"></script>
+    <script src="https://js.stripe.com/v3/" type="text/javascript"></script>
+    <script async="" src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer="" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Teaching Jobs in China</title>
+        <script defer="" referrerpolicy="origin" src="/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyVGVhY2hpbmclMjBKb2JzJTIwaW4lMjBDaGluYSUyMiUyQyUyMnglMjIlM0EwLjAxNzkwNzI5MzUxNTkzNTAwOCUyQyUyMnclMjIlM0ExOTIwJTJDJTIyaCUyMiUzQTEwODAlMkMlMjJqJTIyJTNBMTA4MCUyQyUyMmUlMjIlM0ExOTIwJTJDJTIybCUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGd3d3LnNlcmlvdXN0ZWFjaGVycy5jb20lMkYwJTJGNDElMkZ0ZWFjaGluZy1qb2Itb2ZmZXJzLWZyb20tY2hpbmElMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTI0JTJDJTIybiUyMiUzQSUyMlVURi04JTIyJTJDJTIybyUyMiUzQTI0MCUyQyUyMnElMjIlM0ElNUIlNUQlN0Q="></script><script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+        "@type": "Question",
+        "name": "What is Serious Teachers?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is an online platform for international teachers and schools/recruiters to connect with one another."
+        }
+        }, {
+        "@type": "Question",
+        "name": "Is Serious Teachers a recruitment agency?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, Serious Teachers acts as a dynamic job board for international teachers and schools/recruiters."
+        }
+        }, {
+        "@type": "Question",
+        "name": "Is it free for teachers to join?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, all teachers in search of employment can submit their profile and documents free of charge.
+        <p><a href='https://www.seriousteachers.com/teachers_join'>Click here</a> to join</p>"
+        }
+        }, {
+        "@type": "Question",
+        "name": "Is it free for schools and recruiters to post their job ads?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is free to post but each ad must be activated in order to be published via a selected plan.
+        <p><a href='https://www.seriousteachers.com/post_jobs'>Click here</a> post your ad</p>"
+        }
+        }, {
+        "@type": "Question",
+        "name": "How much does it cost to activate and publish a job ad?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text":"It ranges from $49 US to $2,500 US."
+        }
+        }, {
+        "@type": "Question",
+        "name": "How does Serious Teachers match teachers with posted jobs?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text":"Via the following 2 methods:
+        <ol><li>Teachers desired countries.</li><li>Schools/Recruiters in search of teachers in selected countries.</li></ol>"
+        }
+        }, {
+        "@type": "Question",
+        "name": "Does my profile as a teacher appear in search engines i.e. Google?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text":"No, all submitted profiles are secure and private which can only be accessed by matching schools/recruiters with published ad(s)."
+        }
+        }, {
+        "@type": "Question",
+        "name": "How can I travel and teach abroad?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text":"All teachers can submit their profile and select their desired countries in which they wish to travel to and teach."
+        }
+        }, {
+        "@type": "Question",
+        "name": "Do I need to have a teaching certificate to apply for posted jobs?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text":"Yes, depending on the job’s requirements, a TEFL Diploma is the minimum requirement."
+        }
+        }, {
+        "@type": "Question",
+        "name": "Do I need prior experience to teach ESL at home or abroad?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text":"Many schools/recruiters hire teachers without experience. However, a TEFL certificate is a requirement."
+        }
+        }, {
+        "@type": "Question",
+        "name": "Do I need a visa to travel and teach abroad?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text":"Almost all countries require a related visa. Usually, most schools/recruiters will arrange it on your behalf."
+        }
+        }, {
+        "@type": "Question",
+        "name": "What is the SeriousTEFL Diploma?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The SeriousTEFL Diploma is a 120-hour online TEFL course developed by experienced ESL teachers. It provides practical lessons and strategies for teaching English as a foreign language. Graduates gain immediate recognition by thousands of schools advertising with Serious Teachers, facilitating job placement."
+        }
+        }, {
+        "@type": "Question",
+        "name": "How can I verify the authenticity of my SeriousTEFL Certificate or Diploma?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can verify your SeriousTEFL credentials by contacting the authorized SeriousTEFL training center. This ensures that your degree has been issued legitimately."
+        }
+        }, {
+        "@type": "Question",
+        "name": "What payment methods are accepted for SeriousTEFL courses?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SeriousTEFL accepts various payment methods for course enrollment. Once payment is made, you can begin your course immediately."
+        }
+        }, {
+        "@type": "Question",
+        "name": "How does Serious Teachers ensure the privacy of my personal data?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Serious Teachers maintains all your personal data and contact information submitted during registration 100% intact, making them only available to matching employers and no one else. This ensures that your private data, including email addresses, telephone numbers, and references, remain secure."
+        }
+        }, {
+        "@type": "Question",
+        "name": "What support does Serious Teachers offer to educators seeking employment?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Serious Teachers provides an active directory of teachers and employers with job offers, facilitating connections between educators and institutions worldwide. They also offer a TEFL Diploma and a platform for self-promoting campaigns to enhance your visibility to potential employers."
+        }
+        }, {
+        "@type": "Question",
+        "name": "How can schools and recruiters benefit from Modern Teacher Recruitment?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Modern Teacher Recruitment, available exclusively through Serious Teachers and its partners, is dedicated to providing highly qualified educators to educational institutions globally. A team of skilled teacher-recruiters is ready to meet your recruitment needs."
+        }
+        }]
+    }
+</script>
+
+    <meta name="description" content="SeriousTeachers.com is an active directory of teachers and available job offers from China">
+    <meta name="keywords" content="jobs, esl, efl, tefl, tesol, celta, delta, esl jobs, teachers, resume, english as a second language, teacher, native english teacher, jobs, seriousteachers, serious teachers, english, teach abroad, educator, esl america, canadian teacher, american teacher, british teacher, australian teacher">
+    <meta name="robots" content="All">
+    <link rel="canonical" href="https://www.seriousteachers.com">
+    <meta name="google-site-verification" content="84nrat_MOUIOYI_03jo0PANC8hdpN6MUNLJtcA0hPmM">
+    <meta property="og:type" content="article">
+    <meta property="og:title">
+    <meta property="og:url">
+    <meta property="og:image">
+    <meta property="og:description">
+    <meta property="og:site_name" content="SeriousTeachers">
+    <meta name="msvalidate.01" content="62893A0BEC457E7F67ECE09B5DDA9079">
+    <link href="/css/forms.css?v=HLJ90nHcxjCJgtAYg1bGyP8zhY0h4uNAbpBuxIDCiOo" rel="stylesheet">
+    <link href="/css/signin.css?v=IZAeHaIpjhMIO-7SgLPHqyINC_t4z0n4CdL90M3XMbg" rel="stylesheet">
+    <link href="/css/serious.css?v=1F88nlVqPuTRCmRV1vOaMvwRoEXNUH88j4Ye733vzzM" rel="stylesheet">
+    <link href="/css/decorate.css?v=N1GjyFuJwsvRW5MXLzKq29q7Qk-xnN6k_WMfojoh7p0" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-2270922-1" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-2270922-1');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LMJ836SQ1R" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LMJ836SQ1R');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Ads: 1071031976 -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-1071031976" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-1071031976');
+    </script>
+    <script type="text/javascript">
+        gtag('event', 'page_view', {
+        'send_to': 'AW-1071031976',
+        'value': 'replace with value',
+        'items': [{
+        'id': 'replace with value',
+        'google_business_vertical': 'retail'
+        }]
+        });
+    </script>
+
+    <style>
+        .imageCliperSmall {
+        height: auto;
+        width: 20px;
+        overflow: hidden
+        }
+
+        .padding-template {
+        padding: 20px 10px 5px 10px;
+        }
+
+        .left-template {
+        padding: 0px 15px 0px 15px;
+        text-align: center;
+        background-color: #ffffff;
+        }
+
+        .right-template {
+        padding: 0px 15px 0px 15px;
+        text-align: center;
+        background-color: #ffffff;
+        }
+    </style>
+<script data-cfasync="false" nonce="73af9778-b8ff-49ae-88cc-7cb5510827b2">try{(function(w,d){!function(dd,de,df,dg){if(dd.zaraz)console.error("zaraz is loaded twice");else{dd[df]=dd[df]||{};dd[df].executed=[];dd.zaraz={deferred:[],listeners:[]};dd.zaraz._v="5872";dd.zaraz._n="73af9778-b8ff-49ae-88cc-7cb5510827b2";dd.zaraz.q=[];dd.zaraz._f=function(dh){return async function(){var di=Array.prototype.slice.call(arguments);dd.zaraz.q.push({m:dh,a:di})}};for(const dj of["track","set","debug"])dd.zaraz[dj]=dd.zaraz._f(dj);dd.zaraz.init=()=>{var dk=de.getElementsByTagName(dg)[0],dl=de.createElement(dg),dm=de.getElementsByTagName("title")[0];dm&&(dd[df].t=de.getElementsByTagName("title")[0].text);dd[df].x=Math.random();dd[df].w=dd.screen.width;dd[df].h=dd.screen.height;dd[df].j=dd.innerHeight;dd[df].e=dd.innerWidth;dd[df].l=dd.location.href;dd[df].r=de.referrer;dd[df].k=dd.screen.colorDepth;dd[df].n=de.characterSet;dd[df].o=(new Date).getTimezoneOffset();if(dd.dataLayer)for(const dn of Object.entries(Object.entries(dataLayer).reduce((dp,dq)=>({...dp[1],...dq[1]}),{})))zaraz.set(dn[0],dn[1],{scope:"page"});dd[df].q=[];for(;dd.zaraz.q.length;){const dr=dd.zaraz.q.shift();dd[df].q.push(dr)}dl.defer=!0;for(const ds of[localStorage,sessionStorage])Object.keys(ds||{}).filter(du=>du.startsWith("_zaraz_")).forEach(dt=>{try{dd[df]["z_"+dt.slice(7)]=JSON.parse(ds.getItem(dt))}catch{dd[df]["z_"+dt.slice(7)]=ds.getItem(dt)}});dl.referrerPolicy="origin";dl.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(dd[df])));dk.parentNode.insertBefore(dl,dk)};["complete","interactive"].includes(de.readyState)?zaraz.init():dd.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");window.zaraz._p=async cI=>new Promise(cJ=>{if(cI){cI.e&&cI.e.forEach(cK=>{try{const cL=d.querySelector("script[nonce]"),cM=cL?.nonce||cL?.getAttribute("nonce"),cN=d.createElement("script");cM&&(cN.nonce=cM);cN.innerHTML=cK;cN.onload=()=>{d.head.removeChild(cN)};d.head.appendChild(cN)}catch(cO){console.error(`Error executing script: ${cK}\n`,cO)}});Promise.allSettled((cI.f||[]).map(cP=>fetch(cP[0],cP[1])))}cJ()});zaraz._p({"e":["(function(w,d){})(window,document)"]});})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script><script>(function(w,d){})(window,document)</script><script>(function(w,d){;w.zarazData.executed.push("Pageview");})(window,document)</script><script>(function(w,d){{const d = document.createElement('div');d.innerHTML = `<noscript><div style="display:inline"><a href="http://messenger.providesupport.com/messenger/1ab334twrrq6y0j1w4taror5ec.html"><img src="//image.providesupport.com/image/1ab334twrrq6y0j1w4taror5ec.gif" style="border:0px" alt="" /></a></div></noscript>`;document.body.appendChild(d);};{window.addEventListener("load", function () { function n(n, e) { e = document.createElement("script"); e.src = "https://image.providesupport.com/" + n, document.body.appendChild(e) } n("js/1ab334twrrq6y0j1w4taror5ec/safe-monitor-sync.js?ps_h=8Zcp&ps_t=" + Date.now()), n("sjs/static.js") })}})(window,document)</script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1071031976/?random=1760388975796&amp;cv=11&amp;fst=1760388975796&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be5a80za200xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~105446120~115480709~115616985~115752876~115834636~115834638~115868792~115868794~115938465~115938468&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.seriousteachers.com%2F0%2F41%2Fteaching-job-offers-from-china&amp;frm=0&amp;tiba=Teaching%20Jobs%20in%20China&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=286472395.1760388976&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.16%7CNot%253DA%253FBrand%3B24.0.0.0%7CHeadlessChrome%3B140.0.7339.16&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=10_15_7&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4" nonce="73af9778-b8ff-49ae-88cc-7cb5510827b2"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1071031976/?random=1760388975807&amp;cv=11&amp;fst=1760388975807&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=page_view&amp;gtm=45be5a80za200xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=101509157~103116026~103200004~103233427~104527906~104528501~104684208~104684211~104948813~105446120~115480709~115616985~115752876~115834636~115834638~115868792~115868794~115938465~115938468&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.seriousteachers.com%2F0%2F41%2Fteaching-job-offers-from-china&amp;frm=0&amp;tiba=Teaching%20Jobs%20in%20China&amp;value=replace%20with%20value&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=286472395.1760388976&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B140.0.7339.16%7CNot%253DA%253FBrand%3B24.0.0.0%7CHeadlessChrome%3B140.0.7339.16&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=10_15_7&amp;uaw=0&amp;data=event%3Dpage_view%3Bgoogle_business_vertical%3Dretail%3Bid%3Dreplace%20with%20value&amp;rfmt=3&amp;fmt=4" nonce="73af9778-b8ff-49ae-88cc-7cb5510827b2"></script></head>
+<body>
+
+    <main class="container-fluid">
+        <div class="masthead">
+            <a href="/"><img src="/images/stlogo.png" class="img-fluid" alt="Serious Teachers"></a>
+
+                <span class="badge pt-2" style="background-color: #b9c7f3; height: 26px">USA&nbsp;&nbsp;39,490</span>
+                <span class="badge pt-2" style="background-color: #b9c7f3; height: 26px">CA&nbsp;&nbsp;11,963</span>
+                <span class="badge pt-2" style="background-color: #b9c7f3; height: 26px">UK&nbsp;&nbsp;20,998</span>
+                <span class="badge pt-2" style="background-color: #b9c7f3; height: 26px">AU&nbsp;&nbsp;4,625</span>
+                <span class="badge pt-2" style="background-color: #b9c7f3; height: 26px">NZ&nbsp;&nbsp;1,445</span>
+                <span class="badge pt-2" style="background-color: #b9c7f3; height: 26px">Others&nbsp;&nbsp;73,917</span>
+                <a role="button" class="btn btn-primary pt-0 mb-1 py-0 mt-1" href="/listofcountries">
+                    see all
+                </a>
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item" style="background-color: lightgray; border: solid; border-width:thin; color: white">
+                    <a class="nav-link" href="/">
+                        JOBS
+                    </a>
+                </li>
+                <li class="nav-item dropdown" style="background-color: lightgray; border: solid; border-width:thin; color: white">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">
+                        TEACHERS                     </a>
+                    <div class="dropdown-menu">
+
+                            <a class="dropdown-item" target="_top" href="/teachers_join"><span class="bg-danger text-white">Teachers Join</span></a>
+                            <a class="dropdown-item" target="_top" href="/te2/login">Teacher Login</a>
+                        <a class="dropdown-item" target="_top" href="/te2/login">Private Job Board</a>
+                        <a class="dropdown-item" target="_top" href="/te2/login?returnUrl=1">Edit Profile</a>
+                        <a class="dropdown-item" target="_top" href="/te2/login?returnUrl=4">Upload Photo-Docs</a>
+                        <a class="dropdown-item" target="_top" href="/te2/login?returnUrl=4#youtube">Upload <img border="0" src="/images/youtube.gif" alt="youtube video"> </a>
+                        <a class="dropdown-item" target="_top" href="/te2/login?returnUrl=7">Change Email</a>
+                        <a class="dropdown-item" target="_top" href="/te2/login?returnUrl=6">Change Password</a>
+                        <a class="dropdown-item" target="_top" href="/tefl"><img src="/images/certi.png" class="img-fluid" border="0"> TEFL Diploma</a>
+                        <a class="dropdown-item" target="_top" href="/seriousforum">Serious Forum</a>
+                        <a class="dropdown-item" target="_top" href="/support">Teacher Support</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown" style="background-color: lightgray; border: solid; border-width:thin; color: white">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">
+                        EMPLOYERS 
+                    </a>
+                    <div class="dropdown-menu">
+
+                            <a class="dropdown-item" href="/post_jobs"><span class="bg-danger text-white">Post a Job</span></a>
+                            <a class="dropdown-item" href="/views/upgrade_posting">Login</a>
+
+                        <a class="dropdown-item" href="/views/upgrade_posting/0/0?returnUrl=2">Teachers Database Access</a>
+                        <a class="dropdown-item" href="/views/upgrade_posting/0?returnUrl=3">Invoices</a>
+                        <a class="dropdown-item" href="/views/upgrade_posting/0?returnUrl=4">Activation History</a>
+                        <a class="dropdown-item" href="/views/upgrade_posting/?returnUrl=8">Upload Logo</a>
+                        <a class="dropdown-item" href="/support">Support</a>
+                        <a class="dropdown-item" href="/advertise">Advertising</a>
+                    </div>
+                </li>
+                <li class="nav-item" style="background-color: lightgray; border: solid; border-width:thin; color: white">
+                    <a class="nav-link" href="/tefl">
+                        <img src="/images/certi.png" class="img-fluid">TEFL Diploma
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="row padding-template text-decoration-none">
+            <div class="col-sm-2 col-sm-pull-8 order-2 left-template">
+                
+<style type="text/css">
+    #main:hover {
+        -moz-box-shadow: 0 0 10px #ccc;
+        -webkit-box-shadow: 0 0 10px #ccc;
+        box-shadow: 0 0 10px red;
+    }
+</style>
+
+<div class="text-center">
+    <a class="btn btn-outline-primary btn-sm mb-2" role="button" href="/advertise">Advertising</a>
+        <div class="accordion" id="accordion1">
+
+                <div class="card border-bottom mb-2 rounded" id="main">
+                    <div class="row mt-1">
+                        <div class="col text-center" id="279356">
+                            <h6>Turkey</h6>
+                        </div>
+                    </div>
+                    <div id="_27935624892" class="collapse show" data-bs-parent="#accordion1" aria-labelledby="279356">
+                        <div class="row px-1">
+                            <div class="col text-center">
+                                <h6>Passionate and Dedicated English &amp; German Teachers</h6>
+                                    <a class="btn btn-outline-primary btn-sm my-1 py-0" role="button" href="https://www.youtube.com/@teacheradilokullari" target="_blank">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col text-center mx-1">
+                                    <a href="https://www.youtube.com/@teacheradilokullari" target="_blank"><img src="/uploads/logo/24892~191.jpeg?id=279356" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="&lt;u&gt;Turkey&lt;/u&gt;&lt;br&gt;Passionate and Dedicated English &amp; German Teachers&lt;br&gt;&lt;i class='text-primary'&gt;click to visit website&lt;/i&gt;" alt="Passionate and Dedicated English &amp; German Teachers - SeriousTeachers.com Responsive image"></a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col pt-1"></div>
+                <div class="card border-bottom mb-2 rounded" id="main">
+                    <div class="row mt-1">
+                        <div class="col text-center" id="276759">
+                            <h6>United Arab Emirates</h6>
+                        </div>
+                    </div>
+                    <div id="_27675914352" class="collapse show" data-bs-parent="#accordion1" aria-labelledby="276759">
+                        <div class="row px-1">
+                            <div class="col text-center">
+                                <h6>EFL Instructor, Military Setting in UAE</h6>
+                                    <a class="btn btn-outline-primary btn-sm my-1 py-0" role="button" href="http://www.dlsdc.com/company/careers/" target="_blank">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col text-center mx-1">
+                                    <a href="http://www.dlsdc.com/company/careers/" target="_blank"><img src="/uploads/logo/14352~14352~42.jpeg?id=276759" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="&lt;u&gt;United Arab Emirates&lt;/u&gt;&lt;br&gt;EFL Instructor, Military Setting in UAE&lt;br&gt;&lt;i class='text-primary'&gt;click to visit website&lt;/i&gt;" alt="EFL Instructor, Military Setting in UAE - SeriousTeachers.com Responsive image"></a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col pt-1"></div>
+                <div class="card border-bottom mb-2 rounded" id="main">
+                    <div class="row mt-1">
+                        <div class="col text-center" id="279802">
+                            <h6>Taiwan</h6>
+                        </div>
+                    </div>
+                    <div id="_2798028667" class="collapse show" data-bs-parent="#accordion1" aria-labelledby="279802">
+                        <div class="row px-1">
+                            <div class="col text-center">
+                                <h6>ESL foreign teachers</h6>
+                                    <a class="btn btn-outline-primary btn-sm my-1 py-0" role="button" href="http://www.ritz.tc.edu.tw" target="_blank">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col text-center mx-1">
+                                    <a href="http://www.ritz.tc.edu.tw" target="_blank"><img src="/uploads/logo/8667_8667.gif?id=279802" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="&lt;u&gt;Taiwan&lt;/u&gt;&lt;br&gt;ESL foreign teachers&lt;br&gt;&lt;i class='text-primary'&gt;click to visit website&lt;/i&gt;" alt="ESL foreign teachers - SeriousTeachers.com Responsive image"></a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col pt-1"></div>
+        </div> 
+</div>
+
+            </div>
+            <div class="col-sm-8 col-sm-push-2 order-sm-2 text-center p-1">
+                <h1 class="display-6">
+         Job Offers
+                 from China
+
+    <br><a href="/teachers_join" class="btn btn-outline-primary btn-sm position-relative px-3" role="button">
+        <span class="position-absolute top-0 start-0 translate-middle p-2 bg-danger border border-light rounded-circle"></span>Teachers Join
+    </a>
+    <a href="/post_jobs" class="btn btn-outline-success btn-sm px-4 position-relative" role="button">
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"></span> Post a Job
+    </a>
+    <p class="lead text-muted">"all posted ads are within the past 30 days"</p>
+</h1>
+
+<div class="row my-1">
+    <div class="col-sm-6 offset-sm-3">
+        <form name="enviadatos">
+            <input type="hidden" name="byfield" value="0">
+            <select name="bypais" onchange="if (!window.__cfRLUnblockHandlers) return false; javascript:selectcountry()" class="form-select form-select-lg  border-danger bg-light">
+                        <option value="41" selected="">Jobs in China ▼</option>
+                    <option value="0">List All Countries</option>
+                        <option value="2">Albania</option>
+                        <option value="8">Argentina</option>
+                        <option value="15">Bahrain</option>
+                        <option value="34">Cambodia</option>
+                        <option value="41">China</option>
+                        <option value="42">Colombia</option>
+                        <option value="43">Costa Rica</option>
+                        <option value="53">Dominican Republic</option>
+                        <option value="56">Egypt</option>
+                        <option value="72">Guatemala</option>
+                        <option value="78">Honduras</option>
+                        <option value="82">Indonesia</option>
+                        <option value="84">Iraq</option>
+                        <option value="87">Italy</option>
+                        <option value="89">Japan</option>
+                        <option value="91">Kazakhstan</option>
+                        <option value="194">Kurdistan</option>
+                        <option value="93">Kuwait</option>
+                        <option value="99">Libya</option>
+                        <option value="106">Malaysia</option>
+                        <option value="111">Mexico</option>
+                        <option value="114">Mongolia</option>
+                        <option value="181">Myanmar (Burma)</option>
+                        <option value="125">Oman</option>
+                        <option value="190">ONLINE*</option>
+                        <option value="129">Peru</option>
+                        <option value="131">Poland</option>
+                        <option value="132">Portugal</option>
+                        <option value="134">Romania</option>
+                        <option value="135">Russian Federation</option>
+                        <option value="137">Saudi Arabia</option>
+                        <option value="140">Singapore</option>
+                        <option value="144">South Korea</option>
+                        <option value="145">Spain</option>
+                        <option value="151">Taiwan</option>
+                        <option value="153">Thailand</option>
+                        <option value="156">Turkey</option>
+                        <option value="160">United Arab Emirates</option>
+                        <option value="162">United States of America</option>
+                        <option value="171">Vietnam</option>
+            </select>
+        </form>
+    </div>
+</div>
+
+        <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card mb-2 rounded border-bottom border-primary p-0" id="main">
+                            <div class="card-header border-bottom-0 p-0 pb-1" id="20238279840">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                            <div class="shadow-sm p-1  rounded fs-6 m-2" style="background-color: azure">SpeakEasy Education ltd</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a class="display-6 text-dark h1" href="/job_details/279840/0/native-and-non-native-teachers-all-over-china-china">Native and Non native teachers all over China</a>
+                                        <br><span class="fs-5">China (Beijing Shanghai Shenzhe Luoyang etc.)</span>
+
+                                        <div class="modal fade" id="_279840" tabindex="-1" aria-labelledby="repliesModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="repliesModalLongTitle">Native and Non native teachers all over China<br>China (Beijing Shanghai Shenzhe Luoyang etc.)</h5>
+                                                        <button type="button" class="btn btn-outline-danger btn-lg float-end" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                    <div class="modal-body text-start">
+
+
+                                                                    <div class="shadow-sm m-3 bg-white rounded text-center">
+                                                                        <h4 style="background-color: honeydew">
+                                                                            <a rel="nofollow" href="/te2/login/279840/20238">SpeakEasy Education ltd</a>
+                                                                        </h4>
+                                                                    </div>
+
+
+                                                            <b>Required Degrees:</b> bachelor degree or above<br><b>Fields of Expertise: </b>
+ESL/EFL  ,&nbsp;
+Elementary ,&nbsp;
+ESL to Children ,&nbsp;
+Kindergarten ,&nbsp;
+High School ,&nbsp;
+University ,&nbsp;
+Science ,&nbsp;
+Math/Physics ,&nbsp;
+                                                            <mark class="bg-info">A-level  IB  AP IGCSE, PGCE, TESOL, TEFL</mark>
+                                                            <br>
+                                                        <strong>Details: </strong><span class="text-break lead">School type: <br>Kindergarten, primary school, middle school, high school, private and international school, university, training center positions <br>Locations :<br>over 50 cities in China. <br>About the Role: <br>Teaching English or other subjects such as Science ,Math, Chemistry, Biology, Physics, Computer science, Drama ,Social Studies, Literature, History ,Art,Music, Geography, Humanities, Economics etc. ( IB A-level IGCSE AP EAL SACE ICT MYP PYP IPC Cambridge curriculum )for international schools. <br>Homeroom teacher and English teacher position in kindergarden, Primary and Secondary school . <br>Permanent and full-time role: <br>40hours ,around 15-25 teaching hours with two days off per week. <br>Start time: <br>any time in 2025 and 2026 <br>Benefits of the Role: <br>Salary: RMB 10000-35000 per month  Free private accommodation or Housing Allowance (with settlement assistance) Bonuses and airfare allowance provided Working visa and insurance provided Paid sick leave and vacation  Supportive, driven and caring team of staff Other benefits offered by local schools <br>About You: <br>Experience in a similar role will be advantageous ,Native and Non Native English Speakers , BA Degree or above, no criminal background, good health Under 55 years old TESOL ,TEFL ,QTS, PGCE or CELTA Certificate preferred. References from previous employers preferred <br>Please send us: (wechat: w7728ww) Your resume and recent photo. A self introduction video ( 1-2mins is ok)is preferred</span>
+
+                                                        <p class="text-end"><a rel="nofollow" href="/te2/login/279840/20238" role="button" target="_blank" class="btn btn-primary btn-sm text-end">Apply</a></p>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger btn-lg" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                                <span>$5,500  USD</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <button type="button" class="btn btn-sm btn-outline-dark mt-3" data-bs-toggle="modal" data-bs-target="#_279840">Info <i class="bi bi-tv text-danger"></i></button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a rel="nofollow" href="/te2/login/279840/20238" role="button" target="_blank" class="btn btn-primary btn-sm float-end fst-italic fs-6 m-2">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card mb-2 rounded border-bottom border-primary p-0" id="main">
+                            <div class="card-header border-bottom-0 p-0 pb-1" id="24635278774">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                            <div class="shadow-sm p-1  rounded fs-6 m-2" style="background-color: azure">Shen Zhen Shi Yi Qi Guan Li Zi Xun You Xian Gong Si</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a class="display-6 text-dark h1" href="/job_details/278774/0/international-schools-and-kindergartens-homeroom-china">INTERNATIONAL SCHOOLS AND Kindergartens HOMEROOM</a>
+                                        <br><span class="fs-5">China (All over China)</span>
+
+                                        <div class="modal fade" id="_278774" tabindex="-1" aria-labelledby="repliesModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="repliesModalLongTitle">INTERNATIONAL SCHOOLS AND Kindergartens HOMEROOM<br>China (All over China)</h5>
+                                                        <button type="button" class="btn btn-outline-danger btn-lg float-end" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                    <div class="modal-body text-start">
+
+
+                                                                    <div class="shadow-sm m-3 bg-white rounded text-center">
+                                                                        <h4 style="background-color: honeydew">
+                                                                            <a rel="nofollow" href="/te2/login/278774/24635">Shen Zhen Shi Yi Qi Guan Li Zi Xun You Xian Gong Si</a>
+                                                                        </h4>
+                                                                    </div>
+
+
+                                                            <b>Required Degrees:</b> BA<br><b>Fields of Expertise: </b>
+ESL/EFL  ,&nbsp;
+Nursery ,&nbsp;
+Elementary ,&nbsp;
+ESL to Children ,&nbsp;
+Kindergarten ,&nbsp;
+University ,&nbsp;
+Science ,&nbsp;
+Math/Physics ,&nbsp;
+                                                            &nbsp;
+                                                            <br>
+                                                        <strong>Details: </strong><span class="text-break lead">INTERNATIONAL SCHOOLS AND Kindergartens HOMEROOM ESL/SUBJECT TEACHERS WANTED IN CHINA<br>Job description:<br>(1) Students age: 3-18 years old;<br>(2) The number of students in a class: 15-30;<br>(3) 18-25 lessons teaching a week;<br>(4) Working days: Monday to Friday;<br>Benefits:<br>1. Salary: 20-35K rmb/month before tax;<br>2. House allowance: up to 4K housing allowance;<br>3. Commercial insurance provided;<br>4. Travel allowance;<br>Requirements:<br>1. Native English speakers from US/UK/Canada/Australia/Ireland/New Zealand/South Africa;<br>2. Bachelor degree or above;<br>3. Two-year related teaching experience;</span>
+
+                                                        <p class="text-end"><a rel="nofollow" href="/te2/login/278774/24635" role="button" target="_blank" class="btn btn-primary btn-sm text-end">Apply</a></p>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger btn-lg" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                            <span>Negotiable </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <button type="button" class="btn btn-sm btn-outline-dark mt-3" data-bs-toggle="modal" data-bs-target="#_278774">Info <i class="bi bi-tv text-danger"></i></button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a rel="nofollow" href="/te2/login/278774/24635" role="button" target="_blank" class="btn btn-primary btn-sm float-end fst-italic fs-6 m-2">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card mb-2 rounded border-bottom border-primary p-0" id="main">
+                            <div class="card-header border-bottom-0 p-0 pb-1" id="13513234386">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                            <a rel="nofollow" href="/te2/login/234386/13513">
+                                                <img alt="Daqing Royal Bridge Academy" rel="nofollow" border="0" src="/uploads/logo/13513~13513.jpeg" class="img-fluid m-2">
+                                            </a>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a class="display-6 text-dark h1" href="/job_details/234386/0/mathematics-physics-and-economicsbusiness-china">Mathematics, Physics and Economics/Business</a>
+                                        <br><span class="fs-5">China (Daqing)</span>
+
+                                        <div class="modal fade" id="_234386" tabindex="-1" aria-labelledby="repliesModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="repliesModalLongTitle">Mathematics, Physics and Economics/Business<br>China (Daqing)</h5>
+                                                        <button type="button" class="btn btn-outline-danger btn-lg float-end" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                    <div class="modal-body text-start">
+
+
+                                                                    <a rel="nofollow" href="/te2/Login/234386/13513">
+                                                                        <img alt="Daqing Royal Bridge Academy" border="0" src="/uploads/logo/13513~13513.jpeg" class="img-fluid img-thumbnail float-start">
+                                                                    </a>
+
+
+                                                            <b>Required Degrees:</b> Bachelor or Above<br><b>Fields of Expertise: </b>
+ESL/EFL  ,&nbsp;
+High School ,&nbsp;
+University ,&nbsp;
+Science ,&nbsp;
+Math/Physics ,&nbsp;
+                                                            <mark class="bg-info">Economics, Business and English</mark>
+                                                            <br>
+                                                        <strong>Details: </strong><span class="text-break lead">★★★ Mathematics, Physics and Economics/Business Teachers required at an International high School, Daqing, China ★★★<br>***Daqing Royal Bridge Academy ***<br>About Us:<br>Daqing Royal Bridge Academy is an international high school located in Northeast China. It is a top school in the city and province, recognized for its outstanding academic achievements and excellent facilities. The school offers IGCSE and A-Level education programs, following the Cambridge Assessment International Education (CAIE) syllabus. It has a strong  teaching team including many highly qualified foreign educators.<br> <br>What We Require:<br>  • A minimum of a bachelor’s degree in a relevant field.<br>  • At least 2 years of teaching experience in the relevant subject.<br>  • Experience in teaching IGCSE and A-Level courses.<br>  • Work time: 5 days a week.<br><br>What We Offer:<br>  • Salary: Based on qualifications and experience.<br>  • Accommodation: Free on-campus accommodation (2 rooms with TV, air- <br>     conditioning, washing machine, refrigerator, microwave, heating, and shower).<br>  • Paid Holidays: Including summer (6 weeks), winter vacation, and all statutory <br>    Chinese holidays.<br>  • Airport or train station pick-up.<br>  • Additional benefits:<br>	Medical insurance.<br>	Annual flight allowance of up to RMB 8,000.<br>	Free Chinese language courses.<br>	Assistance with work permit and Z-visa applications.<br><br>How to Apply:<br>Please submit the following documents <br>  • Cover letter.<br>  • Detailed resume (include month/year for all positions).<br>  • Self-introduction video.<br>  • Scanned copies of your degree and TEFL certificates.<br>  • Scanned passport photo page.<br>  • Interviews will be conducted via Teams or VooV / WeChat video.<br>  • Send application with above information to Email: jobsdqcie<br><br></span>
+
+                                                        <p class="text-end"><a rel="nofollow" href="/te2/login/234386/13513" role="button" target="_blank" class="btn btn-primary btn-sm text-end">Apply</a></p>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger btn-lg" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                            <span>Negotiable </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <button type="button" class="btn btn-sm btn-outline-dark mt-3" data-bs-toggle="modal" data-bs-target="#_234386">Info <i class="bi bi-tv text-danger"></i></button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a rel="nofollow" href="/te2/login/234386/13513" role="button" target="_blank" class="btn btn-primary btn-sm float-end fst-italic fs-6 m-2">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card mb-2 rounded border-bottom border-primary p-0" id="main">
+                            <div class="card-header border-bottom-0 p-0 pb-1" id="24003279823">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                            <div class="shadow-sm p-1  rounded fs-6 m-2" style="background-color: azure">TDC Recruiter</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a class="display-6 text-dark h1" href="/job_details/279823/0/deputy-dean-and-esl-teachers-for-universities-china">Deputy Dean and ESL Teachers for Universities</a>
+                                        <br><span class="fs-5">China (Hainan, Chengdu, Yantai, Kangding)</span>
+
+                                        <div class="modal fade" id="_279823" tabindex="-1" aria-labelledby="repliesModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="repliesModalLongTitle">Deputy Dean and ESL Teachers for Universities<br>China (Hainan, Chengdu, Yantai, Kangding)</h5>
+                                                        <button type="button" class="btn btn-outline-danger btn-lg float-end" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                    <div class="modal-body text-start">
+
+
+                                                                    <div class="shadow-sm m-3 bg-white rounded text-center">
+                                                                        <h4 style="background-color: honeydew">
+                                                                            <a rel="nofollow" href="/te2/login/279823/24003">TDC Recruiter</a>
+                                                                        </h4>
+                                                                    </div>
+
+
+                                                            <b>Required Degrees:</b> bachelor Degree or Above<br><b>Fields of Expertise: </b>
+ESL/EFL  ,&nbsp;
+University ,&nbsp;
+                                                            &nbsp;
+                                                            <br>
+                                                        <strong>Details: </strong><span class="text-break lead">★★★ 1x Deput Dean/Associate Director for University ★★★  3x Urgenty ESL University Teaching Vacancies ★★★ See below for more details ★★★ Apply Now! <br>______________________________<br>Deputy Dean and Associate Director for University in Hainan<br>…<br>Job Details: <br>*Position: Deputy Dean and Associate Director for University in Hainan <br>*School: University<br>*Location: Hainan <br>*Start Date: January 2026 or as near after as possible <br>…<br>Job Responsibilities:<br>The Deputy Dean is a key leadership and management role, shaping strategy for the new school and ensuring its success in terms of academic performance and ensuring an outstanding learning experience for students. Responsibilities as follows. <br>*Be accountable for ensuring excellence in all academic and research portfolios across the institute and for enhancing the student and staff experience.<br>*Have an oversight and be a member of the university’s Joint Executive Committee, Research Committee, Academic Standards Committee, Finance Committee and Collaboration Enhancement Committee as well as supporting any other collaborative boards. <br>*Work as part of that team to develop and deliver the strategic and operational objectives, at all times ensuring alignment to the values of the partner universities. <br>*Ensure the effective communication between the college and all relevant stakeholders. This will include management of the College of Health, Science and Society as well as the School of Health and Social Wellbeing and our collaborative Services team. <br>*Make a significant contribution to the joint Institutes strategic plan and to engage fully in the wider international educational Services objectives in relation to China.  <br>*Represent the Institute at key external networks and develop strategic partnerships to promote the profile and reputation of the Joint Institute.<br>…<br>Salary and Benefits: <br>*Salary: £62000 GBP per year <br>*Up to £1000 GBP health insurance allowance <br>…<br>Requirements: <br>Applicants will need to evidence one or more of the following:<br>*Qualified to Doctorate level in a subject relevant and/or with equivalent professional qualification/ demonstrable experience.<br>*Professor or Associate Professor working towards Professor status.<br>*Membership of a relevant Professional body, preferably in Health or Social Care.<br>*Achievement of a recognised teaching qualification in Higher Education.<br>…<br>Applications will close on October 3rd 2025 and shortlisting will take place prior to interviews scheduled for the same month.<br>Applications should contain the following:<br>*A Curriculum Vitae outlining your experience to date<br>*A letter of application of not more than 1000 words outlining why you feel you have the experience, skills and vision to be able to make an effective contribution to this role.  Please consider the key responsibilities outlined in the job description in this letter. <br>______________________________<br>ESL Teacher Needed for University in Minority location, Ganzi, Sichuan Province <br>…<br>Job Details: <br>*Job Type: University ESL Teacher<br>*Location: Kangding, Ganzi, Sichuan Province. It has the most amazing natural scenery with pure air. It is also a place full of minority culture. <br>*Start date: Next Semester<br>*One year contract<br>*16 classes weekly, each last for 45 minutes. Textbooks provided. Each class has around 40-50 students.<br>*Start: October<br>…<br>Salary and Benefits<br>*Salary: 14k RMB/month before tax<br>*Free two-bedroom accommodation with kitchen and furniture provided<br>*Summer and winter holidays and other public holidays fully paid<br>*Cheap and nice meals provided as a benefit <br>*Traveling allowance: 11k RMB after finishing the contract.<br>…<br>Requirement：<br>*Bachelor or above degree<br>*TEFL or other teaching qualification or 2+ years teaching experience<br>*Native English speaker<br>*Clean criminal background<br>______________________________<br>ESL Teacher needed for University in Yantai, Shandong Province<br>*Can arrive by end of Sept or beginning of October<br>*They can arrange your classes for 2 or 3 days per week.<br>..<br>Job Details：<br>*School Type: University<br>*Location: Yantai<br>*Student age: 18-22 years old<br>*Around 16 teaching hours per week<br>*Subject: ESL<br>*Start Date: End of Sept/Beginning of October<br>…<br>Salary and Benefits:<br>*9500 RMB per month<br>*Free accommodation provided<br>*10k flight allowance after finishing the contract<br>*Full pay during summer and winter holidays<br>*Insurance provided<br>…<br>Note：<br>*They need a simple demo class for the interview, can be oral english for several minutes<br>*They have two campuses which is about 60-90 mins for the trip, can take school bus for free.<br>______________________________<br>Another University vacancy in suburbs of Chengdu. 9k Salary. Ask for more details. </span>
+
+                                                        <p class="text-end"><a rel="nofollow" href="/te2/login/279823/24003" role="button" target="_blank" class="btn btn-primary btn-sm text-end">Apply</a></p>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger btn-lg" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                            <span>Negotiable </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <button type="button" class="btn btn-sm btn-outline-dark mt-3" data-bs-toggle="modal" data-bs-target="#_279823">Info <i class="bi bi-tv text-danger"></i></button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a rel="nofollow" href="/te2/login/279823/24003" role="button" target="_blank" class="btn btn-primary btn-sm float-end fst-italic fs-6 m-2">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card mb-2 rounded border-bottom border-primary p-0" id="main">
+                            <div class="card-header border-bottom-0 p-0 pb-1" id="24377279813">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                            <div class="shadow-sm p-1  rounded fs-6 m-2" style="background-color: azure">JOBCHINA</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a class="display-6 text-dark h1" href="/job_details/279813/0/-middle-school-science-teachers-needed-beiijing-china"> Middle school science teachers needed Beiijing</a>
+                                        <br><span class="fs-5">China (Beijing, Zibo,Hangzhou,Qingdao,Dalian)</span>
+
+                                        <div class="modal fade" id="_279813" tabindex="-1" aria-labelledby="repliesModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="repliesModalLongTitle"> Middle school science teachers needed Beiijing<br>China (Beijing, Zibo,Hangzhou,Qingdao,Dalian)</h5>
+                                                        <button type="button" class="btn btn-outline-danger btn-lg float-end" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                    <div class="modal-body text-start">
+
+
+                                                                    <div class="shadow-sm m-3 bg-white rounded text-center">
+                                                                        <h4 style="background-color: honeydew">
+                                                                            <a rel="nofollow" href="/te2/login/279813/24377">JOBCHINA</a>
+                                                                        </h4>
+                                                                    </div>
+
+
+                                                            <b>Required Degrees:</b> bachelor degree or above<br><b>Fields of Expertise: </b>
+ESL/EFL  ,&nbsp;
+Elementary ,&nbsp;
+High School ,&nbsp;
+Science ,&nbsp;
+Math/Physics ,&nbsp;
+                                                            &nbsp;
+                                                            <br>
+                                                        <strong>Details: </strong><span class="text-break lead">Middle school science teachers are needed near Beijing starting from Feb 2026
+
+
+Job 1
+Location: near Beijing
+Positions : middle school science teacher 
+Payment : 25-35k
+Starting date: Feb 2026
+
+
+Jobs starting ASAP / Feb 2026
+Job 1
+Location: Dalian city , Liaoning province 
+Postions: kids English training schools teachers  and kindergartens teachers are needed, starting date flexible.
+Payment: 20-25k, negotiable
+
+
+Job 2 
+Location : Qingdao city, Shandong province 
+Positions: adults and kids English teacher, middle school art teacher starting ASAP
+Payment: 20-25k, negotiable
+</span>
+
+                                                        <p class="text-end"><a rel="nofollow" href="/te2/login/279813/24377" role="button" target="_blank" class="btn btn-primary btn-sm text-end">Apply</a></p>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger btn-lg" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                                    <button type="button" class="btn btn-outline-primary mt-2 p-1" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-title="¥25,000 CNY = $3,500 USD" html="true" data-bs-content="These rates are approximate. Check out x.com for the latest rates!">
+                                                        <span>¥25,000  CNY</span>
+                                                    </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <button type="button" class="btn btn-sm btn-outline-dark mt-3" data-bs-toggle="modal" data-bs-target="#_279813">Info <i class="bi bi-tv text-danger"></i></button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a rel="nofollow" href="/te2/login/279813/24377" role="button" target="_blank" class="btn btn-primary btn-sm float-end fst-italic fs-6 m-2">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card mb-2 rounded border-bottom border-primary p-0" id="main">
+                            <div class="card-header border-bottom-0 p-0 pb-1" id="24956279545">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                            <a rel="nofollow" href="/te2/login/279545/24956">
+                                                <img alt="SIE -Succeed In Education (Shenzhen, China)" rel="nofollow" border="0" src="/uploads/logo/24956~623.png" class="img-fluid m-2">
+                                            </a>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a class="display-6 text-dark h1" href="/job_details/279545/0/top-schools-eslsubject-teachers-in-china-china">Top Schools ESL/Subject teachers in China</a>
+                                        <br><span class="fs-5">China (Shenzhen,Guangzhou,Ningbo, Xiamen,Qingdao)</span>
+
+                                        <div class="modal fade" id="_279545" tabindex="-1" aria-labelledby="repliesModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="repliesModalLongTitle">Top Schools ESL/Subject teachers in China<br>China (Shenzhen,Guangzhou,Ningbo, Xiamen,Qingdao)</h5>
+                                                        <button type="button" class="btn btn-outline-danger btn-lg float-end" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                    <div class="modal-body text-start">
+
+
+                                                                        <a rel="nofollow" href="/te2/Login/279545/24956">
+                                                                            <img alt="SIE -Succeed In Education (Shenzhen, China)" border="0" src="/uploads/logo/24956~623.png" class="img-fluid img-thumbnail float-start">
+                                                                        </a>
+
+
+                                                            <b>Required Degrees:</b> English/ Education related if possible<br><b>Fields of Expertise: </b>
+ESL/EFL  ,&nbsp;
+Elementary ,&nbsp;
+ESL to Children ,&nbsp;
+Kindergarten ,&nbsp;
+High School ,&nbsp;
+                                                            &nbsp;
+                                                            <br>
+                                                        <strong>Details: </strong><span class="text-break lead">English Native- Speaker ONLY<br>Location: Shenzhen, Guangzhou, Dongguan, Xiamen, Ningbo, Qingdao, Suzhou, Shanghai<br>On-Board Date: All year round (Peak time is August/September/February)<br>School type: Private/ Bilingual/ International / Public<br>ESL: Salary Range: RMB 18 K-25 K/month / $ 2600 - $ 3500/ month (Before Tax)<br>Subject Teaching:  Salary Range: RMB 23 K-29 K/month / $ 3500 - $ 4000/ month (Before Tax)<br>Contract Length: 2 years/1.5 years/1 year<br>Accommodation: housing allowance included in the salary (or school accommodation provided) + full relocation support<br>Flight Bonus: RMB 5000-8000<br>Insurance: Chinese health insurance provided<br>Visa: Legal Z work visa sponsorship and application assistance/<br>Other benefits: <br>Winter/Summer vacations with holiday pay<br>Fully paid Chinese public holidays<br>Free hotel during the first week after arrival with bank, phone, and apartment logistics assistance<br>Online training sessions for interview preparation and On-site training before the job starts are provided free of charge.<br>Teaching/living support for the entire duration of your working contract with SIE<br><br>Job Responsibilities<br>Plan, prepare, and deliver instructional lessons that facilitate active learning experiences with clearly established objectives using the provided textbook and learning materials<br>Participate in extracurricular events, social activities, and teacher departmental meetings as required by the school<br>Be familiar with and able to use relevant technology to support instruction and present lessons<br><br>Working Hours: <br>Mon-Fri 8:00 am—6:00 pm, with a 2-hour lunch break. There is a maximum of 18 teaching hours per week (the actual workload will be between 8 and 10 hours/week for kindergartens, 13-15 hours for primary to high schools). Each lesson is 20 – 30 minutes for kindergartens and 40- 45 minutes for primary to high schools.<br>Student Age: 3 – 6/7-12/13-15/15-18, Class size: avg. 15-25 for kindergartens and 35-45 for primary to high schools.<br>Educational Requirements:<br>Bachelor’s or Master’s degree in a related subject<br>120-Hour TEFL/TESOL/CELTA Certification<br>Clean health/criminal background to obtain a Chinese work visa(Z visa)<br>Experience Requirements:<br>0-3 years, depending on qualifications (1 -2 years preferred)<br>Additional Requirements<br>Independent and outgoing personalities preferred. While SIE will sponsor your work visa, provide training, and support you with anything you need during your contract term, we believe teaching abroad is more than just another job. It’s a chance to become part of a foreign community and experience a new culture. We only select the best applicants who we think will excel both inside and outside the classroom in assisting SIE to achieve our company’s mission of helping bridge the cultural divide between China and the rest of the world through language and education.</span>
+
+                                                        <p class="text-end"><a rel="nofollow" href="/te2/login/279545/24956" role="button" target="_blank" class="btn btn-primary btn-sm text-end">Apply</a></p>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger btn-lg" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                                <span>$3,500  USD</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <button type="button" class="btn btn-sm btn-outline-dark mt-3" data-bs-toggle="modal" data-bs-target="#_279545">Info <i class="bi bi-tv text-danger"></i></button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a rel="nofollow" href="/te2/login/279545/24956" role="button" target="_blank" class="btn btn-primary btn-sm float-end fst-italic fs-6 m-2">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card mb-2 rounded border-bottom border-primary p-0" id="main">
+                            <div class="card-header border-bottom-0 p-0 pb-1" id="24684278880">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                            <a rel="nofollow" href="/te2/login/278880/24684">
+                                                <img alt="Majestic BC International School (MBCIS)" rel="nofollow" border="0" src="/uploads/logo/24684~618.png" class="img-fluid m-2">
+                                            </a>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a class="display-6 text-dark h1" href="/job_details/278880/0/english-social-studies-math-science-teachers-china">English, Social Studies, Math &amp; Science Teachers</a>
+                                        <br><span class="fs-5">China (Foshan City, Guangdong Province)</span>
+
+                                        <div class="modal fade" id="_278880" tabindex="-1" aria-labelledby="repliesModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="repliesModalLongTitle">English, Social Studies, Math &amp; Science Teachers<br>China (Foshan City, Guangdong Province)</h5>
+                                                        <button type="button" class="btn btn-outline-danger btn-lg float-end" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                    <div class="modal-body text-start">
+
+
+                                                                        <a rel="nofollow" href="/te2/Login/278880/24684">
+                                                                            <img alt="Majestic BC International School (MBCIS)" border="0" src="/uploads/logo/24684~618.png" class="img-fluid img-thumbnail float-start">
+                                                                        </a>
+
+
+                                                            <b>Required Degrees:</b> Bachelor’s Degree (Master’s Preferred)<br><b>Fields of Expertise: </b>
+High School ,&nbsp;
+                                                            &nbsp;
+                                                            <br>
+                                                        <strong>Details: </strong><span class="text-break lead">The Majestic BC International School (MBCIS) is recruiting for the 2026/27 school year! We are actively pursuing the following positions for an Aug 2026 start:<br><br>1) English grades 10-12 - (immediate hire) - MUST BE BC CERTIFIED<br>2) (Science) - Physics, AP Physics, Science 10<br>3) (Math) - Pre-Cal 11/12, Calculus, AP Calculus <br>4) Social Studies grades 10-12<br>5) PE grades 10-12<br><br>We seek flexible teachers who can adapt to situations and understand the importance of flexibility in today’s fast-paced and continuously changing international school environments. <br><br>Responsibilities:<br>- Frequent strategic planning meetings to optimize planning efforts and lesson preparation. <br>- Supervising classes to ensure all students learn in a safe and productive environment.<br>- Organizing supplies and resources for lectures and presentations.<br>- Planning and implementing educational activities and events.<br>- Ensuring your classroom is clean and orderly.<br>- Attending parent-teacher meetings.<br>- Evaluating and documenting students’ progress.<br>- Allocating and grading homework, assignments, and tests.<br>- Developing and enforcing classroom rules. <br><br>Qualifications: <br>- Bachelor’s degree (Master’s preferred)<br>- Current British Columbia (BC) Teacher certification<br>- Excellent interpersonal skills <br>- Well-organized and committed <br>- Creative and energetic <br><br>Salary: <br>- 52k to 80k CAD based on years of high school teaching experience. <br>- Christmas and Chinese New Year holidays<br>- Generous Housing Allowance<br><br>Feel free to forward your resume for immediate consideration. <br><br>Sorry, but only licensed/certified teachers will be considered. </span>
+
+                                                        <p class="text-end"><a rel="nofollow" href="/te2/login/278880/24684" role="button" target="_blank" class="btn btn-primary btn-sm text-end">Apply</a></p>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger btn-lg" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <button type="button" class="btn btn-sm btn-outline-dark mt-3" data-bs-toggle="modal" data-bs-target="#_278880">Info <i class="bi bi-tv text-danger"></i></button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a rel="nofollow" href="/te2/login/278880/24684" role="button" target="_blank" class="btn btn-primary btn-sm float-end fst-italic fs-6 m-2">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card mb-2 rounded border-bottom border-primary p-0" id="main">
+                            <div class="card-header border-bottom-0 p-0 pb-1" id="24991279567">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                            <a rel="nofollow" href="/te2/login/279567/24991">
+                                                <img alt="Real Education Academy" rel="nofollow" border="0" src="/uploads/logo/24991~225.png" class="img-fluid m-2">
+                                            </a>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a class="display-6 text-dark h1" href="/job_details/279567/0/esl-positions-in-south-china-china">ESL Positions in South China</a>
+                                        <br><span class="fs-5">China (Changsha)</span>
+
+                                        <div class="modal fade" id="_279567" tabindex="-1" aria-labelledby="repliesModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="repliesModalLongTitle">ESL Positions in South China<br>China (Changsha)</h5>
+                                                        <button type="button" class="btn btn-outline-danger btn-lg float-end" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                    <div class="modal-body text-start">
+
+
+                                                                    <a rel="nofollow" href="/te2/Login/279567/24991">
+                                                                        <img alt="Real Education Academy" border="0" src="/uploads/logo/24991~225.png" class="img-fluid img-thumbnail float-start">
+                                                                    </a>
+
+
+                                                            <b>Required Degrees:</b> university degree, teaching certificate<br><b>Fields of Expertise: </b>
+ESL/EFL  ,&nbsp;
+Elementary ,&nbsp;
+ESL to Children ,&nbsp;
+Kindergarten ,&nbsp;
+High School ,&nbsp;
+University ,&nbsp;
+                                                            &nbsp;
+                                                            <br>
+                                                        <strong>Details: </strong><span class="text-break lead">Job Qualifications<br>Bachelor’s degree<br>TEFL/TESOL/CELTA certification<br>Native English speakers<br><br>Job Benefits<br>💰 Salary USD 2500- 3000/month after tax (Post-probation)<br>🏠 Housing Fully covered 1-bed apartment near campus<br>✈️ Relocation ¥3,000 allowance + visa sponsorship<br>🩺 Insurance Medical &amp; accident coverage<br>🎯 Bonus Up to 10% annual salary performance bonus<br>11 paid public holidays + 5 vacation days<br>Supportive expat community &amp; onboarding<br><br>Company Description<br>🌟 About Real Education Academy 🌟<br>📍 Location: Changsha, Hunan, China<br>📘 Established: 2009<br>👥 Class Size: 1-on-1 or Small Group (5–8 students)<br>Founded in 2009, Real Education Academy (REA瑞德国际英语学校) is a trusted and dynamic English training school based in the heart of Changsha, a city known for its energy, food, and friendliness! 🏙️🌶️<br>We offer high-quality English instruction to:<br>🧒 Young learners (ages 3–12)<br>🎓 Teenagers preparing for Cambridge exams (KET, PET, IELTS)<br>💼 Adults focusing on Business &amp; Conversational English<br>Our teaching team is made up of passionate local and international teachers who love working in a warm, professional and supportive environment. 🤝✨<br>At REA, we believe in:<br>🧑‍🏫 Interactive, student-centred learning<br>🎯 Clear academic goals and personalised feedback<br>🏡 A friendly team and strong community atmosphere<br>Whether you’re looking to make a real difference in your students’ lives or experience an exciting new culture, REA is a place where your teaching journey will be valued and supported. 🚀<br>📣 Join us in one of China’s most liveable and culturally rich cities!<br>Job Description<br>👩‍🏫 What You’ll Teach<br>📘 Young learners (ages 3–12): phonics, conversation, reading<br>📗 Teens (ages 13–18): Cambridge KET/PET, speaking, exam prep<br>📕 Adults: Business English, conversation, writing<br>Class sizes: 5–8 students or 1-on-1<br>All materials and training provided<br>🕒 Working Hours<br>⏰ 5 days/week (2 days off)<br>📅 8 working hours per day (includes office + teaching hours)<br>🏖️ 11 days of Chinese public holidays + 5 days of paid annual leave<br>💰 Compensation &amp; Benefits<br>💷 £1,970–£2,370/month (USD $2,500–$3,000), based on experience<br>🏡 Free modern private apartment (furnished, with Wi-Fi, A/C, close to school)<br>📄 Full Z visa sponsorship<br>🎁 Contract completion bonus<br>🚕 Airport pickup + settling-in support<br>❤️ Friendly local + international team<br>🌇 Why Changsha?<br>Changsha is one of China’s most vibrant and authentic cities — a perfect mix of modern convenience and deep culture. Think:<br>🔥 Spicy Hunan food (hello, stinky tofu!)<br>🎤 Karaoke, riverside bars, tea houses<br>🏞️ Yuelu Mountain, Orange Isle, art galleries<br>💸 Low cost of living — save more while living well!<br>✨ Still curious? Watch these 4K YouTube videos to get a feel for the city:<br>City Views of Changsha (4K Walk)<br>Changsha Food &amp; Culture Tour<br>IShowSpeed visits Changsha<br>✅ Requirements<br>Native English speaker (UK, USA, Canada, Australia, etc.)<br>Bachelor’s degree in any field<br>TEFL/CELTA/TESOL preferred<br>Enthusiastic, responsible, and kind-hearted with children</span>
+
+                                                        <p class="text-end"><a rel="nofollow" href="/te2/login/279567/24991" role="button" target="_blank" class="btn btn-primary btn-sm text-end">Apply</a></p>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger btn-lg" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                                <span>$3,000  USD</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <button type="button" class="btn btn-sm btn-outline-dark mt-3" data-bs-toggle="modal" data-bs-target="#_279567">Info <i class="bi bi-tv text-danger"></i></button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a rel="nofollow" href="/te2/login/279567/24991" role="button" target="_blank" class="btn btn-primary btn-sm float-end fst-italic fs-6 m-2">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card mb-2 rounded border-bottom border-primary p-0" id="main">
+                            <div class="card-header border-bottom-0 p-0 pb-1" id="11114279815">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                            <a rel="nofollow" href="/te2/login/279815/11114">
+                                                <img alt="Shanghai Bowai Education" rel="nofollow" border="0" src="/uploads/logo/11114~11114~64.jpeg" class="img-fluid m-2">
+                                            </a>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a class="display-6 text-dark h1" href="/job_details/279815/0/intl-school-englishsubjectprincipal-jobs-china-china">Int’l School English/Subject/Principal Jobs China</a>
+                                        <br><span class="fs-5">China (Shanghai, Beijing &amp; other cities)</span>
+
+                                        <div class="modal fade" id="_279815" tabindex="-1" aria-labelledby="repliesModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="repliesModalLongTitle">Int’l School English/Subject/Principal Jobs China<br>China (Shanghai, Beijing &amp; other cities)</h5>
+                                                        <button type="button" class="btn btn-outline-danger btn-lg float-end" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                    <div class="modal-body text-start">
+
+
+                                                                        <a rel="nofollow" href="/te2/Login/279815/11114">
+                                                                            <img alt="Shanghai Bowai Education" border="0" src="/uploads/logo/11114~11114~64.jpeg" class="img-fluid img-thumbnail float-start">
+                                                                        </a>
+
+
+                                                            <b>Required Degrees:</b> bachelor degree,prefer PGCE or teacher license<br><b>Fields of Expertise: </b>
+ESL/EFL  ,&nbsp;
+Nursery ,&nbsp;
+Elementary ,&nbsp;
+ESL to Children ,&nbsp;
+Kindergarten ,&nbsp;
+High School ,&nbsp;
+Science ,&nbsp;
+Math/Physics ,&nbsp;
+                                                            &nbsp;
+                                                            <br>
+                                                        <strong>Details: </strong><span class="text-break lead">Shanghai Bowai Education currently is recruiting foreign/bilingual teachers from now and Feb 2026 on behalf of hundreds of bilingual/international schools in Shanghai, Nanjing, Changzhou, Ningbo, Hangzhou, Wuhan, Beijing, Nanchang, Zibo, Shenzhen， Chongqing， Changsha in China.<br>We mainly look for native English speakers but could also accept experienced non-native English speaker subject teachers with good English. We have all kinds of teaching and management positions in China. Salary varies depending on your academic background and teaching/management experience.<br>Kindergarten Principal position:<br>Yangpu district, Shanghai// kindergarten International Director Needed now or Feb 2026 in Yangpu district, Shanghai；<br>Kindergarten Positions Starting ASAP/Feb 2026 in Shanghai/Beijing/Wuhan/Ningbo/Nanchang/ Shenzhen //Pre-Kindergarten/Kindergarten Homeroom Teachers Needed (up to 450k rmb/year);<br>Locations:<br>1. Jiading, Yangpu, Pudong; Shanghai;<br>2. Beijing;<br>3. Ningbo city, Zhejiang province;<br>4. Wuhan city, Hubei province;<br>5. Nanchang city, Jiangxi province;<br>6. Shenzhen; <br>The K12 International school SH: Xuhui//ASAP or February 2026//Shanghai: International K12 school Middle/High School Literature/English Teacher Needed in Xuhui district, Shanghai (RMB 29-41k/m+ free housing)<br>Primary/Middle/High School Teaching positions starting ASAP/Feb 2025 for All kinds of positions including English/Art/Math/Biology/Science Homeroom positions in Shanghai, Nanjing, Changzhou, Hangzhou, Beijing, Guangzhou, Shenzhen, Zibo, and other cities (up to 500k rmb/year or more for the whole package or more depending on your background and teaching experience<br>Locations:<br>1.	Primary School Homeroom position, Primary Schoool PYP Coordinator in Pudong, Shanghai; <br>2.	High School English position in Qinpgu,&amp; Xuhui, Shanghai; <br>3.	High school ELA position in Changzhou, Jiangsu;<br>4.	High school English position in Zibo city, Shandong province;<br>5.	 Primary School Math/English position &amp; Middle School science position in Beijing;<br>6.	l IB School High School Biology position in Changsha city, Hunan province; <br>7.	Primary School EAL position in Guangzhou city, Guangdong province;<br>8.	Head of high school Math position in Chongqing city, Sichuan province; <br>9.	Training School Drama position in Nanjing city, Jiangsu province; <br>Requirements:<br>1. Native English speakers or Non-native English speakers with good English;<br>2. Bachelor or above;<br>3. At least 2-3 years’ related teaching/Management experience;<br>4. prefer teaching license/QTS/PGCE;<br></span>
+
+                                                        <p class="text-end"><a rel="nofollow" href="/te2/login/279815/11114" role="button" target="_blank" class="btn btn-primary btn-sm text-end">Apply</a></p>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger btn-lg" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                                    <button type="button" class="btn btn-outline-primary mt-2 p-1" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-title="¥40,000 CNY = $5,600 USD" html="true" data-bs-content="These rates are approximate. Check out x.com for the latest rates!">
+                                                        <span>¥40,000  CNY</span>
+                                                    </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <button type="button" class="btn btn-sm btn-outline-dark mt-3" data-bs-toggle="modal" data-bs-target="#_279815">Info <i class="bi bi-tv text-danger"></i></button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a rel="nofollow" href="/te2/login/279815/11114" role="button" target="_blank" class="btn btn-primary btn-sm float-end fst-italic fs-6 m-2">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card mb-2 rounded border-bottom border-primary p-0" id="main">
+                            <div class="card-header border-bottom-0 p-0 pb-1" id="22781275212">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                            <a rel="nofollow" href="/te2/login/275212/22781">
+                                                <img alt="Hangzhou Haicheng Education" rel="nofollow" border="0" src="/uploads/logo/22781~22781~13.jpeg" class="img-fluid m-2">
+                                            </a>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a class="display-6 text-dark h1" href="/job_details/275212/0/esl-and-subject-teachers-china">ESL and Subject Teachers</a>
+                                        <br><span class="fs-5">China (Hangzhou/Jinhua/Wenzhou/Nantong)</span>
+
+                                        <div class="modal fade" id="_275212" tabindex="-1" aria-labelledby="repliesModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="repliesModalLongTitle">ESL and Subject Teachers<br>China (Hangzhou/Jinhua/Wenzhou/Nantong)</h5>
+                                                        <button type="button" class="btn btn-outline-danger btn-lg float-end" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                    <div class="modal-body text-start">
+
+
+                                                                        <a rel="nofollow" href="/te2/Login/275212/22781">
+                                                                            <img alt="Hangzhou Haicheng Education" border="0" src="/uploads/logo/22781~22781~13.jpeg" class="img-fluid img-thumbnail float-start">
+                                                                        </a>
+
+
+                                                            <b>Required Degrees:</b> Bachelor’s degree<br><b>Fields of Expertise: </b>
+ESL/EFL  ,&nbsp;
+Nursery ,&nbsp;
+Elementary ,&nbsp;
+ESL to Children ,&nbsp;
+Kindergarten ,&nbsp;
+Science ,&nbsp;
+                                                            <mark class="bg-info">English/PE/Music/Science/Dance</mark>
+                                                            <br>
+                                                        <strong>Details: </strong><span class="text-break lead">Position:<br>Full Time ESL / Subject Teacher<br>Start time: September 1st, 2025<br>Location: Hangzhou city/Jinhua city/Wenzhou city/Nantong city<br>School Type: Kindergarten/Primary school/Middle school<br>Class size: 20-40 students<br>Age Groups: 3-6 / 7-12 /13-15<br>Teacher Requirements:<br>Native English speakers with BA degree or BA of Fine Arts/PE/Science/Music<br>Bachelor’s degree or above<br>TESOL/TEFL/CELTA holders<br>Teaching Schedule:<br>Working hours: 8 a.m-5 p.m., or flexible office hours<br>Teaching hours: less than 15 hours per week.<br>Days off: weekends off.<br>We offer:<br>(1) Monthly salary of 10,000-18,000 RMB plus free housing(Independent and fully furnished) or 2,500RMB housing allowance; <br>(2) Free lunch. <br>(3) Paid 11 National Official Holidays per year<br>(4) Flight allowance of 6,000 RMB paid per year after teachers finish each year’s contract<br>(5) Complimentary airport pickup<br>(6) Complimentary hotel for 3 days upon arrival<br>(7) Complimentary medical check<br>(8) Paid health insurance<br>(9) Full work visa (Z visa)<br>(10) Residence permit<br>Application Process:<br>Please submit a formal application to us including:<br>(1) An updated and detailed teaching resume<br>(2) A short self-introduction video<br>(3) Bachelor’s degree certificate<br>(4) Recommendation letters (if any)<br>(5) Passport page</span>
+
+                                                        <p class="text-end"><a rel="nofollow" href="/te2/login/275212/22781" role="button" target="_blank" class="btn btn-primary btn-sm text-end">Apply</a></p>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-danger btn-lg" data-bs-dismiss="modal">X</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                                    <button type="button" class="btn btn-outline-primary mt-2 p-1" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-title="¥18,000 CNY = $2,520 USD" html="true" data-bs-content="These rates are approximate. Check out x.com for the latest rates!">
+                                                        <span>¥18,000  CNY</span>
+                                                    </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        <button type="button" class="btn btn-sm btn-outline-dark mt-3" data-bs-toggle="modal" data-bs-target="#_275212">Info <i class="bi bi-tv text-danger"></i></button>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <a rel="nofollow" href="/te2/login/275212/22781" role="button" target="_blank" class="btn btn-primary btn-sm float-end fst-italic fs-6 m-2">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+
+<span class="badge bg-primary">Page 1</span>
+
+<br>
+<div class="btn-group btn-group-lg" role="group" aria-label="...">
+    <button type="button" class="btn btn-outline-secondary" onclick="if (!window.__cfRLUnblockHandlers) return false; window.location='/'">Start</button>
+        <button type="button" class="btn btn-outline-secondary" onclick="if (!window.__cfRLUnblockHandlers) return false; window.location='/1/41/0'">Next</button>
+</div>
+
+<div class="text-center">
+    <a href="/advertise">
+        <img src="/images/buttons/featured_banners.png" alt="Featured Banners" border="0">
+    </a><br>
+
+                <div class="mb-2">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#_233872233872" aria-expanded="false" aria-controls="_233872233872">
+                        <i class="bi bi-chevron-down"></i>
+                        <img src="/images/buttons/info.png" alt="Info" border="0">
+                        <i class="bi bi-chevron-up"></i>
+                    </button>
+                </div>
+                <a href="/shared/visitors/233872/1" target="_blank">
+                    <img src="https://www.seriousteachers.com/uploads/banner/13964~233872~475-62.png?id=e92ee10d-6d30-41ca-a5e3-2fba22abe589" class="img-fluid" alt="Responsive image" border="0">
+                </a>
+                <div id="_233872233872" class="collapse" aria-labelledby="_233872233872">
+                    <div class="card">
+                        <div class="card-body text-start" style="background-color: ghostwhite;">
+                            <a href="#_233872233872" data-bs-toggle="collapse" aria-expanded="false" aria-controls="_233872233872" class="close float-end" role="button" aria-label="Close">
+                                <i class="bi bi-x-circle-fill text-danger"></i>
+                            </a>
+
+                            <h4>SeriousTEFL with Exclusive Jobs for Our Graduates</h4>
+
+                            <span class="text-start">
+                                SeriousTEFL distinguishes itself through several key features. First, it offers exclusive job opportunities for its 120-hour Diploma graduates. These graduates gain access to a network of employers and recruiters offering teaching positions in over 150 countries. Second, SeriousTEFL boasts a substantial community of 48,000 graduates, highlighting its extensive reach and alumni network.
+                            </span>
+
+                                <h6 class="mt-2">
+                                        <a href="/shared/visitors/233872/2" target="_blank">
+                                            Visit Website <i class="bi bi-link fs-3"></i>
+                                        </a>
+                                </h6>
+
+                                <a class="btn btn-primary float-end" href="/shared/visitors/233872/1" target="_blank" role="button">Website</a>
+                        </div>
+                    </div>
+                </div>
+            <br>
+            <br>
+</div>
+
+<div class="card border mb-3">
+    <div class="card-body">
+        <h6>
+            Available Jobs by Field
+        </h6>
+        <a class="badge bg-light text-dark" href="/0/41/1/tefl-esl-tesol-celta-job-offers">TEFL/TESOL</a>
+        <a class="badge bg-light text-dark" href="/0/41/14/summer-camp-job-offers">Summer Camp</a>
+        <a class="badge bg-light text-dark" href="/0/41/8/teach-university-job-offers">University</a>
+        <a class="badge bg-light text-dark" href="/0/41/3/teach-elementary-job-offers">Elementary</a>
+        <a class="badge bg-light text-dark" href="/0/41/7/teach-high-school-job-offers">High School</a>
+        <a class="badge bg-light text-dark" href="/0/41/2/nursery-school-job-offers">Nursery</a>
+        <a class="badge bg-light text-dark" href="/0/41/6/teach-Kindergarten-job-offers">Kindergarten</a>
+        <a class="badge bg-light text-dark" href="/0/41/5/teach-esl-to-children-job-offers">ESL to Children</a>
+        <a class="badge bg-light text-dark" href="/0/41/11/teach-science-job-offers">Science</a>
+        <a class="badge bg-light text-dark" href="/0/41/12/teach-math-physics-job-offers">Math/Physics</a>
+        <a class="badge bg-light text-dark" href="/0/41/4/curriculum-developer-job-offers">Curriculum Developer</a>
+        <a class="badge bg-light text-dark" href="/0/41/9/teach-french-job-offers">French</a>
+        <a class="badge bg-light text-dark" href="/0/41/10/teach-spanish-job-offers">Spanish</a>
+        <a class="badge bg-light text-dark" href="/0/41/13/teaching-job-offers">Others..</a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h6>
+            Available Jobs by Country
+        </h6>
+                <a class="badge bg-light text-dark" href="/0/2/teaching-job-offers-from-albania">Albania</a>
+                <a class="badge bg-light text-dark" href="/0/8/teaching-job-offers-from-argentina">Argentina</a>
+                <a class="badge bg-light text-dark" href="/0/15/teaching-job-offers-from-bahrain">Bahrain</a>
+                <a class="badge bg-light text-dark" href="/0/34/teaching-job-offers-from-cambodia">Cambodia</a>
+                <a class="badge bg-light text-dark" href="/0/41/teaching-job-offers-from-china">China</a>
+                <a class="badge bg-light text-dark" href="/0/42/teaching-job-offers-from-colombia">Colombia</a>
+                <a class="badge bg-light text-dark" href="/0/43/teaching-job-offers-from-costa-rica">Costa Rica</a>
+                <a class="badge bg-light text-dark" href="/0/53/teaching-job-offers-from-dominican-republic">Dominican Republic</a>
+                <a class="badge bg-light text-dark" href="/0/56/teaching-job-offers-from-egypt">Egypt</a>
+                <a class="badge bg-light text-dark" href="/0/72/teaching-job-offers-from-guatemala">Guatemala</a>
+                <a class="badge bg-light text-dark" href="/0/78/teaching-job-offers-from-honduras">Honduras</a>
+                <a class="badge bg-light text-dark" href="/0/82/teaching-job-offers-from-indonesia">Indonesia</a>
+                <a class="badge bg-light text-dark" href="/0/84/teaching-job-offers-from-iraq">Iraq</a>
+                <a class="badge bg-light text-dark" href="/0/87/teaching-job-offers-from-italy">Italy</a>
+                <a class="badge bg-light text-dark" href="/0/89/teaching-job-offers-from-japan">Japan</a>
+                <a class="badge bg-light text-dark" href="/0/91/teaching-job-offers-from-kazakhstan">Kazakhstan</a>
+                <a class="badge bg-light text-dark" href="/0/194/teaching-job-offers-from-kurdistan">Kurdistan</a>
+                <a class="badge bg-light text-dark" href="/0/93/teaching-job-offers-from-kuwait">Kuwait</a>
+                <a class="badge bg-light text-dark" href="/0/99/teaching-job-offers-from-libya">Libya</a>
+                <a class="badge bg-light text-dark" href="/0/106/teaching-job-offers-from-malaysia">Malaysia</a>
+                <a class="badge bg-light text-dark" href="/0/111/teaching-job-offers-from-mexico">Mexico</a>
+                <a class="badge bg-light text-dark" href="/0/114/teaching-job-offers-from-mongolia">Mongolia</a>
+                <a class="badge bg-light text-dark" href="/0/181/teaching-job-offers-from-myanmar-(burma)">Myanmar (Burma)</a>
+                <a class="badge bg-light text-dark" href="/0/125/teaching-job-offers-from-oman">Oman</a>
+                <a class="badge bg-light text-dark" href="/0/190/teaching-job-offers-from-online">ONLINE*</a>
+                <a class="badge bg-light text-dark" href="/0/129/teaching-job-offers-from-peru">Peru</a>
+                <a class="badge bg-light text-dark" href="/0/131/teaching-job-offers-from-poland">Poland</a>
+                <a class="badge bg-light text-dark" href="/0/132/teaching-job-offers-from-portugal">Portugal</a>
+                <a class="badge bg-light text-dark" href="/0/134/teaching-job-offers-from-romania">Romania</a>
+                <a class="badge bg-light text-dark" href="/0/135/teaching-job-offers-from-russian-federation">Russian Federation</a>
+                <a class="badge bg-light text-dark" href="/0/137/teaching-job-offers-from-saudi-arabia">Saudi Arabia</a>
+                <a class="badge bg-light text-dark" href="/0/140/teaching-job-offers-from-singapore">Singapore</a>
+                <a class="badge bg-light text-dark" href="/0/144/teaching-job-offers-from-south-korea">South Korea</a>
+                <a class="badge bg-light text-dark" href="/0/145/teaching-job-offers-from-spain">Spain</a>
+                <a class="badge bg-light text-dark" href="/0/151/teaching-job-offers-from-taiwan">Taiwan</a>
+                <a class="badge bg-light text-dark" href="/0/153/teaching-job-offers-from-thailand">Thailand</a>
+                <a class="badge bg-light text-dark" href="/0/156/teaching-job-offers-from-turkey">Turkey</a>
+                <a class="badge bg-light text-dark" href="/0/160/teaching-job-offers-from-united-arab-emirates">United Arab Emirates</a>
+                <a class="badge bg-light text-dark" href="/0/162/teaching-job-offers-from-united-states-of-america">United States of America</a>
+                <a class="badge bg-light text-dark" href="/0/171/teaching-job-offers-from-vietnam">Vietnam</a>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+    function selectcountry() {
+        location.href = location.protocol + "//" + location.host + "/0/" + document.enviadatos.bypais.value + "/" + document.enviadatos.byfield.value;
+    }
+</script>
+            </div>
+            <div class="col-sm-2 order-3 right-template">
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).ready(function () {
+            $('#div_cnt').bind("cut copy paste", function (e) {
+                // alert('Copy Paste is disabled');
+                e.preventDefault();
+            });
+        });
+    });
+</script>
+<div class="text-center">
+        <style>
+            .imageClip1 {
+                width: auto;
+                height: 120px;
+                overflow: hidden
+            }
+
+            .imageClip {
+                width: auto;
+                height: 120px;
+                overflow: hidden
+            }
+        </style>
+        <div class="card border-bottom mb-2 rounded" id="main">
+            <div class="card-header text-center p-0">
+                <a href="/tefl/"><img src="/images/steflLogo.png" class="img-fluid" alt="TEFL 120-hour Diploma Course"></a>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="/tefl"><img class="img-fluid" src="/tefl/images/rotate/11.jpg"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="/tefl"><img class="img-fluid" src="/tefl/images/rotate/8.jpg"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="/tefl"><img class="img-fluid" src="/tefl/images/rotate/2.jpg"></a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="/tefl"><img class="img-fluid" src="/tefl/images/rotate/9.jpg"></a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="/tefl"><img class="img-fluid" src="/tefl/images/rotate/7.jpg"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="/tefl"><img class="img-fluid" src="/tefl/images/rotate/6.jpg"></a>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" role="button" href="#carouselExampleControls" data-bs-slide="prev">
+                    <i class="bi bi-chevron-left text-danger fs-4"></i>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" role="button" href="#carouselExampleControls" data-bs-slide="next">
+                    <i class="bi bi-chevron-right text-danger fs-4"></i>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+
+        </div>
+    <div class="accordion" id="accordion">
+
+            <div class="row mb-1">
+                <img src="/images/stlogo.png" class="img-fluid" alt="Serious Teachers">
+                    <div class="col text-center">
+
+
+                    </div>
+
+            </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Mystique H.</strong>
+                    <div class="small">United States of America</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2690909" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2690909" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2690909">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;                            <img border="0" src="/images/certi.gif" alt="Certificates Attached">
+
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7294387~2690909.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Corey A.</strong>
+                    <div class="small">United States of America</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2676492" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2676492" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2676492">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;                            <img border="0" src="/images/certi.gif" alt="Certificates Attached">
+
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7279970~2676492.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Josh O.</strong>
+                    <div class="small">United States of America</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2226288" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2226288" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2226288">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;                                <img src="/images/asap.jpg" alt="AVAILABLE IMMEDIATELY!">
+&nbsp;
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/6829885~2226288.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Sara K.</strong>
+                    <div class="small">United Kingdom</div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="/images/hired.gif" class="img-fluid">
+                            </div>
+                        </div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2690075" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2690075" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2690075">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;                            <img border="0" src="/images/certi.gif" alt="Certificates Attached">
+
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7293553~2690075.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Jason C.</strong>
+                    <div class="small">United States of America</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_914825" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_914825" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_914825">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;                            <img border="0" src="/images/certi.gif" alt="Certificates Attached">
+
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/5517256~914825.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Jolson J.</strong>
+                    <div class="small">United States of America</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2691389" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2691389" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2691389">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;                                <img src="/images/asap.jpg" alt="AVAILABLE IMMEDIATELY!">
+&nbsp;
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7294867~2691389.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Dawn W.</strong>
+                    <div class="small">United States of America</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2688295" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2688295" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2688295">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;                                <img src="/images/asap.jpg" alt="AVAILABLE IMMEDIATELY!">
+&nbsp;                            <img border="0" src="/images/certi.gif" alt="Certificates Attached">
+
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7291773~2688295.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Brooks M.</strong>
+                    <div class="small">United States of America</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2653896" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2653896" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2653896">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;                                <img src="/images/asap.jpg" alt="AVAILABLE IMMEDIATELY!">
+&nbsp;                            <img border="0" src="/images/certi.gif" alt="Certificates Attached">
+
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7257375~2653896.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Said H.</strong>
+                    <div class="small">Canada</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2688632" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2688632" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2688632">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                                <img src="/images/asap.jpg" alt="AVAILABLE IMMEDIATELY!">
+&nbsp;
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7292110~2688632.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Claudia N.</strong>
+                    <div class="small">United States of America</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2686970" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2686970" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2686970">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;                            <img border="0" src="/images/certi.gif" alt="Certificates Attached">
+
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7290448~2686970.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Iddrisu S.</strong>
+                    <div class="small">United Kingdom</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2663260" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2663260" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2663260">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7266738~2663260.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Aisha K.</strong>
+                    <div class="small">United States of America</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2690569" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2690569" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2690569">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7294047~2690569.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Fatima S.</strong>
+                    <div class="small">Australia</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2675732" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2675732" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2675732">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7279210~2675732.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Katie P.</strong>
+                    <div class="small">United States of America</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2635402" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2635402" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2635402">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+                            <img border="0" src="/images/cv.gif" alt="Resume Attached" width="20" height="18">
+&nbsp;                                <img src="/images/asap.jpg" alt="AVAILABLE IMMEDIATELY!">
+&nbsp;                            <img border="0" src="/images/certi.gif" alt="Certificates Attached">
+
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7238881~2635402.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+                <div class="card border rounded border-primary mb-2">
+
+                    <strong>Amera J.</strong>
+                    <div class="small">United States of America</div>
+
+
+                    <a rel="nofollow" style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" class="btn btn-outline-secondary text-sm-center btn-sm mx-1" data-bs-toggle="collapse" href="#_T_2689971" aria-expanded="false" aria-controls="_T_">My Cover Letter</a>
+                    <div id="_T_2689971" class="accordion-collapse collapse" data-bs-parent="#accordion" aria-labelledby="_T_2689971">
+                                <span>LOGIN to view this member's full name &amp; profile!</span>
+                        <br>
+
+                    </div>
+
+
+                    <div class="row my-1">
+                        <div class="col text-center">
+                                        <img img="" src="/uploads/pics/7293449~2689971.jpeg" type="image" class="img-fluid img-thumbnail rounded-circle" rel="nofollow">
+                        </div>
+                    </div>
+                </div>
+
+
+        <div class="row mt-1">
+
+                <div class="col text-center">
+                        <button style="overflow:hidden; text-overflow:ellipsis; white-space: nowrap" type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-placement="bottom" data-bs-original-title="Login to continue">next</button>
+
+                </div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    function findit() { if (document.enviasearch.search.value == "search images") { alert("Needs a Keyword!"); document.enviasearch.search.focus(); return } document.enviasearch.target = "_self"; document.enviasearch.action = "https://www.seriousteachers.com/te2/teacher_panel_main/0/0/1"; document.enviasearch.submit() } function quick(a) { x = window.open(location.protocol + "//" + location.host + "/quick_profile/" + a, "Quick_Profile", "toolbar=0, scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=650,height=570,left = 0,top = 0") } function contactme(a) { x = window.open(location.protocol + "//" + location.host + "/feature/contact_feature/" + a) }
+</script>            </div>
+        </div>
+
+        <footer class="pt-4 my-md-5 pt-md-2 text-center border-top">
+            <div class="row">
+                <div class="col">
+                    <h5><u>Employers</u></h5>
+
+                        <a class="badge rounded-pill bg-light text-dark" target="_top" href="/views/upgrade_posting">Employer Login-Panel</a>
+                    <a class="badge rounded-pill bg-light text-dark" target="_top" href="/post_jobs">Post a Job</a>
+                    <a class="badge rounded-pill bg-light text-dark" target="_top" href="/recruit">Recruitment Services</a>
+                    <a class="badge rounded-pill bg-light text-dark" target="_top" href="/views/upgrade_posting/0/0?returnUrl=2">Teachers Database Access</a>
+                    <a class="badge rounded-pill bg-light text-dark" target="_top" href="/views/upgrade_posting/0?returnUrl=3">Invoices</a>
+                    <a class="badge rounded-pill bg-light text-dark" target="_top" href="/views/upgrade_posting/0?returnUrl=4">Activation History</a>
+                    <a class="badge rounded-pill bg-light text-dark" target="_top" href="/views/change_email">Change Email-Password</a>
+                    <a class="badge rounded-pill bg-light text-dark" target="_top" href="/advertise">Advertising</a>
+
+                </div>
+                <div class="col">
+                    <h5><u>Teachers</u></h5>
+                    <a class="badge rounded-pill bg-light text-dark" href="/teachers_join">Teachers Join</a>
+                    <a class="badge rounded-pill bg-light text-dark" href="/te2/login">Teacher Login</a>
+                    <a class="badge rounded-pill bg-light text-dark" href="/te2/login">Private Job Board</a>
+                    <a class="badge rounded-pill bg-light text-dark" href="/te2/login?returnUrl=1">Edit Profile</a>
+                    <a class="badge rounded-pill bg-light text-dark" href="/te2/login?returnUrl=4">Upload Photo-Docs</a>
+                    <a class="badge rounded-pill bg-light text-dark" href="/tefl">TEFL Diploma</a>
+<a class="badge rounded-pill bg-light text-dark" href="/seriousforum">Serious Forum</a>
+                    <a class="badge rounded-pill bg-light text-dark" href="/feature">Self-Promoting Campaign</a>
+                </div>
+                <div class="col mr-2">
+                    <h5><u>Others</u></h5>
+                    <a class="badge rounded-pill bg-light text-dark" href="/Index">Job Board</a>
+                    <a class="badge rounded-pill bg-light text-dark" href="/support">Support - Contact</a>
+                    <a class="badge rounded-pill bg-light text-dark" href="/shared/privacy">Privacy Policy</a>
+                    <a class="badge rounded-pill bg-light text-dark" href="/shared/terms_use">Terms of Use</a>
+                    <a class="badge rounded-pill bg-light text-dark" href="/faq">FAQ</a>
+                    <a class="badge rounded-pill bg-light text-dark" href="/educationallinks">Educational Links</a>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="row mt-2">
+                <div class="col-12 col-md  text-center">
+                    <img src="/images/stlogo.png" class="img-fluid" alt="Serious Teachers">
+                    <small class="d-block mb-3 text-muted">© 2007-2025</small>
+                </div>
+            </div>
+
+
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="/js/providesupport.js" type="text/javascript"></script>
+    <noscript>
+        <div style="display:inline">
+            <a href="http://messenger.providesupport.com/messenger/1ab334twrrq6y0j1w4taror5ec.html">
+                <img src="//image.providesupport.com/image/1ab334twrrq6y0j1w4taror5ec.gif" style="border:0px" alt="" />
+            </a>
+        </div>
+    </noscript>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98e1be10c87739fa',t:'MTc2MDM4ODk3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;98e1be10c87739fa&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.9.1&quot;,&quot;token&quot;:&quot;608aeeaa8344466da25b02a41e6b250e&quot;}" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript">
+    window.addEventListener('load', function () {
+        if (window.location.pathname == '/') {
+            jQuery('a:contains("Post a Job")').click(function () {
+                gtag('event', 'conversion', { 'send_to': 'AW-1071031976/Pv2vCIaK67MDEKjN2v4D' });
+            });
+        }
+        if (window.location.pathname == '/post_jobs') {
+            jQuery('button:contains("signup")').click(function () {
+                gtag('event', 'conversion', { 'send_to': 'AW-1071031976/b-2aCIfo7bMDEKjN2v4D' });
+            })
+        }
+    });
+
+    (function () {
+        'use strict'
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+            new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    });
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe><div><noscript><div style="display:inline"><a href="http://messenger.providesupport.com/messenger/1ab334twrrq6y0j1w4taror5ec.html"><img src="//image.providesupport.com/image/1ab334twrrq6y0j1w4taror5ec.gif" style="border:0px" alt="" /></a></div></noscript></div><script src="https://image.providesupport.com/js/1ab334twrrq6y0j1w4taror5ec/safe-monitor-sync.js?ps_h=8Zcp&amp;ps_t=1760388975824"></script><script src="https://image.providesupport.com/sjs/static.js"></script><script src="https://image.providesupport.com/js/1ab334twrrq6y0j1w4taror5ec/safe-monitor-sync.js?ps_h=8Zcp&amp;ps_t=1760388975824"></script><script src="https://image.providesupport.com/sjs/static.js"></script><div id="sc8Zcp"><div class="psmtc_8Zcp" style="z-index: 2147483647; position: fixed; bottom: 20px; right: 20px; display: none;"><a href="#" tabindex="0" class="chat-button-8Zcp" title="Live chat online" aria-label="Live chat online"><style>#sc8Zcp .psmtc_8Zcp .chat-button-8Zcp:focus:not(:focus-visible) {outline: 0;}#sc8Zcp .psmtc_8Zcp .chat-button-8Zcp:focus-visible { outline: auto; }</style><img name="ps8Zcpimage" width="151" height="84" alt="Live chat online" title="Live chat online" src="https://image.providesupport.com/image/1ab334twrrq6y0j1w4taror5ec/online-1761748370.gif" style="display: block;"></a></div><div class="psmw_8Zcp" style="z-index: 2147483647; display: none;"></div><style id="psst_8Zcp"></style></div><iframe name="__privateStripeMetricsController8040" frameborder="0" allowtransparency="true" scrolling="no" role="presentation" allow="payment *" src="https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fwww.seriousteachers.com%2F0%2F41%2Fteaching-job-offers-from-china&amp;title=Teaching%20Jobs%20in%20China&amp;referrer=&amp;muid=NA&amp;sid=NA&amp;version=6&amp;preview=false&amp;__shared_params__[version]=v3" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe></body></html>
