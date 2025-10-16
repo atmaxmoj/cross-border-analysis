@@ -7,9 +7,9 @@ const asiaWorkersData = [
     country: 'China',
     teaching: 70000,
     totalWorkers: 384000,
-    teachingGrowth: 'Post-2021 decline',
+    teachingGrowth: 'Post-2021 decline (-60-75%)',
     totalGrowth: '+12% since 2021',
-    source: 'Industry estimates 2024 (40-100K teachers), NIA 2023, HiredChina 2025'
+    source: 'MOE 2020: 17,693 in higher ed (official). Xinhua 2017: 400K total (pre-Double Reduction). Current est: 50-150K post-2021. NIA 2023: 384K total work permits. ISC Research 2025: 1,106 int\'l schools'
   },
   {
     country: 'Japan',
@@ -69,11 +69,11 @@ const asiaWorkersData = [
   },
   {
     country: 'Vietnam',
-    teaching: 4157,
+    teaching: 3310,
     totalWorkers: 100000,
-    teachingGrowth: '+42% since 2019',
+    teachingGrowth: 'Growing (HCMC verified only)',
     totalGrowth: 'Growing (2022 data)',
-    source: 'Vietnam.vn & British Council 2024 (2,157 verified) + ISC est. 2,000, GSO 2022'
+    source: 'Vietnam.vn 2024-25: 1,310 verified (HCMC language centers only). ISC Research: 362 int\'l schools (est. +2,000 teachers). Total est: 3,310. GSO 2022: 100K total foreign workers'
   },
   {
     country: 'Philippines',

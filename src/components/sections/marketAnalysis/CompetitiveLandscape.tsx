@@ -1,5 +1,5 @@
 import Section from '../../layout/Section'
-import CompetitivePositioningChart from '../../charts/CompetitivePositioningChart'
+import CompetitorHexagonChart from '../../charts/CompetitorHexagonChart'
 
 export default function CompetitiveLandscape() {
   return (
@@ -93,13 +93,6 @@ export default function CompetitiveLandscape() {
           </tr>
         </tbody>
       </table>
-
-      <h4>Competitive Positioning Map:</h4>
-      <p style={{ fontSize: '0.9em', color: '#718096', marginBottom: '10px' }}>
-        ⚠️ THEORETICAL POSITIONING MAP (not based on quantitative research). This represents YouTeacher's strategic intent to compete on both trust (verification) and technology (modern platform), positioning against Dave's ESL Cafe (high trust/low tech legacy) and scam sites (low trust).
-      </p>
-
-      <CompetitivePositioningChart />
 
       <h4 style={{ marginTop: '40px' }}>Expansion Scenario 1: All Cross-Border Jobs in China</h4>
       <p style={{ fontSize: '0.9em', color: '#718096', marginBottom: '15px' }}>
@@ -507,6 +500,8 @@ export default function CompetitiveLandscape() {
           <strong>YouTeacher's Path:</strong> Expanding beyond China teaching to "all Asia cross-border jobs" requires competing with entrenched players in each country (GaijinPot in Japan, Hays/Michael Page in Singapore/HK). <strong>Recommendation: Vertical expansion (China teaching → all China jobs) is easier than horizontal expansion (China → Japan/Korea/SEA)</strong> because each new country requires different visa expertise, language support, employer relationships, and cultural knowledge. Master one country deeply before going regional.
         </p>
       </div>
+
+      <CompetitorHexagonChart />
     </Section>
   )
 }

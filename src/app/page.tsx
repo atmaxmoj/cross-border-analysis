@@ -3,7 +3,8 @@ import ExecutiveSummary from '@/components/chapters/ExecutiveSummary'
 import ProjectGenesis from '@/components/chapters/ProjectGenesis'
 import CoreDiscoveries from '@/components/chapters/CoreDiscoveries'
 import MarketAnalysis from '@/components/chapters/MarketAnalysis'
-import Contradictions from '@/components/chapters/Contradictions'
+import StrategicQuestions from '@/components/chapters/StrategicQuestions'
+import SolutionToolkit from '@/components/chapters/SolutionToolkit'
 import BusinessModel from '@/components/chapters/BusinessModel'
 import RiskAssessment from '@/components/chapters/RiskAssessment'
 import Comparison from '@/components/chapters/Comparison'
@@ -42,7 +43,8 @@ export default function Home() {
               <ProjectGenesis />
               <CoreDiscoveries />
               <MarketAnalysis />
-              <Contradictions />
+              <StrategicQuestions />
+              <SolutionToolkit />
               <BusinessModel />
               <RiskAssessment />
               <Comparison />
