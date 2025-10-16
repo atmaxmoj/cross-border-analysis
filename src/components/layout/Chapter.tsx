@@ -8,9 +8,9 @@ interface ChapterProps {
 
 export default function Chapter({ id, title, children }: ChapterProps) {
   return (
-    <section id={id}>
+    <div id={id} className="chapter" data-type="chapter">
       <h2>{title}</h2>
       {children}
-    </section>
+    </div>
   )
 }
