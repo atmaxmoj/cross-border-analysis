@@ -253,18 +253,6 @@ export default function AppendixFScrapingLegal() {
           </tbody>
         </table>
       </div>
-
-      <div style={{ margin: '20px 0', padding: '15px', backgroundColor: '#fef5e7', border: '2px solid #ecc94b', borderRadius: '4px' }}>
-        <strong>⚠️ DISCLAIMER:</strong>
-        <p style={{ fontSize: '0.9em', marginTop: '10px', lineHeight: '1.6' }}>
-          This appendix is for informational purposes only and does NOT constitute legal advice. Consult a licensed attorney
-          in relevant jurisdictions before implementing scraping infrastructure. Laws evolve rapidly - verify current regulations before deployment.
-        </p>
-        <p style={{ fontSize: '0.9em', marginTop: '10px', lineHeight: '1.6' }}>
-          <strong>Recommendation:</strong> Budget $2,000-$5,000 for legal consultation with US/China data privacy lawyer before
-          Stage 1 launch to review scraping strategy and terms of service.
-        </p>
-      </div>
     </Section>
   )
 }
