@@ -1,6 +1,7 @@
 
 import Chapter from '../layout/Chapter'
 import GlassdoorPlaybook from '../sections/solutionToolkit/GlassdoorPlaybook'
+import AngelListNicheToGlobal from '../sections/solutionToolkit/AngelListNicheToGlobal'
 import MarketplaceColdStarts from '../sections/solutionToolkit/MarketplaceColdStarts'
 import SeekRegionalChampion from '../sections/solutionToolkit/SeekRegionalChampion'
 import PlatformDiscrimination from '../sections/solutionToolkit/PlatformDiscrimination'
@@ -23,6 +24,7 @@ export default function SolutionToolkit() {
       </p>
 
       <GlassdoorPlaybook />
+      <AngelListNicheToGlobal />
       <StackOverflowCommunity />
       <BossZhipinDirectChat />
       <LiepinHeadhunterModel />
