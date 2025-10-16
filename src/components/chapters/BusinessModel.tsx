@@ -11,13 +11,15 @@ export default function BusinessModel() {
   return (
     <Chapter id="business-model" title="7. Business Model: Staged Revenue Growth">
       <p>
-        This chapter outlines our revenue strategy aligned with product features (Desiderata). We progress through 4 stages:
-        (1) Traffic Acquisition via aggregation [Months 1-6, $0 revenue], (2) Monetization Start via direct posting [Months 7-18, $5K-$15K/mo],
-        (3) Differentiation via premium features [Months 19-36, $37K/mo], and (4) Moat Building via excitement features [Year 3+, $74K/mo].
+        This chapter outlines our revenue strategy aligned with product features (Desiderata). We progress through 4 stages over 4 years:
+        (1) Traffic Acquisition [Months 1-6], (2) Monetization Start [Months 7-18], (3) Differentiation [Months 19-36],
+        (4) Moat Building + Expansion [Year 3-4].
       </p>
       <p>
         <strong>Core Strategy:</strong> Don't monetize too early. Build teacher traffic first via aggregation (like Indeed 2004-2007),
-        THEN charge schools to reach that audience. Each stage builds on the previous: traffic → monetization → premium tiers → multiple revenue streams.
+        THEN charge schools to reach that audience. <strong>Critical insight:</strong> ESL teaching alone cannot sustain $1M+ ARR
+        (ceiling = $700K-$900K). Stage 4 combines excitement features (moat building) WITH market expansion—vertical first (all foreign jobs
+        in China Year 3 Q3-Q4, 11x market), then horizontal (teaching in Korea/Japan Year 4, 2-3x per country). This reaches <strong>$1.25M ARR by end of Year 4</strong>.
       </p>
 
       <Section id="stage-1-traffic" title="Stage 1: Traffic Acquisition">
@@ -32,7 +34,7 @@ export default function BusinessModel() {
         <Stage3Differentiation />
       </Section>
 
-      <Section id="stage-4-moat" title="Stage 4: Moat Building">
+      <Section id="stage-4-moat" title="Stage 4: Moat Building + Expansion">
         <Stage4MoatBuilding />
       </Section>
 

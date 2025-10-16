@@ -3,9 +3,21 @@ import InfoBox from '../../ui/InfoBox'
 export default function Stage4MoatBuilding() {
   return (
     <div style={{ marginTop: '30px' }}>
-      <h4>Stage 4: Moat Building (Year 3+) - Excitement Features</h4>
+      <h4>Stage 4: Moat Building + Expansion (Year 3-4)</h4>
+
+      <div style={{ margin: '20px 0', padding: '15px', backgroundColor: '#fef5e7', border: '2px solid #ecc94b', borderRadius: '4px' }}>
+        <strong>⚠️ Critical Insight: ESL China Alone Cannot Sustain $1M+ ARR</strong>
+        <p style={{ fontSize: '0.9em', marginTop: '10px', lineHeight: '1.8' }}>
+          China ESL market = 12,000 teachers/year, ~1,500-2,000 schools. Realistic ceiling = $700K-$900K ARR.
+        </p>
+        <p style={{ fontSize: '0.9em', marginTop: '10px', lineHeight: '1.8' }}>
+          <strong>Stage 4 strategy:</strong> Launch excitement features (moat building) WHILE expanding market (vertical + horizontal).
+          Don't wait until Year 5-6 - expansion happens in <strong>Year 3-4 simultaneously with moat features</strong>.
+        </p>
+      </div>
+
       <InfoBox>
-        <strong>Features Deployed:</strong>
+        <strong>Part A: Excitement Features (C-Tier Moat Building)</strong>
         <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>
           <li>C.1 AI Scam Detection</li>
           <li>C.2 Contract Review Tool</li>
@@ -14,9 +26,36 @@ export default function Stage4MoatBuilding() {
           <li>C.5 B2B Recruiter Marketplace</li>
           <li>C.6 Weekly Teacher Meetups</li>
           <li>C.7 Escrow & EOR Service</li>
+          <li>C.8 Advanced Badge System</li>
+        </ul>
+        <p style={{ fontSize: '0.9em', marginTop: '10px' }}>
+          These features create defensible moats - competitors cannot easily copy AI models, escrow infrastructure, or community relationships.
+        </p>
+      </InfoBox>
+
+      <InfoBox>
+        <strong>Part B: Market Expansion (Year 3-4)</strong><br/><br/>
+
+        <strong>Phase 1 (Year 3 Q3-Q4): Vertical Expansion - All Foreign Jobs in China</strong>
+        <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>
+          <li><strong>Why vertical first:</strong> 85% feature transferability, SAME Chinese business license verification, 11x market size (131,500 foreign workers/year vs 12,000 teachers)</li>
+          <li><strong>Target sectors:</strong> Tech (engineers, designers), finance (consultants, analysts), education (admins, curriculum designers)</li>
+          <li><strong>Setup time:</strong> 6 months (domain research + scrape 51job/Zhaopin + engineer community)</li>
+          <li><strong>Launch date:</strong> Year 3 Q3 (18 months after Stage 3 launch)</li>
+          <li><strong>Revenue target:</strong> +$200K-$300K ARR by end of Year 4</li>
         </ul>
 
-        <strong>Additional Revenue Streams:</strong>
+        <strong>Phase 2 (Year 4 Q1-Q4): Horizontal Expansion - Teaching in Korea/Japan</strong>
+        <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>
+          <li><strong>Why Korea/Japan:</strong> 83% feature transferability, same vertical (teaching), large markets (Korea: 13K teachers, Japan: 6K JET + international schools)</li>
+          <li><strong>Sequential launch:</strong> Korea Q1-Q2 (6 months), Japan Q3-Q4 (4 months, faster because Korea learnings transfer)</li>
+          <li><strong>Setup per country:</strong> Regulatory research + business registration system integration + banking/EOR partnerships</li>
+          <li><strong>Revenue target:</strong> Korea +$150K ARR, Japan +$120K ARR by end of Year 4</li>
+        </ul>
+      </InfoBox>
+
+      <InfoBox>
+        <strong>Part C: Additional Revenue Streams</strong>
 
         <div style={{ margin: '15px 0', padding: '10px', backgroundColor: '#fff5f5', border: '1px solid #fc8181' }}>
           <strong>1. B2B Recruiter Marketplace (C.5):</strong>
@@ -75,17 +114,64 @@ export default function Stage4MoatBuilding() {
           </ul>
         </div>
 
-        <strong>Revenue Projection (Year 3+):</strong>
-        <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>
-          <li>Direct job postings (from Stage 3): $444K/year</li>
-          <li>B2B recruiter marketplace: $80K/year</li>
-          <li>Weekly teacher meetups: $125K/year</li>
-          <li>Escrow & EOR service: $108K/year</li>
-          <li>Contract review tool: $15K/year</li>
-          <li>Data products: $25K/year</li>
-          <li>Sponsored content: $90K/year</li>
-          <li><strong>Total: $887K/year</strong></li>
-        </ul>
+        <strong>Revenue Projection Breakdown (Year 3-4):</strong>
+
+        <table style={{ fontSize: '0.85em', marginTop: '15px', width: '100%' }}>
+          <thead>
+            <tr style={{ background: '#edf2f7' }}>
+              <th style={{ textAlign: 'left', padding: '10px' }}>Revenue Stream</th>
+              <th style={{ padding: '10px' }}>Year 3<br/>(ESL China Only)</th>
+              <th style={{ padding: '10px' }}>Year 4<br/>(+ Vertical + Horizontal)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={{ padding: '8px' }}>Direct job postings</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$444K</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$600K<br/><span style={{ fontSize: '0.85em', color: '#718096' }}>(China ESL + eng + Korea + Japan)</span></td>
+            </tr>
+            <tr>
+              <td style={{ padding: '8px' }}>B2B recruiter marketplace</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$60K</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$120K</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '8px' }}>Weekly meetups</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$100K</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$180K<br/><span style={{ fontSize: '0.85em', color: '#718096' }}>(+ Seoul, Tokyo meetups)</span></td>
+            </tr>
+            <tr>
+              <td style={{ padding: '8px' }}>Escrow & EOR</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$80K</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$180K<br/><span style={{ fontSize: '0.85em', color: '#718096' }}>(higher salaries for engineers)</span></td>
+            </tr>
+            <tr>
+              <td style={{ padding: '8px' }}>Contract review</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$15K</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$50K<br/><span style={{ fontSize: '0.85em', color: '#718096' }}>(engineers pay $49-$99)</span></td>
+            </tr>
+            <tr>
+              <td style={{ padding: '8px' }}>Data products</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$20K</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$40K</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '8px' }}>Sponsored content</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$50K</td>
+              <td style={{ padding: '8px', textAlign: 'center' }}>$80K</td>
+            </tr>
+            <tr style={{ background: '#f0fff4', fontWeight: 'bold' }}>
+              <td style={{ padding: '10px' }}>TOTAL ARR</td>
+              <td style={{ padding: '10px', textAlign: 'center' }}>$769K</td>
+              <td style={{ padding: '10px', textAlign: 'center' }}>$1.25M</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style={{ fontSize: '0.9em', marginTop: '15px', color: '#2d3748', lineHeight: '1.8' }}>
+          <strong>Key Insight:</strong> By combining moat features WITH expansion in Year 3-4, we break through the $1M ARR barrier.
+          ESL China alone ($769K) + Vertical expansion ($250K) + Korea/Japan ($230K) = <strong>$1.25M ARR by end of Year 4</strong>.
+        </p>
 
         <strong>Success Metrics:</strong>
         <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>

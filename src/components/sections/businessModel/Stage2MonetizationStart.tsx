@@ -9,6 +9,7 @@ export default function Stage2MonetizationStart() {
         <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>
           <li>A.4 Job Posting System (schools post DIRECTLY on our platform)</li>
           <li>A.5 Basic User Accounts</li>
+          <li><strong>Discord integration:</strong> Embed Discord widget on site (1-2 days dev time) - users stay on website, no app switching</li>
         </ul>
 
         <strong>Revenue Model:</strong>
