@@ -22,6 +22,7 @@ import TeacherStories from '../sections/desiderata/TeacherStories'
 import B2BRecruiterService from '../sections/desiderata/B2BRecruiterService'
 import WeeklyTeacherMeetups from '../sections/desiderata/WeeklyTeacherMeetups'
 import EscrowEORService from '../sections/desiderata/EscrowEORService'
+import AdvancedBadgeSystem from '../sections/desiderata/AdvancedBadgeSystem'
 
 export default function Desiderata() {
   return (
@@ -80,6 +81,7 @@ export default function Desiderata() {
         <B2BRecruiterService />
         <WeeklyTeacherMeetups />
         <EscrowEORService />
+        <AdvancedBadgeSystem />
       </Section>
 
       <Section id="desiderata-summary" title="Summary: From Evidence to Features">
@@ -89,12 +91,12 @@ export default function Desiderata() {
             <li><strong>Every feature is evidence-backed:</strong> Not hunches, but conclusions from 6,195 teacher posts,
             strategic questions, and case studies of $1.8B-$15B companies.</li>
             <li><strong>Kano categorization guides prioritization:</strong> Must-Haves (A.1-A.5) must launch first.
-            Performance features (B.1-B.9) differentiate us. Delighters (C.1-C.7) create moats.</li>
+            Performance features (B.1-B.9) differentiate us. Delighters (C.1-C.8) create moats.</li>
             <li><strong>Traceability ensures strategic alignment:</strong> Each feature maps to specific questions,
             pain points, and case study evidence—no feature is arbitrary.</li>
             <li><strong>MVP = Aggregator First (Solve Chicken-Egg):</strong> Launch with ONLY A.1-A.5. Critical: START with job aggregator (A.1) like Indeed did—scrape Dave's ESL, SeriousTeachers, etc. to have thousands of jobs from day 1. THEN add browse/search (A.2), contact (A.3), and eventually direct posting (A.4) and accounts (A.5). This solves the cold start problem. Add Performance features (B.1-B.9) AFTER validating aggregator drives traffic.</li>
             <li><strong>Performance features moved from Basic:</strong> School verification (B.6), advanced search (B.7), transparent listing requirements (B.8), and application tracking (B.9) are valuable but NOT minimum viable—they differentiate us AFTER we have traction.</li>
-            <li><strong>Excitement features build moats:</strong> AI scam detection (C.1), contract review tool (C.2), weekly teacher meetups (C.6), and escrow/EOR service (C.7) are defensible advantages competitors cannot easily copy. These transform us from \"job board\" to \"full-service teacher employment & community platform.\"</li>
+            <li><strong>Excitement features build moats:</strong> AI scam detection (C.1), contract review tool (C.2), weekly teacher meetups (C.6), escrow/EOR service (C.7), and advanced badge system (C.8) are defensible advantages competitors cannot easily copy. C.8's multi-dimensional school evaluation (government data scraping + AI analysis + proprietary scoring) creates the strongest moat - requires data infrastructure competitors cannot replicate without massive investment. These transform us from \"job board\" to \"full-service teacher employment & community platform.\"</li>
           </ul>
         </InfoBox>
       </Section>
