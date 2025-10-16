@@ -25,6 +25,7 @@ export default function AppendixEFeatureList() {
         <li><strong>B.7 Advanced Search & Filters:</strong> Filter by verified schools, review ratings, salary range, contract renewal rate, visa support type</li>
         <li><strong>B.8 Transparent Listing Requirements:</strong> Schools must disclose: exact salary, overtime policy, housing allowance, contract penalties</li>
         <li><strong>B.9 Direct Application Tracking:</strong> Teacher dashboard showing application status, school response times, interview scheduling</li>
+        <li><strong>B.10 Edge/Client Entity Split:</strong> One Edge Entity (global platform/scraping) + Client Entities per market (China/Korea/Japan) for local payments/invoicing - scales to new markets while protecting platform from local regulation</li>
       </ul>
 
       <h3 style={{ marginTop: '30px' }}>C-Tier: Excitement Features (Stage 4, Year 3-4)</h3>
@@ -52,7 +53,7 @@ export default function AppendixEFeatureList() {
         <strong>Feature Prioritization Summary:</strong>
         <ul style={{ margin: '10px 0', fontSize: '0.9em', lineHeight: '1.8' }}>
           <li><strong>Stage 1-2 (Months 1-18):</strong> Build ONLY A-tier features (A.1-A.5). Critical: Start with job aggregator (A.1) to have 50K+ jobs from day 1, solving chicken-egg problem. Goal: 10K MAU by Month 6.</li>
-          <li><strong>Stage 3 (Months 19-36):</strong> Add B-tier features (B.1-B.9) for differentiation. Focus: Verification infrastructure (B.6) + purchasing power calculator (B.5) create moat competitors can't replicate. Goal: $30K+ MRR, 500+ schools.</li>
+          <li><strong>Stage 3 (Months 19-36):</strong> Add B-tier features (B.1-B.10) for differentiation. Focus: Verification infrastructure (B.6) + purchasing power calculator (B.5) create moat competitors can't replicate. B.10 Edge/Client entity split enables monetization in China while protecting platform. Goal: $30K+ MRR, 500+ schools.</li>
           <li><strong>Stage 4 (Year 3-4):</strong> Launch C-tier features (C.1-C.8) for excitement + moat building. Simultaneously expand market (vertical: all foreign jobs in China Year 3 Q3-Q4, horizontal: Korea/Japan Year 4). Goal: $1.25M ARR by end of Year 4.</li>
           <li><strong>Year 5-10:</strong> D-tier features transform industry structure (super-app, SaaS, predictive matching, teacher collectives). These are vision features, not Year 1-3 priorities. Potential: $100M+ ARR category expansion.</li>
         </ul>
