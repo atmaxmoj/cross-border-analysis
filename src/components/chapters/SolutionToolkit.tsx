@@ -9,6 +9,10 @@ import ExpertVerification from '../sections/solutionToolkit/ExpertVerification'
 import AmazonTrustFlywheel from '../sections/solutionToolkit/AmazonTrustFlywheel'
 import IndeedAggregationModel from '../sections/solutionToolkit/IndeedAggregationModel'
 import EslInternalCases from '../sections/solutionToolkit/EslInternalCases'
+import LiepinHeadhunterModel from '../sections/solutionToolkit/LiepinHeadhunterModel'
+import BossZhipinDirectChat from '../sections/solutionToolkit/BossZhipinDirectChat'
+import StackOverflowCommunity from '../sections/solutionToolkit/StackOverflowCommunity'
+import RedfinAgentDisruption from '../sections/solutionToolkit/RedfinAgentDisruption'
 
 export default function SolutionToolkit() {
   return (
@@ -19,6 +23,10 @@ export default function SolutionToolkit() {
       </p>
 
       <GlassdoorPlaybook />
+      <StackOverflowCommunity />
+      <BossZhipinDirectChat />
+      <LiepinHeadhunterModel />
+      <RedfinAgentDisruption />
       <MarketplaceColdStarts />
       <SeekRegionalChampion />
       <PlatformDiscrimination />
