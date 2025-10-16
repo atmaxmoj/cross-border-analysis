@@ -14,6 +14,7 @@ import LiepinHeadhunterModel from '../sections/solutionToolkit/LiepinHeadhunterM
 import BossZhipinDirectChat from '../sections/solutionToolkit/BossZhipinDirectChat'
 import StackOverflowCommunity from '../sections/solutionToolkit/StackOverflowCommunity'
 import RedfinAgentDisruption from '../sections/solutionToolkit/RedfinAgentDisruption'
+import UpworkGlobalMarketplace from '../sections/solutionToolkit/UpworkGlobalMarketplace'
 
 export default function SolutionToolkit() {
   return (
@@ -24,6 +25,8 @@ export default function SolutionToolkit() {
       </p>
 
       <GlassdoorPlaybook />
+      <IndeedAggregationModel />
+      <UpworkGlobalMarketplace />
       <AngelListNicheToGlobal />
       <StackOverflowCommunity />
       <BossZhipinDirectChat />
@@ -35,7 +38,6 @@ export default function SolutionToolkit() {
       <ZillowDataFirst />
       <ExpertVerification />
       <AmazonTrustFlywheel />
-      <IndeedAggregationModel />
       <EslInternalCases />
 
       <div className="section-divider"></div>
