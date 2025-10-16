@@ -3,23 +3,21 @@ import InfoBox from '../../ui/InfoBox'
 export default function DirectApplication() {
   return (
     <div style={{ marginTop: '30px' }}>
-      <h4>A.4 Direct Application System</h4>
+      <h4>A.5 Basic User Accounts</h4>
       <InfoBox>
-        <strong>Addresses:</strong> Question #9 (Role of recruitment agents)<br/>
-        <strong>Solves Pain Point:</strong> Teachers report agent fraud: "Agent disappeared after I paid placement
-        fee." "Agent took my documents and I never heard back." Teachers want to apply directly to schools.<br/>
+        <strong>Addresses:</strong> Question #1 (Competing with incumbents)<br/>
+        <strong>Solves Pain Point:</strong> Schools need to manage their job postings. Future features (reviews, messaging) require user identity.<br/>
         <strong>Evidence:</strong>
         <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>
-          <li><strong>Boss Zhipin:</strong> "Talk to the boss directly" eliminated HR/agent intermediaries for
-          mid-level hiring. Became China's #1 platform by MAU with direct chat model.</li>
-          <li><strong>Redfin Lesson:</strong> While Redfin failed to eliminate agents in real estate (high-stakes,
-          unique transactions), ESL teaching jobs are more standardized—teachers WANT to bypass agents due to fraud.</li>
+          <li><strong>All job boards:</strong> Account system is table stakes for managing content and building platform features.</li>
+          <li><strong>Stack Overflow:</strong> Reputation system requires user accounts. Community features need identity.</li>
         </ul>
-        <strong>Implementation:</strong>
+        <strong>Implementation:</strong> Bare minimum:
         <ul style={{ margin: '5px 0 0 20px', fontSize: '0.9em' }}>
-          <li>One-click apply with saved resume/credentials</li>
-          <li>Track application status (submitted, reviewed, interview scheduled, offer)</li>
-          <li>In-platform messaging between teachers and schools (no need to share personal contact info immediately)</li>
+          <li>Schools create account with email + password</li>
+          <li>Teachers can browse without account (increase accessibility)</li>
+          <li>Schools can edit/delete their own job postings</li>
+          <li>Simple authentication (no OAuth, no 2FA at MVP)</li>
         </ul>
       </InfoBox>
     </div>
