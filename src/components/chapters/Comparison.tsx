@@ -3,7 +3,7 @@ import ComparisonTable from '../sections/comparison/ComparisonTable'
 
 export default function Comparison() {
   return (
-    <Chapter id="comparison" title="7. Pete's Original Plan vs. Enhanced Strategy">
+    <Chapter id="comparison" title="9. Pete's Original Plan vs. Enhanced Strategy">
       <ComparisonTable />
       <div className="section-divider"></div>
     </Chapter>

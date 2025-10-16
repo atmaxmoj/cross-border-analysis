@@ -5,6 +5,7 @@ import CoreDiscoveries from '@/components/chapters/CoreDiscoveries'
 import MarketAnalysis from '@/components/chapters/MarketAnalysis'
 import StrategicQuestions from '@/components/chapters/StrategicQuestions'
 import SolutionToolkit from '@/components/chapters/SolutionToolkit'
+import Desiderata from '@/components/chapters/Desiderata'
 import BusinessModel from '@/components/chapters/BusinessModel'
 import RiskAssessment from '@/components/chapters/RiskAssessment'
 import Comparison from '@/components/chapters/Comparison'
@@ -45,6 +46,7 @@ export default function Home() {
               <MarketAnalysis />
               <StrategicQuestions />
               <SolutionToolkit />
+              <Desiderata />
               <BusinessModel />
               <RiskAssessment />
               <Comparison />

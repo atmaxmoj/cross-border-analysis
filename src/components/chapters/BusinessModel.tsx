@@ -3,7 +3,7 @@ import CompleteBusinessModel from '../sections/businessModel/CompleteBusinessMod
 
 export default function BusinessModel() {
   return (
-    <Chapter id="business-model" title="5. Business Model">
+    <Chapter id="business-model" title="7. Business Model">
       <CompleteBusinessModel />
       <div className="section-divider"></div>
     </Chapter>
