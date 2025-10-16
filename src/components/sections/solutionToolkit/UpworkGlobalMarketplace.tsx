@@ -249,43 +249,50 @@ export default function UpworkGlobalMarketplace() {
         </p>
       </div>
 
-      <h4 style={{ marginTop: '30px' }}>SWOT Analysis for YouTeacher:</h4>
+      <h4 style={{ marginTop: '30px' }}>SWOT Analysis of Upwork:</h4>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
         <div style={{ padding: '15px', backgroundColor: '#f0fff4', border: '2px solid #68d391', borderRadius: '4px' }}>
-          <strong style={{ color: '#2f855a' }}>Strengths (Copy)</strong>
+          <strong style={{ color: '#2f855a' }}>Strengths</strong>
           <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
-            <li><strong>B.10 Edge/Client Model Validation:</strong> Upwork proves single global platform + local payment rails works ($3.8B GSV, 180 countries)</li>
-            <li>Digital trust infrastructure (B.1, B.2, B.6) - ID verification, skill tests, reviews, escrow all work remotely without local offices</li>
-            <li>Merger solved chicken-egg (3.5M users day 1) - we replicate via A.1 Job Aggregator (50K+ jobs via scraping)</li>
-            <li>Payment processor partnerships (Stripe, Payoneer, PayPal) - we copy for teacher-side payouts (C.7 Escrow)</li>
-            <li>Data moat via Job Success Score - we build equivalent with C.8 Advanced Badge System (school quality scoring)</li>
+            <li>Global platform scale - $3.8B GSV, 18M freelancers, 5M clients across 180 countries demonstrates marketplace network effects at scale</li>
+            <li>Merger solved cold start - Elance+oDesk (2013) created instant liquidity (3.5M freelancers day 1), eliminated chicken-egg problem</li>
+            <li>Digital trust infrastructure - ID verification, skill tests, reviews, escrow work remotely without local offices (9,000+ disputes/month resolved)</li>
+            <li>Payment processor partnerships - Stripe, Payoneer, PayPal enable 100+ currency payouts without registering 180 local entities</li>
+            <li>Job Success Score data moat - proprietary algorithm using 14+ factors, trained on 10+ years transaction data competitors can't replicate</li>
+            <li>US entity advantages - Section 230 protects UGC, First Amendment shields content, NASDAQ listing provides capital access</li>
           </ul>
         </div>
         <div style={{ padding: '15px', backgroundColor: '#fff5f5', border: '2px solid #fc8181', borderRadius: '4px' }}>
-          <strong style={{ color: '#c53030' }}>Weaknesses (Avoid)</strong>
+          <strong style={{ color: '#c53030' }}>Weaknesses</strong>
           <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
-            <li>Transaction fee model won't work for full-time hires - teachers work 1-2 year contracts, schools won't pay 15-25% of annual salary ($4.5K-$6K per placement)</li>
-            <li>Upwork's B2C model doesn't address our B2B needs - payment processors can't issue fapiao/tax invoices required by Asian schools</li>
-            <li>Race to bottom on pricing - freelancers compete globally, drives rates down. We avoid this by competing on trust (verified schools), not price</li>
-            <li>Regulatory complexity - Upwork struggles with employment classification lawsuits (California AB5). We avoid by facilitating direct employment, not gig work</li>
+            <li>High take rate (15-25% of GSV) drives freelancers to bypass platform for direct client relationships after initial connection</li>
+            <li>Freelancer commoditization - race to bottom on pricing as global talent competes, especially for low-skilled work (data entry, transcription)</li>
+            <li>Gig worker classification lawsuits - California AB5, UK IR35 threaten business model (force W2 employee status = massive cost increase)</li>
+            <li>Quality control at scale - review manipulation, skill test cheating, fake portfolios undermine trust (platform relies on self-reporting)</li>
+            <li>Limited full-time employment - optimized for project-based gigs, weak offering for companies seeking long-term hires</li>
+            <li>Revenue concentration - 70% from marketplace fees, vulnerable to economic downturns (2020 COVID: discretionary spending cuts)</li>
           </ul>
         </div>
         <div style={{ padding: '15px', backgroundColor: '#ebf8ff', border: '2px solid #4299e1', borderRadius: '4px' }}>
-          <strong style={{ color: '#2c5282' }}>Opportunities (Gaps to Exploit)</strong>
+          <strong style={{ color: '#2c5282' }}>Opportunities</strong>
           <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
-            <li>Upwork doesn't serve full-time employment well - we focus on 1-2 year teaching contracts, not hourly gigs</li>
-            <li>No niche-specific verification - we add ESL credential verification (TEFL, CELTA, teaching licenses) Upwork doesn't have</li>
-            <li>Weak school vetting - Upwork verifies freelancers, we verify BOTH sides (B.2 teacher verification + B.6 school verification)</li>
-            <li>No local market optimization - Upwork is US-centric, we build B.10 client entities for China/Korea/Japan monetization from day 1</li>
+            <li>Full-time employment category - companies increasingly hiring remote FTEs, Upwork currently only serves project work (could expand into permanent placement)</li>
+            <li>AI matching - leverage 20+ years data for ML-based freelancer-client recommendations (currently basic keyword search)</li>
+            <li>Vertical specialization - create niche marketplaces (healthcare, legal, finance) with industry-specific verification and compliance tools</li>
+            <li>International expansion - Asia, Africa underserved, opportunity for localized platforms (China, India growing freelance markets)</li>
+            <li>Skills verification partnerships - integrate with Coursera, LinkedIn Learning, bootcamps for credential verification (reduce skill test cheating)</li>
+            <li>Enterprise SaaS - upsell Fortune 500s on workforce management tools (contractor analytics, compliance dashboards) beyond basic marketplace</li>
           </ul>
         </div>
         <div style={{ padding: '15px', backgroundColor: '#fef5e7', border: '2px solid #ecc94b', borderRadius: '4px' }}>
-          <strong style={{ color: '#744210' }}>Threats (Competitive Risks)</strong>
+          <strong style={{ color: '#744210' }}>Threats</strong>
           <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
-            <li>Upwork could add "Full-Time Jobs" category - mitigate by building ESL-specific moats (B.5 purchasing power, B.6 GSXT verification, C.2 contract review)</li>
-            <li>Payment processor dependencies - Stripe/Payoneer could raise fees, mitigate: use multiple processors, negotiate volume discounts</li>
-            <li>Freelancer marketplace saturation - Upwork, Fiverr, Toptal compete on same talent pool. We're different (full-time teaching, not freelancing), but perception risk exists</li>
-            <li>Global platform requires $10M+ infrastructure - Upwork spent years building payment rails. We shortcut via B.10 hybrid (Edge Entity + payment processors for teachers, Client Entities for schools)</li>
+            <li>Fiverr, Toptal, Freelancer.com competition - low switching costs for freelancers/clients, marketplace commoditization drives fee compression</li>
+            <li>Platform disintermediation - clients bypass Upwork after initial hire (use LinkedIn, email for direct contact), lose 85% of transaction value</li>
+            <li>Regulatory risks - gig worker reclassification (AB5, UK IR35) could force expensive compliance changes, reduce platform flexibility</li>
+            <li>Economic sensitivity - discretionary hiring cuts during recessions (2008, 2020), GSV dropped 30-40% during downturns</li>
+            <li>AI automation - ChatGPT, Midjourney replacing entry-level freelancers (content writing, graphic design), shrinks addressable market</li>
+            <li>Geographic fragmentation - local platforms (Freelancer India, PeoplePerHour UK) gain traction vs global generalist</li>
           </ul>
         </div>
       </div>

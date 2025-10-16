@@ -53,43 +53,50 @@ export default function IndeedAggregationModel() {
         </li>
       </ul>
 
-      <h4 style={{ marginTop: '30px' }}>SWOT Analysis for YouTeacher:</h4>
+      <h4 style={{ marginTop: '30px' }}>SWOT Analysis of Indeed:</h4>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
         <div style={{ padding: '15px', backgroundColor: '#f0fff4', border: '2px solid #68d391', borderRadius: '4px' }}>
-          <strong style={{ color: '#2f855a' }}>Strengths (Copy)</strong>
+          <strong style={{ color: '#2f855a' }}>Strengths</strong>
           <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
-            <li><strong>A.1 Job Aggregator = Direct Copy:</strong> Indeed's core strategy - scrape existing job boards to solve chicken-egg problem with instant inventory</li>
-            <li>Free for job seekers, monetize employers - proven B2B model (70% employers pay, 30% free)</li>
-            <li>Pay-Per-Click model scales with usage - we can adopt for premium job listings (schools pay per application)</li>
-            <li>Resume database access - applicable to our "Verified Teacher" profiles (B.2 Credential Verification)</li>
-            <li>Simple value prop: "All jobs in one place" - we replicate for ESL niche ("All ESL jobs in Asia")</li>
+            <li>Massive job inventory - aggregates millions of jobs from company sites, ATS systems, other job boards (solved cold start via scraping)</li>
+            <li>Global scale - 60+ countries, 300M+ unique visitors/month, world's #1 job site by traffic</li>
+            <li>Simple, clean UX - minimal friction for job seekers, easy to search and apply</li>
+            <li>SEO dominance - ranks #1 for most job-related search queries, drives massive organic traffic</li>
+            <li>Recruit Holdings backing - $15B parent company provides capital, M&A opportunities (Glassdoor acquisition 2018)</li>
+            <li>Pay-Per-Click model aligns incentives - employers only pay when candidates apply, reduces risk vs fixed job posting fees</li>
           </ul>
         </div>
         <div style={{ padding: '15px', backgroundColor: '#fff5f5', border: '2px solid #fc8181', borderRadius: '4px' }}>
-          <strong style={{ color: '#c53030' }}>Weaknesses (Avoid)</strong>
+          <strong style={{ color: '#c53030' }}>Weaknesses</strong>
           <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
-            <li>Quantity over quality - Indeed has spam problem (fake jobs, MLM schemes), we need C.1 AI Scam Detection from day 1</li>
-            <li>No trust layer - Indeed doesn't verify employers, we must add B.6 School Verification to differentiate</li>
-            <li>Race to bottom on pricing - Indeed competes on volume, we compete on trust (premium schools pay more for verified badge)</li>
-            <li>Commoditized aggregation - anyone can scrape, we need moat beyond aggregation (reviews, verification, purchasing power data)</li>
+            <li>Spam and low-quality jobs - no employer verification allows scams, MLM schemes, fake postings to proliferate</li>
+            <li>Commoditized aggregation - core scraping strategy easily replicable, no defensible moat beyond scale</li>
+            <li>Declining organic traffic - Google Jobs widget (2017) diverts traffic directly to employer sites, bypassing Indeed</li>
+            <li>Revenue concentration - 90%+ from job posting/advertising, vulnerable to economic cycles (2020 COVID hit hard)</li>
+            <li>No trust layer - doesn't verify employers or provide company reviews (unlike Glassdoor), purely transactional</li>
+            <li>Geographic limitations - strong in US/UK, weaker in Asia/LatAm vs local competitors (51job China, Seek Australia)</li>
           </ul>
         </div>
         <div style={{ padding: '15px', backgroundColor: '#ebf8ff', border: '2px solid #4299e1', borderRadius: '4px' }}>
-          <strong style={{ color: '#2c5282' }}>Opportunities (Gaps to Exploit)</strong>
+          <strong style={{ color: '#2c5282' }}>Opportunities</strong>
           <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
-            <li>Indeed doesn't serve ESL niche well - generic job board, we specialize with ESL-specific filters (visa support, housing, TEFL required)</li>
-            <li>No international salary context - B.5 Purchasing Power Calculator solves "is 15K RMB good?" question Indeed can't answer</li>
-            <li>Weak employer vetting - we add B.6 multi-source verification (GSXT, Tianyancha, court records) Indeed doesn't have</li>
-            <li>No community - we add B.3 Discord + C.6 Weekly Meetups for teacher support Indeed can't provide</li>
+            <li>AI-powered matching - leverage 20+ years job/candidate data for ML-based recommendations (currently basic keyword matching)</li>
+            <li>Vertical specialization - create niche job boards (healthcare, tech, education) with category-specific features</li>
+            <li>Employer verification - add trust layer to differentiate from low-quality aggregators, reduce spam</li>
+            <li>Premium job seeker services - resume writing, interview prep, salary negotiation (currently employer-focused only)</li>
+            <li>Glassdoor integration - combine job search (Indeed) + company reviews (Glassdoor) for full-stack recruiting platform</li>
+            <li>International expansion - Asia, Africa growth markets underserved, opportunity for local partnerships</li>
           </ul>
         </div>
         <div style={{ padding: '15px', backgroundColor: '#fef5e7', border: '2px solid #ecc94b', borderRadius: '4px' }}>
-          <strong style={{ color: '#744210' }}>Threats (Competitive Risks)</strong>
+          <strong style={{ color: '#744210' }}>Threats</strong>
           <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
-            <li>Indeed could add ESL category - mitigate by building niche-specific moats (B.5 purchasing power, B.6 GSXT verification, C.2 contract review)</li>
-            <li>Scraping arms race - job boards may block scrapers, mitigate: partner with schools for direct postings (Stage 2-3)</li>
-            <li>Low switching costs - teachers use multiple job boards, mitigate: make YouTeacher THE source via aggregation + unique data (reviews, verification)</li>
-            <li>Recruit Holdings (Indeed parent) has deep pockets - $15B revenue, could outspend us, mitigate: focus on niche defensibility, not feature parity</li>
+            <li>Google for Jobs - directs job seekers to employer sites, disintermediates Indeed, threatens traffic (30% decline 2017-2020)</li>
+            <li>LinkedIn competition - 900M professionals, adding job search features, employer tools, direct recruiting (LinkedIn Recruiter)</li>
+            <li>Economic downturns - job posting spend evaporates during recessions (2008, 2020), high revenue volatility</li>
+            <li>Job board commoditization - low barriers to entry, new aggregators launch constantly (ZipRecruiter, Glassdoor Jobs)</li>
+            <li>Scraping arms race - employers/job boards increasingly block scrapers, forces direct integrations (higher cost)</li>
+            <li>Employer backlash - complaints about spam applications, low-quality candidates, push for quality over quantity</li>
           </ul>
         </div>
       </div>

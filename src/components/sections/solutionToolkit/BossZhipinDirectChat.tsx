@@ -103,6 +103,54 @@ export default function BossZhipinDirectChat() {
           </ul>
         </li>
       </ul>
+
+      <h4 style={{ marginTop: '30px' }}>SWOT Analysis of Boss Zhipin:</h4>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
+        <div style={{ padding: '15px', backgroundColor: '#f0fff4', border: '2px solid #68d391', borderRadius: '4px' }}>
+          <strong style={{ color: '#2f855a' }}>Strengths</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Direct chat innovation - "Talk to the boss directly" eliminated HR/agent intermediaries, reduced hiring friction dramatically</li>
+            <li>Mobile-first design - launched native for smartphones (2014), captured mobile-dominant Chinese market vs desktop-era incumbents (51job, Zhaopin)</li>
+            <li>Explosive growth - 19.8M MAU (2020) → 28.7M (2022), became China's #1 recruitment platform by users despite 16-year head start by incumbents</li>
+            <li>High engagement - 28 min/user/day vs 18 min/day for competitors, 50%+ higher time-on-platform validates UX superiority</li>
+            <li>Successful IPO - $15.2B market cap (June 2021), exceeded 51job + Liepin combined, validated late-entrant disruption model</li>
+            <li>AI-powered matching - recommendation algorithm reduces need for manual recruiter sourcing, scales efficiently</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fff5f5', border: '2px solid #fc8181', borderRadius: '4px' }}>
+          <strong style={{ color: '#c53030' }}>Weaknesses</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>China market concentration - 100% revenue from Chinese market, no geographic diversification (vs Indeed's 60+ countries)</li>
+            <li>Mid-level focus limits premium revenue - direct chat works for entry/mid-level roles, not high-touch executive search (Liepin's territory)</li>
+            <li>Quality control challenges - instant chat enables spam, low-quality job postings, fake "bosses" (no employer verification layer)</li>
+            <li>Regulatory risk - Chinese government crackdowns on tech platforms, data privacy laws threaten business model</li>
+            <li>LinkedIn China shutdown precedent - LinkedIn exited China in 2021 citing compliance challenges, Boss Zhipin faces similar regulatory uncertainty</li>
+            <li>Economic sensitivity - heavily dependent on Chinese job market health, 2022-2023 economic slowdown impacted growth</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#ebf8ff', border: '2px solid #4299e1', borderRadius: '4px' }}>
+          <strong style={{ color: '#2c5282' }}>Opportunities</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Blue-collar expansion - currently white-collar focused, China's 400M+ blue-collar workers underserved (gig economy, manufacturing)</li>
+            <li>Enterprise HR SaaS - leverage direct chat platform to offer recruiting workflow tools, ATS systems to corporate clients</li>
+            <li>Verification layer - add employer verification badges, reduce scams, create premium tier for verified companies</li>
+            <li>International expansion - replicate model in Southeast Asia (Vietnam, Indonesia, Philippines), India with localized UX</li>
+            <li>AI job matching - enhance algorithm with skills assessment, video interviews, automated screening (reduce time-to-hire further)</li>
+            <li>Freelance/gig platform - extend direct chat model to project-based work, compete with Chinese Upwork equivalents</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fef5e7', border: '2px solid #ecc94b', borderRadius: '4px' }}>
+          <strong style={{ color: '#744210' }}>Threats</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>ByteDance competition - TikTok owner launching job search features with superior distribution (Douyin has 600M+ DAU in China)</li>
+            <li>Economic downturn sensitivity - hiring demand drops during recessions, direct chat platform relies on active job market</li>
+            <li>Regulatory compliance - data localization, censorship, platform liability laws increase operational costs and legal risk</li>
+            <li>LinkedIn re-entry risk - if LinkedIn solves compliance issues and re-launches in China with localized product, threatens market share</li>
+            <li>Incumbent recovery - 51job, Zhaopin could copy direct chat features, leverage existing brand recognition to win back users</li>
+            <li>Content moderation burden - real-time chat requires massive moderation team to prevent harassment, discrimination, scams at scale</li>
+          </ul>
+        </div>
+      </div>
     </Section>
   )
 }

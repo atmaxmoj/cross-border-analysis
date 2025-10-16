@@ -118,6 +118,54 @@ export default function RedfinAgentDisruption() {
           unlike homebuyers who NEED agents.
         </li>
       </ul>
+
+      <h4 style={{ marginTop: '30px' }}>SWOT Analysis of Redfin:</h4>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
+        <div style={{ padding: '15px', backgroundColor: '#f0fff4', border: '2px solid #68d391', borderRadius: '4px' }}>
+          <strong style={{ color: '#2f855a' }}>Strengths</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Discount brokerage model - 1.5% listing commission vs 3% traditional agents, appeals to price-conscious sellers</li>
+            <li>Salaried agents - employees (not contractors) provide more consistent service quality vs commission-driven agents</li>
+            <li>Technology integration - mobile app, instant tour booking, market data analytics provide superior UX vs traditional brokers</li>
+            <li>Public company resources - NASDAQ-listed (2017), access to capital for marketing, tech development, geographic expansion</li>
+            <li>Vertical integration - owns brokerage, mortgage (Redfin Mortgage), title services, creates multiple revenue streams</li>
+            <li>Customer satisfaction - consistently high ratings despite discount pricing, validates quality service at lower cost</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fff5f5', border: '2px solid #fc8181', borderRadius: '4px' }}>
+          <strong style={{ color: '#c53030' }}>Weaknesses</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Failed disruption - &lt;3% market share in Seattle (home turf) after 10 years, agent model proved more resilient than expected</li>
+            <li>Discount model limits service - 75% commission rebate unsustainable, forced to raise prices and reduce rebates over time</li>
+            <li>Geographic concentration - strong in West Coast tech hubs, weak in Midwest/South where traditional agents dominate</li>
+            <li>Agent resistance - traditional brokers refuse to work with Redfin, limits home inventory access in some markets</li>
+            <li>Strategic retreat - moved "very close to traditional model," undermines original value proposition and brand identity</li>
+            <li>Profitability challenges - unprofitable most quarters, low margins make it difficult to compete on price long-term</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#ebf8ff', border: '2px solid #4299e1', borderRadius: '4px' }}>
+          <strong style={{ color: '#2c5282' }}>Opportunities</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>iBuying model - directly buy/sell homes (RedfinNow), capture transaction spreads vs just commission fees</li>
+            <li>Mortgage cross-sell - leverage brokerage relationships to grow Redfin Mortgage, higher-margin business than brokerage</li>
+            <li>Commercial real estate - extend discount model to CRE sector, currently untapped by Redfin</li>
+            <li>Technology licensing - sell agent tools, CRM systems to traditional brokers as B2B SaaS product</li>
+            <li>International expansion - replicate discount brokerage model in Canada, UK, Australia markets with high agent commissions</li>
+            <li>Home services marketplace - leverage customer relationships for moving, insurance, renovation services referral fees</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fef5e7', border: '2px solid #ecc94b', borderRadius: '4px' }}>
+          <strong style={{ color: '#744210' }}>Threats</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Zillow competition - Premier Agent marketplace more successful than Redfin's disruption model, better monetization strategy</li>
+            <li>Traditional broker resilience - agents proved harder to disintermediate than expected, buyers/sellers still prefer human expertise</li>
+            <li>Economic downturns - real estate transactions plummet during recessions (2008, 2020), high revenue volatility</li>
+            <li>iBuying losses - Zillow shut down Zillow Offers with $881M loss, demonstrates difficulty of automated home buying model</li>
+            <li>Interest rate sensitivity - 2022-2023 rate hikes froze housing market, Redfin stock down 90% from peak</li>
+            <li>Agent lobbying - National Association of Realtors political power could create regulatory barriers to discount brokers</li>
+          </ul>
+        </div>
+      </div>
     </Section>
   )
 }

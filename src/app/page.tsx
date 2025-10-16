@@ -1,7 +1,6 @@
 import TableOfContents from '@/components/layout/TableOfContents'
 import ExecutiveSummary from '@/components/chapters/ExecutiveSummary'
 import ProjectGenesis from '@/components/chapters/ProjectGenesis'
-import CoreDiscoveries from '@/components/chapters/CoreDiscoveries'
 import MarketAnalysis from '@/components/chapters/MarketAnalysis'
 import StrategicQuestions from '@/components/chapters/StrategicQuestions'
 import SolutionToolkit from '@/components/chapters/SolutionToolkit'
@@ -42,7 +41,6 @@ export default function Home() {
             <div className="content">
               <ExecutiveSummary />
               <ProjectGenesis />
-              <CoreDiscoveries />
               <MarketAnalysis />
               <StrategicQuestions />
               <SolutionToolkit />

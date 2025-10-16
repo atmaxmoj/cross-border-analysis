@@ -115,6 +115,54 @@ export default function StackOverflowCommunity() {
           </ul>
         </li>
       </ul>
+
+      <h4 style={{ marginTop: '30px' }}>SWOT Analysis of Stack Overflow:</h4>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
+        <div style={{ padding: '15px', backgroundColor: '#f0fff4', border: '2px solid #68d391', borderRadius: '4px' }}>
+          <strong style={{ color: '#2f855a' }}>Strengths</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Free content model - beat Experts Exchange's paywall by providing all Q&A free, dominated Google search results (SEO superiority)</li>
+            <li>Community-driven moderation - reputation system, peer review, gamification created self-sustaining quality control at scale</li>
+            <li>Network effects - more questions attract more answers attract more developers, created largest programming community (50M+ users)</li>
+            <li>Job board monetization - $1.8B exit (2021) validated "free content + employer-pays" revenue model without paywalling core value</li>
+            <li>Enterprise SaaS expansion - Stack Overflow for Teams provided B2B revenue stream beyond job listings</li>
+            <li>Founder credibility - Joel Spolsky's blog audience and reputation provided initial distribution and trust</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fff5f5', border: '2px solid #fc8181', borderRadius: '4px' }}>
+          <strong style={{ color: '#c53030' }}>Weaknesses</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Over-moderation backlash - post-2014 quality standards became too strict, drove away newcomers, question volume declined to 2009 levels by 2023</li>
+            <li>Hostile reputation to beginners - "power-tripping moderators" created unwelcoming culture, reduced new user acquisition</li>
+            <li>Content saturation - most common programming questions already answered, limited opportunity for new contributors to gain reputation</li>
+            <li>Revenue concentration - heavily dependent on job board revenue, vulnerable to tech hiring cycles (2022-2023 slowdown)</li>
+            <li>Declining engagement - founders sold in 2021 "before terminal decline," monthly questions approaching launch-year levels despite user base growth</li>
+            <li>No international diversification - primarily English-language, US/Europe-focused, limited presence in Asia/LatAm markets</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#ebf8ff', border: '2px solid #4299e1', borderRadius: '4px' }}>
+          <strong style={{ color: '#2c5282' }}>Opportunities</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>AI-assisted Q&A - integrate ChatGPT/LLMs to augment human answers, reduce friction for newcomers while maintaining quality</li>
+            <li>Localized versions - launch language-specific Stack Overflows for China, Japan, LatAm (currently limited non-English presence)</li>
+            <li>New technology categories - create specialized communities for emerging fields (blockchain, AI/ML, quantum computing)</li>
+            <li>Mentorship features - pair experienced developers with newcomers, reduce hostile reputation while maintaining quality</li>
+            <li>Freelance marketplace - leverage developer community to launch Upwork-style platform for technical projects</li>
+            <li>Enterprise knowledge management - expand Teams product to compete with Notion, Confluence for internal documentation</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fef5e7', border: '2px solid #ecc94b', borderRadius: '4px' }}>
+          <strong style={{ color: '#744210' }}>Threats</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>ChatGPT disruption - AI models trained on Stack Overflow data provide instant answers, bypassing platform entirely (existential threat)</li>
+            <li>GitHub Copilot - AI code completion reduces need to search for solutions, captures intent before user reaches Stack Overflow</li>
+            <li>Community decline - over-moderation drove users away, decreasing content freshness and relevance for modern technologies</li>
+            <li>Content licensing disputes - OpenAI, Google trained models on Stack Overflow without compensation, unclear monetization path</li>
+            <li>Developer platform competition - Discord, Reddit, GitHub Discussions offer more welcoming communities, siphon Q&A activity</li>
+            <li>Tech hiring slowdown - job board revenue vulnerable to economic cycles, 2022-2023 layoffs reduced recruiting spend</li>
+          </ul>
+        </div>
+      </div>
     </Section>
   )
 }

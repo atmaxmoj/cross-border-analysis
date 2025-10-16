@@ -153,6 +153,54 @@ export default function AngelListNicheToGlobal() {
           </ul>
         </li>
       </ul>
+
+      <h4 style={{ marginTop: '30px' }}>SWOT Analysis of AngelList:</h4>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
+        <div style={{ padding: '15px', backgroundColor: '#f0fff4', border: '2px solid #68d391', borderRadius: '4px' }}>
+          <strong style={{ color: '#2f855a' }}>Strengths</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Founder credibility - Naval Ravikant's VentureHacks audience provided built-in trust and distribution, bypassed cold start problem</li>
+            <li>Community-first approach - launched as directory (one-sided) before marketplace (two-sided), avoided chicken-egg problem entirely</li>
+            <li>Hyper-niche focus - started with 80 angel investors only, dominated narrow beachhead before expanding to adjacent markets</li>
+            <li>Quality curation model - admin-vetted introductions created trust signal, "top 1% candidates" positioning vs Indeed's volume approach</li>
+            <li>Freemium monetization - 2M+ free candidates attract 35K+ paying companies, proven B2B revenue model at scale ($1B AUM by 2019)</li>
+            <li>Network effects - more startups attract more investors attract more talent, creates self-reinforcing flywheel</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fff5f5', border: '2px solid #fc8181', borderRadius: '4px' }}>
+          <strong style={{ color: '#c53030' }}>Weaknesses</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Startup market concentration - heavily dependent on venture-backed startup ecosystem, vulnerable to funding winter cycles (2022-2023)</li>
+            <li>Curation doesn't scale - manual admin review worked at 80 investors, breaks at 100K+ companies without algorithmic replacement</li>
+            <li>Limited to tech/startup sector - strong in Silicon Valley, weak in traditional industries (healthcare, education, manufacturing)</li>
+            <li>Revenue model limits - 20% placement fee for curated matches only works for high-salary positions ($100K+), not entry-level</li>
+            <li>Founder dependency - Naval's personal brand was critical for early success, hard to replicate without similar founder credibility</li>
+            <li>Geographic concentration - US-centric (especially SF Bay Area), limited international presence vs LinkedIn's global reach</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#ebf8ff', border: '2px solid #4299e1', borderRadius: '4px' }}>
+          <strong style={{ color: '#2c5282' }}>Opportunities</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>International expansion - replicate model in emerging startup ecosystems (India, Brazil, Southeast Asia untapped markets)</li>
+            <li>Vertical specialization - create AngelList for biotech, climate tech, fintech with category-specific features and networks</li>
+            <li>Remote work acceleration - COVID normalized distributed teams, expands addressable market beyond SF Bay Area</li>
+            <li>Equity management platform - leverage startup ecosystem position to become Carta competitor for cap table management</li>
+            <li>Founder community features - expand beyond hiring/funding into founder networking, mentorship, operational tooling</li>
+            <li>Rolling funds democratization - expand from accredited investors to retail investors (like Republic), increase capital supply</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fef5e7', border: '2px solid #ecc94b', borderRadius: '4px' }}>
+          <strong style={{ color: '#744210' }}>Threats</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>LinkedIn competition - 900M users, adding startup/VC features (LinkedIn Talent Solutions), could commoditize AngelList's niche</li>
+            <li>Funding winter impact - 2022-2023 VC slowdown reduced hiring demand, startup failures hurt platform activity</li>
+            <li>Niche market saturation - only so many venture-backed startups exist, limited TAM compared to general job boards</li>
+            <li>Regulatory pressure on syndicates - SEC scrutiny of rolling funds, accredited investor rules limit democratization goals</li>
+            <li>Direct hiring channels - startups increasingly hiring via Twitter, personal networks, bypassing platforms entirely</li>
+            <li>Economic downturns - discretionary hiring (startups) evaporates during recessions, more vulnerable than Fortune 500 hiring</li>
+          </ul>
+        </div>
+      </div>
     </Section>
   )
 }

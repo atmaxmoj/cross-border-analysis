@@ -84,6 +84,54 @@ export default function LiepinHeadhunterModel() {
           matter, agents are not disintermediaries to eliminate but value-adding participants to design for explicitly.
         </li>
       </ul>
+
+      <h4 style={{ marginTop: '30px' }}>SWOT Analysis of Liepin:</h4>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
+        <div style={{ padding: '15px', backgroundColor: '#f0fff4', border: '2px solid #68d391', borderRadius: '4px' }}>
+          <strong style={{ color: '#2f855a' }}>Strengths</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Three-sided marketplace - explicitly designed for headhunters (101.8K), companies (248.6K), job seekers (38.9M), creates multiple revenue streams</li>
+            <li>High-end positioning - targets middle management to senior executives at Fortune 500-level companies, higher transaction values than mass market</li>
+            <li>Guanxi integration - headhunters solve Chinese hiring culture's relationship/trust requirements that platforms alone cannot provide</li>
+            <li>B2B monetization - 96.5% revenue from business customers (companies + headhunters), job seekers use free, proven model at scale</li>
+            <li>Successful IPO - HK$3.12B ($400M USD) Hong Kong IPO in June 2018, validates three-sided marketplace model for investors</li>
+            <li>Quality curation - strict acceptance criteria for job seekers ensures high-value candidate pool, attracts premium companies</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fff5f5', border: '2px solid #fc8181', borderRadius: '4px' }}>
+          <strong style={{ color: '#c53030' }}>Weaknesses</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Executive market size limits - only so many C-level/senior positions exist, smaller TAM than mid-level hiring (Boss Zhipin's territory)</li>
+            <li>Headhunter dependency - business model requires professional recruiters, vulnerable if companies shift to direct hiring</li>
+            <li>Late profitability - first profitable year in 2017 (after years of losses), demonstrates high customer acquisition costs</li>
+            <li>Competition from generalists - LinkedIn, Boss Zhipin adding high-end features could commoditize Liepin's niche over time</li>
+            <li>Limited international presence - primarily China-focused, no meaningful expansion to other Asia markets vs Indeed's global reach</li>
+            <li>Platform complexity - three-sided marketplace harder to balance than two-sided (must satisfy companies AND headhunters AND candidates)</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#ebf8ff', border: '2px solid #4299e1', borderRadius: '4px' }}>
+          <strong style={{ color: '#2c5282' }}>Opportunities</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Mid-market expansion - extend model down to mid-level positions, increase TAM without losing premium positioning</li>
+            <li>International headhunter network - expand to Southeast Asia, India with local headhunter partnerships for cross-border hiring</li>
+            <li>AI-powered candidate matching - reduce headhunter manual work with ML algorithms, increase placement efficiency</li>
+            <li>Talent assessment tools - offer skills testing, personality assessments, background checks as value-added services</li>
+            <li>Employer branding services - monetize companies by offering Glassdoor-style employer profiles, culture showcases</li>
+            <li>RPO platform expansion - build full recruitment process outsourcing tools, compete with HR consulting firms</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fef5e7', border: '2px solid #ecc94b', borderRadius: '4px' }}>
+          <strong style={{ color: '#744210' }}>Threats</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Direct hiring trend - Boss Zhipin's success shows companies prefer eliminating headhunters for mid-level roles, could spread to executives</li>
+            <li>LinkedIn executive recruitment - LinkedIn Talent Solutions adding executive search features, leverages 900M user base</li>
+            <li>Economic downturns - executive hiring most sensitive to recessions, 2008/2020 saw massive C-suite hiring freezes</li>
+            <li>Headhunter disintermediation - AI matching could eventually replace human headhunters for all but highest-level searches</li>
+            <li>Market cap disadvantage - $1.34B vs Boss Zhipin's $15.2B, resource constraints in R&D, marketing, international expansion</li>
+            <li>Regulatory pressure - Chinese government scrutiny of recruitment data, privacy laws increase compliance costs</li>
+          </ul>
+        </div>
+      </div>
     </Section>
   )
 }
