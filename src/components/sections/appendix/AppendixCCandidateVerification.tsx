@@ -8,6 +8,40 @@ export default function AppendixCCandidateVerification() {
         This appendix documents verification sources for teacher candidates - credentials, certifications, background checks, and professional qualifications.
       </p>
 
+      <div style={{ margin: '20px 0', padding: '15px', backgroundColor: '#f0fff4', border: '2px solid #68d391', borderRadius: '4px' }}>
+        <strong>Pragmatic Verification Strategy (Cost-Benefit Optimized)</strong>
+        <p style={{ margin: '10px 0', fontSize: '0.9em', lineHeight: '1.8' }}>
+          Our strategy is straightforward: <strong>automate what's free, defer what's expensive.</strong>
+        </p>
+        <ul style={{ margin: '10px 0', fontSize: '0.9em', lineHeight: '1.8' }}>
+          <li><strong>FREE verification sources</strong> (UK QTS, state teaching licenses, CELTA/Trinity, IB profiles):
+            <ul style={{ marginLeft: '20px', fontSize: '0.95em', marginTop: '5px' }}>
+              <li>✅ Automate lookups where possible (scraping public registries)</li>
+              <li>✅ Build verification tools directly into platform (Stage 1-2)</li>
+              <li>Example: UK teacher enters TRN → auto-verify via find-a-lost-trn.education.gov.uk</li>
+            </ul>
+          </li>
+          <li><strong>PAID API services</strong> (WES, background checks, employment verification):
+            <ul style={{ marginLeft: '20px', fontSize: '0.95em', marginTop: '5px' }}>
+              <li>⏳ Defer to Stage 3-4 when volume justifies cost ($5K-$10K/year minimums)</li>
+              <li>💰 Pass costs to candidates/schools ("Verified Teacher Badge" premium feature)</li>
+            </ul>
+          </li>
+          <li><strong>MANUAL verification</strong> (everything else):
+            <ul style={{ marginLeft: '20px', fontSize: '0.95em', marginTop: '5px' }}>
+              <li>📝 Candidate provides credential number + verification URL during signup</li>
+              <li>🔗 Platform displays link: "Verify this teacher's credentials at [URL]"</li>
+              <li>Schools click through to verify themselves (zero platform cost, schools trust their own verification)</li>
+              <li>Example: "CELTA Certificate #12345 - <a href='#' style={{ color: '#3182ce' }}>Verify on Cambridge website</a>"</li>
+            </ul>
+          </li>
+        </ul>
+        <p style={{ margin: '10px 0 0 0', fontSize: '0.9em', lineHeight: '1.8', color: '#2d3748' }}>
+          <strong>Cost Impact:</strong> Stage 1-2 verification cost = $0-$10 per candidate (VA spot-checks only).
+          Schools appreciate transparency more than platform-verified badges in early stages.
+        </p>
+      </div>
+
       <h3 style={{ marginTop: '30px' }}>Education Credential Evaluation Services</h3>
 
       <InfoBox>
