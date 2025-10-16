@@ -248,6 +248,47 @@ export default function UpworkGlobalMarketplace() {
           Upwork demonstrates global marketplace infrastructure is achievable. YouTeacher adapts it for B2B context where local compliance (tax invoices, business licenses) is unavoidable.
         </p>
       </div>
+
+      <h4 style={{ marginTop: '30px' }}>SWOT Analysis for YouTeacher:</h4>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
+        <div style={{ padding: '15px', backgroundColor: '#f0fff4', border: '2px solid #68d391', borderRadius: '4px' }}>
+          <strong style={{ color: '#2f855a' }}>Strengths (Copy)</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li><strong>B.10 Edge/Client Model Validation:</strong> Upwork proves single global platform + local payment rails works ($3.8B GSV, 180 countries)</li>
+            <li>Digital trust infrastructure (B.1, B.2, B.6) - ID verification, skill tests, reviews, escrow all work remotely without local offices</li>
+            <li>Merger solved chicken-egg (3.5M users day 1) - we replicate via A.1 Job Aggregator (50K+ jobs via scraping)</li>
+            <li>Payment processor partnerships (Stripe, Payoneer, PayPal) - we copy for teacher-side payouts (C.7 Escrow)</li>
+            <li>Data moat via Job Success Score - we build equivalent with C.8 Advanced Badge System (school quality scoring)</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fff5f5', border: '2px solid #fc8181', borderRadius: '4px' }}>
+          <strong style={{ color: '#c53030' }}>Weaknesses (Avoid)</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Transaction fee model won't work for full-time hires - teachers work 1-2 year contracts, schools won't pay 15-25% of annual salary ($4.5K-$6K per placement)</li>
+            <li>Upwork's B2C model doesn't address our B2B needs - payment processors can't issue fapiao/tax invoices required by Asian schools</li>
+            <li>Race to bottom on pricing - freelancers compete globally, drives rates down. We avoid this by competing on trust (verified schools), not price</li>
+            <li>Regulatory complexity - Upwork struggles with employment classification lawsuits (California AB5). We avoid by facilitating direct employment, not gig work</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#ebf8ff', border: '2px solid #4299e1', borderRadius: '4px' }}>
+          <strong style={{ color: '#2c5282' }}>Opportunities (Gaps to Exploit)</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Upwork doesn't serve full-time employment well - we focus on 1-2 year teaching contracts, not hourly gigs</li>
+            <li>No niche-specific verification - we add ESL credential verification (TEFL, CELTA, teaching licenses) Upwork doesn't have</li>
+            <li>Weak school vetting - Upwork verifies freelancers, we verify BOTH sides (B.2 teacher verification + B.6 school verification)</li>
+            <li>No local market optimization - Upwork is US-centric, we build B.10 client entities for China/Korea/Japan monetization from day 1</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fef5e7', border: '2px solid #ecc94b', borderRadius: '4px' }}>
+          <strong style={{ color: '#744210' }}>Threats (Competitive Risks)</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Upwork could add "Full-Time Jobs" category - mitigate by building ESL-specific moats (B.5 purchasing power, B.6 GSXT verification, C.2 contract review)</li>
+            <li>Payment processor dependencies - Stripe/Payoneer could raise fees, mitigate: use multiple processors, negotiate volume discounts</li>
+            <li>Freelancer marketplace saturation - Upwork, Fiverr, Toptal compete on same talent pool. We're different (full-time teaching, not freelancing), but perception risk exists</li>
+            <li>Global platform requires $10M+ infrastructure - Upwork spent years building payment rails. We shortcut via B.10 hybrid (Edge Entity + payment processors for teachers, Client Entities for schools)</li>
+          </ul>
+        </div>
+      </div>
     </Section>
   )
 }

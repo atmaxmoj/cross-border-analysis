@@ -73,6 +73,47 @@ export default function GlassdoorPlaybook() {
           <strong>Competing with Generalists (Question #1):</strong> Glassdoor successfully competes with LinkedIn by focusing on transparency and providing an "insider's view" that LinkedIn's professional networking model doesn't fully offer.
         </li>
       </ul>
+
+      <h4 style={{ marginTop: '30px' }}>SWOT Analysis for YouTeacher:</h4>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' }}>
+        <div style={{ padding: '15px', backgroundColor: '#f0fff4', border: '2px solid #68d391', borderRadius: '4px' }}>
+          <strong style={{ color: '#2f855a' }}>Strengths (Copy)</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>User-generated content creates data moat - reviews, salaries become more valuable over time</li>
+            <li>B2B monetization while keeping users free - employers pay for access to engaged talent pool</li>
+            <li>Pre-launch content seeding (3,300 reviews before beta) - we can scrape 50K+ jobs via A.1 before launch</li>
+            <li>Anonymous reviews protect workers - critical for ESL teachers fearing employer retaliation</li>
+            <li>Employer branding packages as core revenue - applicable to our premium school profiles</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fff5f5', border: '2px solid #fc8181', borderRadius: '4px' }}>
+          <strong style={{ color: '#c53030' }}>Weaknesses (Avoid)</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Relies on gated content ("give-to-get" model) - creates friction for users, we should avoid paywalling reviews</li>
+            <li>Slow cold start without aggregation - took months to reach critical mass, we solve with A.1 Job Aggregator</li>
+            <li>Review manipulation problems at scale - need C.1 AI Scam Detection from day 1 to prevent fake reviews</li>
+            <li>No geographic expansion moat - Glassdoor model easily copied per country, we build B.10 Edge/Client infrastructure for multi-market defense</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#ebf8ff', border: '2px solid #4299e1', borderRadius: '4px' }}>
+          <strong style={{ color: '#2c5282' }}>Opportunities (Gaps to Exploit)</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Glassdoor doesn't verify schools - B.6 School Verification System (GSXT scraping) gives us trust advantage</li>
+            <li>No purchasing power context for international jobs - B.5 Purchasing Power Calculator (15K RMB = $2,500 in Chengdu) is unique to us</li>
+            <li>Weak scam detection - ESL market has MORE scams than general employment, our C.1 AI system trained on teacher-specific red flags</li>
+            <li>No contract review - C.2 Contract Review Tool ($29) addresses ESL-specific contract traps (visa clauses, penalty fees)</li>
+          </ul>
+        </div>
+        <div style={{ padding: '15px', backgroundColor: '#fef5e7', border: '2px solid #ecc94b', borderRadius: '4px' }}>
+          <strong style={{ color: '#744210' }}>Threats (Competitive Risks)</strong>
+          <ul style={{ margin: '5px 0', fontSize: '0.85em', lineHeight: '1.6' }}>
+            <li>Glassdoor could expand to ESL niche - low risk (they focus on white-collar professionals, not teachers)</li>
+            <li>Review fatigue - users tired of writing reviews, mitigation: incentivize with "Verified Teacher" badge (B.2)</li>
+            <li>Employer pushback on negative reviews - schools could pressure platform, mitigation: B.10 Edge Entity hosts reviews outside China jurisdiction</li>
+            <li>Data licensing revenue requires scale - need 100K+ reviews before monetizable, focus on job posting fees first (Stage 1-3)</li>
+          </ul>
+        </div>
+      </div>
     </Section>
   )
 }
