@@ -98,6 +98,62 @@ export default function StrategicQuestions() {
         </p>
       </Section>
 
+      <Section id="question-8" title="Community vs Volume: Which do we prioritize first?">
+        <p>
+          <strong>The Finding:</strong> The <code>CompetitorHexagonChart</code> reveals a critical trade-off. Dave's ESL
+          Cafe has the highest job volume (85/100, 60% market share) but a dead community (15/100 - "ghost town" validated
+          across 1,316 posts). HiredChina has active community engagement (55/100 - expat forums, WeChat groups, networking
+          events) but moderate volume (70/100 - 1K-5K listings). No competitor excels at both.
+        </p>
+        <p>
+          <strong>The Strategic Question:</strong> Which dimension do we prioritize during our launch phase: building an
+          active, engaged community (slow but sticky) or maximizing job listing volume (fast growth but shallow engagement)?
+          Can we achieve both simultaneously with limited resources, or must we make a sequential choice? Dave's ESL proves
+          you can dominate with volume alone despite zero community, but our pain point analysis shows teachers desperately
+          need community for school verification. What is our community-volume strategy for months 1-12?
+        </p>
+      </Section>
+
+      <Section id="question-9" title="What role do recruitment agents play, and why do they exist on job boards?">
+        <p>
+          <strong>The Finding:</strong> Our web scraping of Dave's ESL Cafe reveals a significant pattern: many job postings
+          are not from schools directly, but from recruitment agents acting as intermediaries. Traditional job board design
+          assumes a two-sided marketplace (employers and candidates), but the ESL market appears to operate as a three-sided
+          marketplace with agents as a critical third participant. The <code>CompetitiveLandscape</code> also documents
+          established recruitment agencies like Teach Away (200+ employees), Hays/Michael Page (20-30% placement fees), and
+          ISS/Search Associates (job fair model).
+        </p>
+        <p>
+          <strong>The Strategic Question:</strong> Why do these agents exist in the first place? What value do they provide
+          to schools that makes schools willing to pay them (often 20-30% of first-year salary) rather than hiring directly?
+          What value do they provide to teachers that makes teachers accept intermediation rather than applying to schools directly?
+          Do agents solve different problems for each side, or is there a common value proposition? If we design YouTeacher as
+          a traditional two-sided marketplace (schools ↔ teachers), are we ignoring a fundamental market structure? Should we
+          explicitly design for agents as a third side of the marketplace, and if so, what role should they play in our platform?
+          Or does our verification capability eliminate the need for agents entirely?
+        </p>
+      </Section>
+
+      <Section id="question-10" title="Asia expansion strategy: Deep in China or horizontal across 12 markets?">
+        <p>
+          <strong>The Finding:</strong> The <code>AsiaForeignWorkersHeatMap</code> and <code>MarketSize</code> analysis reveals
+          12 Asia markets with 130K+ foreign teachers annually: China (70K teachers, 18% of 384K total foreign workers), Japan
+          (20K - JET Programme + eikaiwa), South Korea (13K E-2 visa holders), Thailand (6K), Singapore (4.5K), Malaysia (4.5K),
+          Taiwan (4K), Vietnam (3.3K), Indonesia (2K), Cambodia (1.5K), Hong Kong (800), Philippines (exports teachers). China
+          represents 54% of the Asia teaching market but is undergoing post-2021 regulatory decline. Japan/Korea are stable but
+          saturated with local platforms (GaijinPot, Saramin).
+        </p>
+        <p>
+          <strong>The Strategic Question:</strong> Do we pursue a <strong>depth-first</strong> strategy (dominate China's 70K
+          teacher market, 1,106 international schools, establish verification database as unassailable moat before expanding) or
+          a <strong>breadth-first</strong> strategy (launch across multiple Asia markets simultaneously to capture first-mover
+          advantage in verification across the region)? China offers the largest beachhead and our team's domain expertise (Pete's
+          6 years teaching experience), but China-only focus risks being perceived as niche. Multi-country launch builds
+          "Asia-wide" brand positioning but spreads resources thin and requires localization (languages, visa systems, school types).
+          What is our 18-month geographic expansion roadmap?
+        </p>
+      </Section>
+
       <div className="section-divider"></div>
     </Chapter>
   )
