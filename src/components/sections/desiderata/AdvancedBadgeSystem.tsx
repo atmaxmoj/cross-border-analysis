@@ -70,22 +70,36 @@ export default function AdvancedBadgeSystem() {
         <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>
           <li><strong>Public criteria:</strong> All badge requirements published (e.g., "High Retention = 80%+ contract completion")</li>
           <li><strong>Real-time tracking:</strong> Schools see dashboard showing progress toward each badge (e.g., "73% contract completion - 7% away from High Retention badge")</li>
-          <li><strong>Automatic awards:</strong> Badges awarded automatically when criteria met (no manual review for Tier 1-2)</li>
-          <li><strong>Audit required for Tier 3:</strong> Excellence badges require paid audit ($499/year) - prevents gaming, ensures quality</li>
+          <li><strong>Automatic awards (Tier 1-2):</strong> Compliance and Performance badges awarded automatically when data thresholds met</li>
+          <li><strong>Excellence badges (Tier 3):</strong> Require minimum data threshold (e.g., 50+ reviews for DEI Champion) to ensure statistical validity, still FREE but need sufficient data</li>
         </ul>
 
-        <strong>Revenue Model:</strong>
+        <strong>Business Model (Badges are FREE, but gated by verification):</strong>
         <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>
-          <li><strong>Free:</strong> All earned badges displayed publicly on school profiles</li>
-          <li><strong>"Badge Report" ($199):</strong> Detailed breakdown showing current scores, gap analysis, improvement recommendations</li>
-          <li><strong>"Excellence Badge Audit" ($499/year):</strong> Manual audit for DEI Champion / Well-Managed / Career Growth badges, includes:
+          <li><strong>First transaction requirement ($49 job post):</strong> Schools must post first job and PAY to unlock badge system
             <ul style={{ marginLeft: '20px', fontSize: '0.95em' }}>
-              <li>On-site or video interview with management and teachers</li>
-              <li>Contract review and policy documentation</li>
-              <li>Certificate to display on school website</li>
+              <li><strong>Why this matters:</strong> Payment requires REAL bank account (bank ID verification), filters out scammers who won't pay</li>
+              <li><strong>KYC compliance:</strong> Bank transfer provides legal name, account number, business registration - impossible to fake</li>
+              <li><strong>Commitment signal:</strong> Schools that pay are serious, not just browsing or phishing for teacher emails</li>
+              <li><strong>After first payment:</strong> All badges calculated automatically based on performance data - CANNOT be purchased</li>
             </ul>
           </li>
-          <li><strong>"Featured Badge Listings" ($99/month):</strong> Schools with 3+ badges get featured placement in search results</li>
+          <li><strong>All badges FREE after verification:</strong> No ongoing fees for badges, earned purely through data (reviews, retention, compliance)</li>
+          <li><strong>Indirect revenue from badges:</strong>
+            <ul style={{ marginLeft: '20px', fontSize: '0.95em' }}>
+              <li>"Hiring Insights Report" ($199): "Your retention is 65%. Top-rated schools average 82%. Here's how to improve."</li>
+              <li>"Benchmark Analysis" ($499): Compare your metrics to competitors in your city/region</li>
+              <li>Featured listings for badged schools ($99/month): Schools with 3+ badges can pay for top placement</li>
+            </ul>
+          </li>
+        </ul>
+
+        <strong>Why Bank ID Verification Matters:</strong>
+        <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>
+          <li><strong>Scam prevention:</strong> Fake schools won't provide real bank accounts (money laundering risk)</li>
+          <li><strong>Legal accountability:</strong> Bank ID tied to business registration, enables legal recourse if school commits fraud</li>
+          <li><strong>Government data matching:</strong> Can cross-reference bank account with Labor Bureau records, court filings</li>
+          <li><strong>Trust signal to teachers:</strong> "This school passed bank verification" displayed on profile</li>
         </ul>
 
         <strong>Why This Creates a Moat:</strong>
@@ -99,12 +113,13 @@ export default function AdvancedBadgeSystem() {
 
         <strong>Success Metrics:</strong>
         <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>
-          <li>500+ schools earn at least one badge by Year 3</li>
-          <li>100+ schools purchase Badge Report ($199) = $19,900/year revenue</li>
-          <li>50+ schools purchase Excellence Badge Audit ($499/year) = $24,950/year revenue</li>
+          <li>500+ schools earn at least one badge by Year 3 (verified via first payment = bank ID check)</li>
+          <li>100+ schools purchase Hiring Insights Report ($199) = $19,900/year indirect revenue</li>
+          <li>50+ schools purchase Benchmark Analysis ($499) = $24,950/year indirect revenue</li>
           <li>Teachers prefer applying to badged schools: 80%+ applications go to schools with 2+ badges</li>
-          <li>Schools with badges get 5x more applications (creates incentive to earn badges)</li>
-          <li>Measurable ecosystem improvement: Labor violation rate drops 30% among participating schools</li>
+          <li>Schools with badges get 5x more applications (creates virtuous cycle - good schools grow, bad schools improve or exit)</li>
+          <li>Measurable ecosystem improvement: Labor violation rate drops 30% among participating schools (badges create accountability)</li>
+          <li>Bank ID verification blocks 90%+ scam schools (won't provide real banking details)</li>
         </ul>
 
         <strong>Why This is a Delighter (Not Performance Feature):</strong> Teachers DON'T expect multi-dimensional school evaluation - Dave's ESL has ZERO verification, SeriousTeachers has basic listings only. When teachers see badges showing DEI scores, government compliance data, and retention rates, they are DELIGHTED ("I can't believe they track this!"). Creates viral word-of-mouth and competitive moat competitors cannot easily copy.
