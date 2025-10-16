@@ -8,7 +8,7 @@ import SolutionToolkit from '@/components/chapters/SolutionToolkit'
 import Desiderata from '@/components/chapters/Desiderata'
 import BusinessModel from '@/components/chapters/BusinessModel'
 import RiskAssessment from '@/components/chapters/RiskAssessment'
-import Comparison from '@/components/chapters/Comparison'
+import Appendix from '@/components/chapters/Appendix'
 
 export default function Home() {
   return (
@@ -49,7 +49,7 @@ export default function Home() {
               <Desiderata />
               <BusinessModel />
               <RiskAssessment />
-              <Comparison />
+              <Appendix />
             </div>
           </main>
         </div>

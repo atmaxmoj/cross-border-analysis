@@ -1,8 +1,8 @@
 import Section from '../../layout/Section'
 
-export default function ComparisonTable() {
+export default function AppendixAComparison() {
   return (
-    <Section id="comparison-table" title="Side-by-Side Comparison">
+    <Section id="appendix-a" title="A. Pete's Original Plan vs. Enhanced Strategy">
       <table>
         <thead>
           <tr>
@@ -82,11 +82,11 @@ export default function ComparisonTable() {
           <tr>
             <td><strong>Competitive Moat</strong></td>
             <td>Better tech, UI/UX</td>
-            <td><strong>C-tier excitement features create moats:</strong><br/>
-            - C.1 AI Scam Detection (ML model, improves with data)<br/>
-            - C.6 Weekly Meetups (community relationships, uncopyable)<br/>
-            - C.7 Escrow/EOR (legal infrastructure, high barrier)<br/>
-            - C.8 Badge System (government data scraping + AI analysis)</td>
+            <td><strong>Kano A-D tiers build progressive moats:</strong><br/>
+            - <strong>A-tier:</strong> Superior UX (basic moat, easily copied)<br/>
+            - <strong>B-tier:</strong> Verification infrastructure starts real moat (B.6 Chinese business license verification, B.1 Review system - 6-12 months to replicate)<br/>
+            - <strong>C-tier:</strong> Deepens moat (C.1 AI Scam Detection with proprietary data, C.6 Community relationships uncopyable, C.7 Escrow/EOR legal infrastructure, C.8 Advanced Badge System)<br/>
+            - <strong>D-tier:</strong> Future moat (5-10 year vision features)</td>
           </tr>
           <tr>
             <td><strong>Risk Management</strong></td>
