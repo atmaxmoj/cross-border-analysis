@@ -24,11 +24,6 @@ import WeeklyTeacherMeetups from '../sections/desiderata/WeeklyTeacherMeetups'
 import EscrowEORService from '../sections/desiderata/EscrowEORService'
 import AdvancedBadgeSystem from '../sections/desiderata/AdvancedBadgeSystem'
 import TwoEntityStructure from '../sections/desiderata/TwoEntityStructure'
-import D1SuperApp from '../sections/desiderata/D1SuperApp'
-import D2SchoolSaaS from '../sections/desiderata/D2SchoolSaaS'
-import D3PredictiveMatching from '../sections/desiderata/D3PredictiveMatching'
-import D4TeacherCollectives from '../sections/desiderata/D4TeacherCollectives'
-import D5GeographicExpansion from '../sections/desiderata/D5GeographicExpansion'
 
 export default function Desiderata() {
   return (
@@ -91,24 +86,6 @@ export default function Desiderata() {
         <AdvancedBadgeSystem />
       </Section>
 
-      <Section id="disruptive-desiderata" title="D. Disruptive/Transformative Desiderata (Industry Transformation)">
-        <p>
-          <strong>Beyond Kano: D-Tier Features</strong> - These features don't just create competitive moats, they fundamentally
-          TRANSFORM the industry structure. D-tier changes market category definition, shifts power dynamics, or creates new business
-          models. Think WeChat (messaging → super-app), Workday (on-prem HR → cloud SaaS), LinkedIn (recruitment → professional network).
-        </p>
-        <p>
-          <strong>Characteristics of D-Tier:</strong> Winner-take-all network effects, 10x+ TAM expansion, impossible to achieve without
-          platform/technology enabling coordination at scale. These are 5-10 year visions, not Year 1-3 features.
-        </p>
-
-        <D1SuperApp />
-        <D2SchoolSaaS />
-        <D3PredictiveMatching />
-        <D4TeacherCollectives />
-        <D5GeographicExpansion />
-      </Section>
-
       <Section id="desiderata-summary" title="Summary: From Evidence to Features">
         <InfoBox>
           <strong>Key Takeaways:</strong>
@@ -116,13 +93,13 @@ export default function Desiderata() {
             <li><strong>Every feature is evidence-backed:</strong> Not hunches, but conclusions from 6,195 teacher posts,
             strategic questions, and case studies of $1.8B-$15B companies.</li>
             <li><strong>Kano categorization guides prioritization:</strong> Must-Haves (A.1-A.5) must launch first.
-            Performance features (B.1-B.10) differentiate us. Delighters (C.1-C.8) create moats. Disruptive features (D.1-D.5) transform the industry (5-10 year vision).</li>
+            Performance features (B.1-B.10) differentiate us. Delighters (C.1-C.8) create moats.</li>
             <li><strong>Traceability ensures strategic alignment:</strong> Each feature maps to specific questions,
             pain points, and case study evidence—no feature is arbitrary.</li>
             <li><strong>MVP = Aggregator First (Solve Chicken-Egg):</strong> Launch with ONLY A.1-A.5. Critical: START with job aggregator (A.1) like Indeed did—scrape Dave's ESL, SeriousTeachers, etc. to have thousands of jobs from day 1. THEN add browse/search (A.2), contact (A.3), and eventually direct posting (A.4) and accounts (A.5). This solves the cold start problem. Add Performance features (B.1-B.10) AFTER validating aggregator drives traffic.</li>
             <li><strong>Performance features differentiate us:</strong> School verification (B.6), advanced search (B.7), transparent listing requirements (B.8), application tracking (B.9), and two-entity structure (B.10) are valuable but NOT minimum viable—they differentiate us AFTER we have traction. B.10 (late B-tier, Stage 3) enables monetization in China while protecting platform features from regulatory constraints.</li>
             <li><strong>Excitement features build moats:</strong> AI scam detection (C.1), contract review tool (C.2), weekly teacher meetups (C.6), escrow/EOR service (C.7), and advanced badge system (C.8) are defensible advantages competitors cannot easily copy. C.8's multi-dimensional school evaluation (government data scraping + AI analysis + proprietary scoring) creates the strongest moat - requires data infrastructure competitors cannot replicate without massive investment. These transform us from \"job board\" to \"full-service teacher employment & community platform.\"</li>
-            <li><strong>Disruptive features (D-tier) = industry transformation:</strong> Super-app (D.1), School SaaS (D.2), Predictive Matching (D.3), Teacher Collectives (D.4), and Geographic Expansion (D.5) represent 5-10 year vision. Each fundamentally changes market structure: D.1 = WeChat-level ecosystem lock-in, D.2 = Workday-level recurring revenue, D.3 = Bloomberg Terminal-level data moat, D.4 = labor union-level power shift, D.5 = LinkedIn-level category expansion. These are NOT Year 1-3 priorities, but define long-term strategic direction and ultimate market potential ($100M-$1B+ ARR).</li>
+            <li><strong>Long-term opportunities:</strong> See Appendix G for 5-10 year transformative opportunities that could expand TAM to $100M+ ARR. These D-tier features are NOT Year 1-4 priorities but define potential future strategic directions.</li>
           </ul>
         </InfoBox>
       </Section>

@@ -16,6 +16,86 @@ export default function Stage4MoatBuilding() {
         </p>
       </div>
 
+      <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '2px solid #3b82f6', borderRadius: '8px', marginBottom: '20px' }}>
+        <strong style={{ fontSize: '1.1em', color: '#1e40af' }}>🎯 Stage 4 MVP Checklist (Phased Launch: Year 3-4)</strong>
+        <table style={{ width: '100%', marginTop: '15px', fontSize: '0.85em', borderCollapse: 'collapse' }}>
+          <thead>
+            <tr style={{ backgroundColor: '#dbeafe', borderBottom: '2px solid #3b82f6' }}>
+              <th style={{ padding: '8px', textAlign: 'left' }}>Feature</th>
+              <th style={{ padding: '8px', textAlign: 'left' }}>Build Time</th>
+              <th style={{ padding: '8px', textAlign: 'left' }}>Owner</th>
+              <th style={{ padding: '8px', textAlign: 'left' }}>Success Criteria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style={{ borderBottom: '1px solid #bfdbfe', backgroundColor: '#fef3c7' }}>
+              <td colSpan={4} style={{ padding: '8px' }}><strong>C-Tier: Moat Features</strong></td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #bfdbfe' }}>
+              <td style={{ padding: '8px' }}><strong>C.6 Weekly Meetups</strong><br/><span style={{ fontSize: '0.9em', color: '#64748b' }}>Organize dinners in 10 cities</span></td>
+              <td style={{ padding: '8px' }}>2 weeks<br/><span style={{ fontSize: '0.85em', color: '#64748b' }}>(use Timeleft API)</span></td>
+              <td style={{ padding: '8px' }}>Pete</td>
+              <td style={{ padding: '8px' }}>200 attendees/week by Month 30</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #bfdbfe' }}>
+              <td style={{ padding: '8px' }}><strong>C.1 AI Scam Detection</strong><br/><span style={{ fontSize: '0.9em', color: '#64748b' }}>Flag fraudulent jobs automatically</span></td>
+              <td style={{ padding: '8px' }}>4 weeks</td>
+              <td style={{ padding: '8px' }}>Mojo</td>
+              <td style={{ padding: '8px' }}>Block 500+ scams/year</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #bfdbfe' }}>
+              <td style={{ padding: '8px' }}><strong>C.2 Contract Review</strong><br/><span style={{ fontSize: '0.9em', color: '#64748b' }}>AI analyzes contracts for red flags</span></td>
+              <td style={{ padding: '8px' }}>3 weeks</td>
+              <td style={{ padding: '8px' }}>Mojo</td>
+              <td style={{ padding: '8px' }}>500+ reviews/year, $29/review</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #bfdbfe' }}>
+              <td style={{ padding: '8px' }}><strong>C.7 Escrow/EOR</strong><br/><span style={{ fontSize: '0.9em', color: '#64748b' }}>Partner with Deel/Skuad for payments</span></td>
+              <td style={{ padding: '8px' }}>6 weeks<br/><span style={{ fontSize: '0.85em', color: '#64748b' }}>(legal + integrations)</span></td>
+              <td style={{ padding: '8px' }}>Pete + Mojo</td>
+              <td style={{ padding: '8px' }}>50+ teachers using by Year 4</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #bfdbfe' }}>
+              <td style={{ padding: '8px' }}><strong>C.8 Advanced Badges</strong><br/><span style={{ fontSize: '0.9em', color: '#64748b' }}>Multi-tier verification system</span></td>
+              <td style={{ padding: '8px' }}>8 weeks<br/><span style={{ fontSize: '0.85em', color: '#dc2626' }}>(complex: data scraping)</span></td>
+              <td style={{ padding: '8px' }}>Mojo</td>
+              <td style={{ padding: '8px' }}>100+ schools with Excellence badge</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #bfdbfe', backgroundColor: '#fef3c7' }}>
+              <td colSpan={4} style={{ padding: '8px' }}><strong>Market Expansion</strong></td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #bfdbfe' }}>
+              <td style={{ padding: '8px' }}><strong>Vertical: All China Jobs</strong><br/><span style={{ fontSize: '0.9em', color: '#64748b' }}>Tech, finance, edu admin positions</span></td>
+              <td style={{ padding: '8px' }}>6 months<br/><span style={{ fontSize: '0.85em', color: '#64748b' }}>(research + scraping + community)</span></td>
+              <td style={{ padding: '8px' }}>Pete + Mojo</td>
+              <td style={{ padding: '8px' }}>$250K ARR by Year 4 end</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #bfdbfe' }}>
+              <td style={{ padding: '8px' }}><strong>Horizontal: Korea Teaching</strong><br/><span style={{ fontSize: '0.9em', color: '#64748b' }}>EPIK program + hagwons</span></td>
+              <td style={{ padding: '8px' }}>6 months</td>
+              <td style={{ padding: '8px' }}>Pete</td>
+              <td style={{ padding: '8px' }}>$150K ARR by Year 4 end</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '8px' }}><strong>Horizontal: Japan Teaching</strong><br/><span style={{ fontSize: '0.9em', color: '#64748b' }}>JET program + eikaiwas</span></td>
+              <td style={{ padding: '8px' }}>4 months<br/><span style={{ fontSize: '0.85em', color: '#059669' }}>(faster with Korea learnings)</span></td>
+              <td style={{ padding: '8px' }}>Pete</td>
+              <td style={{ padding: '8px' }}>$120K ARR by Year 4 end</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#dcfce7', borderRadius: '4px' }}>
+          <strong style={{ color: '#166534' }}>✅ Go/No-Go Decision (End of Year 4):</strong>
+          <ul style={{ margin: '5px 0 0 0', fontSize: '0.9em', color: '#166534' }}>
+            <li>✓ $1M+ ARR (China ESL $700K + Vertical $250K + Horizontal $270K)</li>
+            <li>✓ 1,000+ schools posting monthly across all markets</li>
+            <li>✓ Moat features driving retention (meetups, escrow, AI tools)</li>
+            <li><strong>If YES:</strong> Continue geographic expansion (Vietnam, Thailand) or consider D-tier transformative features</li>
+            <li><strong>If NO:</strong> Focus on profitability in existing markets, optimize unit economics before expanding further</li>
+          </ul>
+        </div>
+      </div>
+
       <InfoBox>
         <strong>Part A: Excitement Features (C-Tier Moat Building)</strong>
         <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>

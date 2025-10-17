@@ -5,6 +5,7 @@ import AppendixCCandidateVerification from '../sections/appendix/AppendixCCandid
 import AppendixDCompetitors from '../sections/appendix/AppendixDCompetitors'
 import AppendixEFeatureList from '../sections/appendix/AppendixEFeatureList'
 import AppendixFScrapingLegal from '../sections/appendix/AppendixFScrapingLegal'
+import AppendixGFutureOpportunities from '../sections/appendix/AppendixGFutureOpportunities'
 
 export default function Appendix() {
   return (
@@ -15,6 +16,7 @@ export default function Appendix() {
       <AppendixDCompetitors />
       <AppendixEFeatureList />
       <AppendixFScrapingLegal />
+      <AppendixGFutureOpportunities />
       <div className="section-divider"></div>
     </Chapter>
   )

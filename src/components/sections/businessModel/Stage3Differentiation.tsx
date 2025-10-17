@@ -4,6 +4,63 @@ export default function Stage3Differentiation() {
   return (
     <div style={{ marginTop: '30px' }}>
       <h4>Stage 3: Differentiation (Months 19-36) - Performance Features</h4>
+
+      <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '2px solid #3b82f6', borderRadius: '8px', marginBottom: '20px' }}>
+        <strong style={{ fontSize: '1.1em', color: '#1e40af' }}>🎯 Stage 3 MVP Checklist (Launch in Month 19)</strong>
+        <table style={{ width: '100%', marginTop: '15px', fontSize: '0.9em', borderCollapse: 'collapse' }}>
+          <thead>
+            <tr style={{ backgroundColor: '#dbeafe', borderBottom: '2px solid #3b82f6' }}>
+              <th style={{ padding: '10px', textAlign: 'left' }}>Feature</th>
+              <th style={{ padding: '10px', textAlign: 'left' }}>Build Time</th>
+              <th style={{ padding: '10px', textAlign: 'left' }}>Owner</th>
+              <th style={{ padding: '10px', textAlign: 'left' }}>Success Criteria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style={{ borderBottom: '1px solid #bfdbfe' }}>
+              <td style={{ padding: '10px' }}><strong>B.1 School Reviews</strong><br/><span style={{ fontSize: '0.85em', color: '#64748b' }}>Teachers rate schools 1-5 stars + written review</span></td>
+              <td style={{ padding: '10px' }}>2 weeks</td>
+              <td style={{ padding: '10px' }}>Mojo</td>
+              <td style={{ padding: '10px' }}>500+ reviews by Month 24</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #bfdbfe' }}>
+              <td style={{ padding: '10px' }}><strong>B.6 School Verification</strong><br/><span style={{ fontSize: '0.85em', color: '#64748b' }}>Business license check, address verification</span></td>
+              <td style={{ padding: '10px' }}>4 weeks</td>
+              <td style={{ padding: '10px' }}>Mojo + Pete</td>
+              <td style={{ padding: '10px' }}>50+ schools verified manually</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #bfdbfe' }}>
+              <td style={{ padding: '10px' }}><strong>B.7 Advanced Search</strong><br/><span style={{ fontSize: '0.85em', color: '#64748b' }}>Salary range, school type, visa sponsorship filters</span></td>
+              <td style={{ padding: '10px' }}>2 weeks</td>
+              <td style={{ padding: '10px' }}>Mojo</td>
+              <td style={{ padding: '10px' }}>70%+ teachers use advanced filters</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid #bfdbfe' }}>
+              <td style={{ padding: '10px' }}><strong>B.8 Transparent Listings</strong><br/><span style={{ fontSize: '0.85em', color: '#64748b' }}>Salary ranges required, completeness score</span></td>
+              <td style={{ padding: '10px' }}>1 week</td>
+              <td style={{ padding: '10px' }}>Mojo</td>
+              <td style={{ padding: '10px' }}>80%+ listings show salary</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '10px' }}><strong>B.9 Application Tracking</strong><br/><span style={{ fontSize: '0.85em', color: '#64748b' }}>Schools see who applied, status dashboard</span></td>
+              <td style={{ padding: '10px' }}>3 weeks</td>
+              <td style={{ padding: '10px' }}>Mojo</td>
+              <td style={{ padding: '10px' }}>Premium schools use it 3x/week</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style={{ marginTop: '15px', padding: '10px', backgroundColor: '#dcfce7', borderRadius: '4px' }}>
+          <strong style={{ color: '#166534' }}>✅ Go/No-Go Decision (End of Month 24):</strong>
+          <ul style={{ margin: '5px 0 0 0', fontSize: '0.9em', color: '#166534' }}>
+            <li>✓ 30%+ schools upgrade to Premium ($149/post)</li>
+            <li>✓ $30,000+/month revenue</li>
+            <li>✓ Verified schools get 3x more applications (proven ROI)</li>
+            <li><strong>If YES:</strong> Proceed to Stage 4 (add C-tier Excitement features)</li>
+            <li><strong>If NO:</strong> Reduce Premium price to $99, improve verification process, or focus on volume over Premium conversions</li>
+          </ul>
+        </div>
+      </div>
+
       <InfoBox>
         <strong>Features Deployed:</strong>
         <ul style={{ margin: '10px 0', fontSize: '0.9em' }}>
