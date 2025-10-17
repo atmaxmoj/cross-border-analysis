@@ -6,6 +6,7 @@ import AppendixDCompetitors from '../sections/appendix/AppendixDCompetitors'
 import AppendixEFeatureList from '../sections/appendix/AppendixEFeatureList'
 import AppendixFScrapingLegal from '../sections/appendix/AppendixFScrapingLegal'
 import AppendixGFutureOpportunities from '../sections/appendix/AppendixGFutureOpportunities'
+import AppendixHForeignTeacherLicensing from '../sections/appendix/AppendixHForeignTeacherLicensing'
 
 export default function Appendix() {
   return (
@@ -17,6 +18,7 @@ export default function Appendix() {
       <AppendixEFeatureList />
       <AppendixFScrapingLegal />
       <AppendixGFutureOpportunities />
+      <AppendixHForeignTeacherLicensing />
       <div className="section-divider"></div>
     </Chapter>
   )
