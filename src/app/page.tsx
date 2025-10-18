@@ -1,13 +1,13 @@
 import TableOfContents from '@/components/layout/TableOfContents'
-import ExecutiveSummary from '@/components/chapters/ExecutiveSummary'
-import ProjectGenesis from '@/components/chapters/ProjectGenesis'
-import MarketAnalysis from '@/components/chapters/MarketAnalysis'
-import StrategicQuestions from '@/components/chapters/StrategicQuestions'
-import SolutionToolkit from '@/components/chapters/SolutionToolkit'
-import Desiderata from '@/components/chapters/Desiderata'
-import BusinessModel from '@/components/chapters/BusinessModel'
-import RiskAssessment from '@/components/chapters/RiskAssessment'
-import Appendix from '@/components/chapters/Appendix'
+import ExecutiveSummary from '@/components/business_plan/chapters/ExecutiveSummary'
+import ProjectGenesis from '@/components/business_plan/chapters/ProjectGenesis'
+import MarketAnalysis from '@/components/business_plan/chapters/MarketAnalysis'
+import StrategicQuestions from '@/components/business_plan/chapters/StrategicQuestions'
+import SolutionToolkit from '@/components/business_plan/chapters/SolutionToolkit'
+import Desiderata from '@/components/business_plan/chapters/Desiderata'
+import BusinessModel from '@/components/business_plan/chapters/BusinessModel'
+import RiskAssessment from '@/components/business_plan/chapters/RiskAssessment'
+import Appendix from '@/components/business_plan/chapters/Appendix'
 
 export default function Home() {
   return (

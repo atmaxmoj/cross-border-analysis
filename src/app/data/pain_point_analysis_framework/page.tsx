@@ -1,4 +1,4 @@
-import MarkdownReader from '@/components/readers/MarkdownReader'
+import MarkdownReader from '@/components/business_plan/readers/MarkdownReader'
 import fs from 'fs'
 import path from 'path'
 

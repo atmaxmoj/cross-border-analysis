@@ -1,4 +1,4 @@
-import AnalysisReportViewer from '@/components/readers/AnalysisReportViewer'
+import AnalysisReportViewer from '@/components/business_plan/readers/AnalysisReportViewer'
 import fs from 'fs'
 import path from 'path'
 

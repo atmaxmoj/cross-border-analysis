@@ -1,4 +1,4 @@
-import ForumPostsViewer from '@/components/readers/ForumPostsViewer'
+import ForumPostsViewer from '@/components/business_plan/readers/ForumPostsViewer'
 import fs from 'fs'
 import path from 'path'
 
