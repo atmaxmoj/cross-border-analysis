@@ -317,6 +317,32 @@ export default function Overview() {
           <p><strong>Build Time:</strong> 2 days (Mojo)</p>
         </div>
 
+        <div style={{ padding: '15px', backgroundColor: '#fef3e7', border: '1px solid #f59e0b', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR12: Admin API Endpoints (Stage 1)</h5>
+          <p><strong>Priority:</strong> P0 (Critical Path)</p>
+          <p><strong>Description:</strong> Backend APIs for Pete to manually verify schools and manage platform from day 1</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Authentication: API key for Pete (environment variable, never committed to git)</li>
+            <li><code>POST /api/admin/schools</code> - Manually add a school to database (for early verified schools)</li>
+            <li><code>PATCH /api/admin/schools/:id/verify</code> - Mark school as verified (add "Verified" badge)</li>
+            <li><code>GET /api/admin/schools</code> - List all schools</li>
+            <li><code>GET /api/jobs/search?location=&amp;salary=</code> - Public search API (for frontend + testing)</li>
+            <li><code>GET /api/jobs/:id</code> - Get job details by ID</li>
+            <li>All endpoints return JSON, use standard HTTP status codes (200, 400, 401, 500)</li>
+            <li>Request logging: Log all admin API calls to audit trail</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Pete can manually add + verify a school in &lt;1 minute via Postman</li>
+            <li>Search API returns results in &lt;500ms</li>
+            <li>API key authentication blocks unauthorized access to admin endpoints</li>
+            <li>Public search API accessible without authentication</li>
+          </ul>
+          <p><strong>Build Time:</strong> 2 days (Mojo)</p>
+          <p><strong>Why Critical:</strong> Pete needs to manually verify 5-10 schools in Stage 1 to seed trust. Search API needed for frontend to work. Separating admin vs public APIs from start ensures clean architecture.</p>
+        </div>
+
         <h4 style={{ marginTop: '25px' }}>Success Criteria</h4>
         <div style={{ padding: '15px', backgroundColor: '#dcfce7', border: '1px solid #16a34a', borderRadius: '6px', marginTop: '10px' }}>
           <p><strong>North Star Metric:</strong> Monthly Active Teachers (MAU) - demonstrates product-market fit before monetizing</p>
@@ -343,17 +369,6 @@ export default function Overview() {
             <strong>Evidence:</strong> Dave's ESL has 350K monthly views with 47 active jobs. We target 1% of their traffic (3.5K MAU) by Month 6 with better UX. Conservative estimate based on actual market size, not fantasy.
           </p>
         </div>
-
-        <h4 style={{ marginTop: '25px' }}>Technical Requirements</h4>
-        <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
-          <li><strong>Frontend:</strong> Next.js 14 (App Router), React, TypeScript, Tailwind CSS</li>
-          <li><strong>Backend:</strong> Python FastAPI for scraper service, PostgreSQL for job storage</li>
-          <li><strong>Scraper:</strong> Python + BeautifulSoup4 + Scrapy, Docker containers for each platform</li>
-          <li><strong>Search:</strong> PostgreSQL Full-Text Search (upgrade to Elasticsearch if &gt;100K jobs)</li>
-          <li><strong>Email:</strong> SendGrid or AWS SES</li>
-          <li><strong>Hosting:</strong> Vercel (frontend), Railway or Render (backend + DB)</li>
-          <li><strong>Monitoring:</strong> Sentry for errors, Google Analytics for traffic</li>
-        </ul>
 
         <h4 style={{ marginTop: '25px' }}>Out of Scope (Stage 1)</h4>
         <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
@@ -419,7 +434,7 @@ export default function Overview() {
         <h4 style={{ marginTop: '25px' }}>Feature Requirements</h4>
 
         <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR12: Direct Job Posting System (A.4)</h5>
+          <h5>FR13: Direct Job Posting System (A.4)</h5>
           <p><strong>Priority:</strong> P0 (Critical Path)</p>
           <p><strong>Description:</strong> Schools can post jobs directly on our platform for $49</p>
           <p><strong>Detailed Requirements:</strong></p>
@@ -444,7 +459,7 @@ export default function Overview() {
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR13: User Accounts (A.5)</h5>
+          <h5>FR14: User Accounts (A.5)</h5>
           <p><strong>Priority:</strong> P0 (Critical Path)</p>
           <p><strong>Description:</strong> School and teacher accounts for authentication and management</p>
           <p><strong>Detailed Requirements:</strong></p>
@@ -467,7 +482,7 @@ export default function Overview() {
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR14: Discord Integration</h5>
+          <h5>FR15: Discord Integration</h5>
           <p><strong>Priority:</strong> P2 (Nice to Have)</p>
           <p><strong>Description:</strong> Embed Discord widget on site so users stay on website</p>
           <p><strong>Detailed Requirements:</strong></p>
@@ -480,7 +495,7 @@ export default function Overview() {
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR15: Outbound Sales Process (Pete)</h5>
+          <h5>FR16: Outbound Sales Process (Pete)</h5>
           <p><strong>Priority:</strong> P0 (Critical Path)</p>
           <p><strong>Description:</strong> Email 500 schools currently posting on Dave's ESL</p>
           <p><strong>Detailed Requirements:</strong></p>
@@ -503,7 +518,7 @@ export default function Overview() {
         <h5 style={{ marginTop: '30px', marginLeft: '20px', color: '#64748b' }}>Infrastructure & Platform Requirements</h5>
 
         <div style={{ padding: '15px', backgroundColor: '#fef3e7', border: '1px solid #f59e0b', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR16: Authentication Infrastructure</h5>
+          <h5>FR17: Authentication Infrastructure</h5>
           <p><strong>Priority:</strong> P0 (Critical Path)</p>
           <p><strong>Description:</strong> Complete auth system with NextAuth.js or Clerk</p>
           <p><strong>Detailed Requirements:</strong></p>
@@ -528,7 +543,7 @@ export default function Overview() {
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#fef3e7', border: '1px solid #f59e0b', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR17: Payment Infrastructure</h5>
+          <h5>FR18: Payment Infrastructure</h5>
           <p><strong>Priority:</strong> P0 (Critical Path)</p>
           <p><strong>Description:</strong> Stripe + Alipay Business payment processing</p>
           <p><strong>Detailed Requirements:</strong></p>
@@ -553,7 +568,7 @@ export default function Overview() {
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#fef3e7', border: '1px solid #f59e0b', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR18: Database Schema Additions (Stage 2)</h5>
+          <h5>FR19: Database Schema Additions (Stage 2)</h5>
           <p><strong>Priority:</strong> P0 (Critical Path)</p>
           <p><strong>Description:</strong> Add auth, payment, and job posting tables</p>
           <p><strong>Detailed Requirements:</strong></p>
@@ -576,7 +591,7 @@ export default function Overview() {
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#fef3e7', border: '1px solid #f59e0b', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR19: File Upload System</h5>
+          <h5>FR20: File Upload System</h5>
           <p><strong>Priority:</strong> P1 (High)</p>
           <p><strong>Description:</strong> AWS S3 or Cloudinary for school logos and teacher resumes</p>
           <p><strong>Detailed Requirements:</strong></p>
@@ -599,7 +614,7 @@ export default function Overview() {
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#fef3e7', border: '1px solid #f59e0b', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR20: Enhanced Security (Stage 2)</h5>
+          <h5>FR21: Enhanced Security (Stage 2)</h5>
           <p><strong>Priority:</strong> P0 (Critical Path)</p>
           <p><strong>Description:</strong> CSRF protection, rate limiting for auth endpoints</p>
           <p><strong>Detailed Requirements:</strong></p>
@@ -622,9 +637,9 @@ export default function Overview() {
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#fef3e7', border: '1px solid #f59e0b', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR21: Admin API Endpoints</h5>
+          <h5>FR22: Admin API Endpoints (Stage 2 Extensions)</h5>
           <p><strong>Priority:</strong> P0 (Critical Path)</p>
-          <p><strong>Description:</strong> Backend APIs for Pete to manually manage schools, verifications, and job postings</p>
+          <p><strong>Description:</strong> Additional admin APIs for job posting and payment management (extends FR12 from Stage 1)</p>
           <p><strong>Detailed Requirements:</strong></p>
           <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
             <li>Authentication: API key for Pete (environment variable, never committed to git)</li>
@@ -651,7 +666,7 @@ export default function Overview() {
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#fef3e7', border: '1px solid #f59e0b', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR22: Admin Dashboard (Pete)</h5>
+          <h5>FR23: Admin Dashboard (Pete)</h5>
           <p><strong>Priority:</strong> P2 (Nice to Have)</p>
           <p><strong>Description:</strong> Web UI for Pete to manage platform (wraps FR21 admin APIs with visual interface)</p>
           <p><strong>Detailed Requirements:</strong></p>
