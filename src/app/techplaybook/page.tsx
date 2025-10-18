@@ -1,7 +1,7 @@
 import DocumentLayout from '@/components/layout/DocumentLayout'
 
 // Tech Playbook chapters
-import TechOverview from '@/components/tech_playbook/chapters/Overview'
+import PRD from '@/components/tech_playbook/chapters/PRD'
 import TechArchitecture from '@/components/tech_playbook/chapters/Architecture'
 import TechDatabase from '@/components/tech_playbook/chapters/Database'
 import TechServices from '@/components/tech_playbook/chapters/Services'
@@ -14,7 +14,7 @@ export default function TechPlaybookPage() {
       title="YouTeacher Tech Playbook"
       subtitle="Technical Architecture & Implementation Guide"
     >
-      <TechOverview />
+      <PRD />
       <TechArchitecture />
       <TechDatabase />
       <TechServices />
