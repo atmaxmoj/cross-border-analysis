@@ -8,7 +8,7 @@ import D5GeographicExpansion from '../desiderata/D5GeographicExpansion'
 
 export default function AppendixGFutureOpportunities() {
   return (
-    <Section id="appendix-g-future" title="Appendix G: Future Opportunities (5-10 Year Vision)">
+    <Section id="appendix-g-future" title="G. Future Opportunities (5-10 Year Vision)">
       <InfoBox>
         <strong>⚠️ Important Context:</strong>
         <p style={{ margin: '10px 0', fontSize: '0.9em', lineHeight: '1.6' }}>

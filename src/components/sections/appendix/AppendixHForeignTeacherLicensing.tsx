@@ -3,7 +3,7 @@ import InfoBox from '../../ui/InfoBox'
 
 export default function AppendixHForeignTeacherLicensing() {
   return (
-    <Section id="appendix-h-licensing" title="Appendix H: China Foreign Teacher Employment Licensing Requirements">
+    <Section id="appendix-h-licensing" title="H. China Foreign Teacher Employment Licensing Requirements">
       <InfoBox>
         <strong>⚠️ Critical Regulatory Context:</strong>
         <p style={{ margin: '10px 0', fontSize: '0.9em', lineHeight: '1.6' }}>
