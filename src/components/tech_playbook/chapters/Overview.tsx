@@ -450,7 +450,29 @@ export default function Overview() {
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR15: Discord Integration</h5>
+          <h5>FR15: Post TTL (Time-To-Live) System</h5>
+          <p><strong>Priority:</strong> P0 (Critical Path)</p>
+          <p><strong>Description:</strong> Automatic job posting expiration to keep listings fresh and drive renewal revenue</p>
+          <p><strong>Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Default TTL: 60 days from posting date</li>
+            <li>Cron job runs daily at 2 AM UTC to mark expired posts as "expired"</li>
+            <li>Expired posts: Hidden from search results, visible in school dashboard as "Expired"</li>
+            <li>Renewal reminders: Email sent 7 days before expiration, 1 day before expiration</li>
+            <li>One-click renewal: "Renew for $49" button in email and dashboard</li>
+            <li>Schools can manually mark as "Filled" before expiration (no refund)</li>
+            <li>Analytics: Track expiration rate, renewal rate</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>100% of posts automatically expire after 60 days</li>
+            <li>Renewal email open rate: 40%+</li>
+            <li>Renewal conversion: 30%+ of expired posts get renewed</li>
+          </ul>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR16: Discord Integration</h5>
           <p><strong>Priority:</strong> P2 (Nice to Have)</p>
           <p><strong>Description:</strong> Embed Discord widget on site so users stay on website</p>
           <p><strong>Detailed Requirements:</strong></p>
