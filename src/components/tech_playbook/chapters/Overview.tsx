@@ -17,12 +17,15 @@ export default function Overview() {
         </p>
       </InfoBox>
 
-      <Section id="stage1-traffic" title="Stage 1: Traffic Acquisition (Months 1-6)">
+      <Section id="stage1-traffic" title="Stage 1: Traffic Acquisition (Months 1-3)">
         <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
           <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
           <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
             <strong>Solve the chicken-and-egg problem by aggregating jobs from existing platforms.</strong> Have thousands of jobs from day 1
             WITHOUT needing schools to post directly. Build teacher traffic FIRST before monetizing. Revenue = $0 in this stage.
+          </p>
+          <p style={{ fontSize: '0.85em', marginTop: '10px', color: '#92400e' }}>
+            <strong>Tier:</strong> A-Tier (Basic Utility) - Must-have features to launch
           </p>
         </div>
 
@@ -79,13 +82,11 @@ export default function Overview() {
           </ul>
           <p><strong>Acceptance Criteria:</strong></p>
           <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
-            <li>150-200 active jobs by Month 1 (scraping Dave's ESL + SeriousTeachers)</li>
-            <li>300-500 active jobs by Month 6 (scraping 5 platforms + some direct postings from Stage 2)</li>
-            <li>500-1,000 jobs cumulative in database (includes expired listings for historical data)</li>
+            <li>150-200 active jobs by Week 2 (scraping Dave's ESL + SeriousTeachers)</li>
+            <li>300-500 active jobs by Month 3 (scraping 5 platforms)</li>
             <li>Daily updates, listings marked as "expired" after 60 days</li>
             <li>100% of jobs have valid source URLs</li>
           </ul>
-          <p><strong>Build Time:</strong> 2 weeks (Mojo)</p>
           <p><strong>Evidence:</strong> Oct 2025 scraping data: Dave's ESL 47 jobs, SeriousTeachers 10 jobs. Total ESL market ~150-300 active listings at any snapshot. Indeed (2004-2007) aggregated all available jobs, built 25M+ monthly visitors before monetizing</p>
         </div>
 
@@ -109,68 +110,39 @@ export default function Overview() {
             <li>60%+ of users find relevant job in first search (track click-through rate)</li>
             <li>Mobile traffic accounts for 50%+ of total (responsive design working)</li>
           </ul>
-          <p><strong>Build Time:</strong> 1 week (Mojo)</p>
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
           <h5>FR3: Contact/Apply Links (A.3)</h5>
           <p><strong>Priority:</strong> P0 (Critical Path)</p>
           <p><strong>Description:</strong> Job detail page with apply button redirecting to source platform</p>
-          <p><strong>Detailed Requirements:</strong></p>
-          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
-            <li>Job detail page displays: title, location, salary, requirements, benefits, full description</li>
-            <li>Show source platform with logo and link: "Originally posted on Dave's ESL Cafe [View Original]"</li>
-            <li>Show posting date and last updated timestamp</li>
-            <li>"Apply Now" button redirects to source URL (opens in new tab)</li>
-            <li>Track click-throughs (analytics) for later ROI proof to schools</li>
-          </ul>
           <p><strong>Acceptance Criteria:</strong></p>
           <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
             <li>100% of jobs have functional apply links (no 404 errors)</li>
             <li>10%+ of job views result in click-throughs to source platform</li>
           </ul>
-          <p><strong>Build Time:</strong> 3 days (Mojo)</p>
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
           <h5>FR4: Email Capture & Weekly Alerts</h5>
           <p><strong>Priority:</strong> P1 (High)</p>
           <p><strong>Description:</strong> "Get new jobs weekly" signup form for email marketing</p>
-          <p><strong>Detailed Requirements:</strong></p>
-          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
-            <li>Signup form: Email + preferred location (city/country dropdown)</li>
-            <li>SendGrid or AWS SES integration for email delivery</li>
-            <li>Weekly digest: Top 10 new jobs matching teacher's location preference</li>
-            <li>Unsubscribe link in every email (CAN-SPAM compliance)</li>
-            <li>Track open rates, click rates for optimization</li>
-          </ul>
           <p><strong>Acceptance Criteria:</strong></p>
           <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
-            <li>100+ email signups by Month 1</li>
-            <li>5,000+ email subscribers by Month 6</li>
+            <li>500+ email subscribers by Month 3</li>
             <li>20%+ open rate, 5%+ click-through rate</li>
           </ul>
-          <p><strong>Build Time:</strong> 2 days (Mojo)</p>
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
           <h5>FR5: Discord Community</h5>
           <p><strong>Priority:</strong> P1 (High)</p>
           <p><strong>Description:</strong> Link to Discord server for community discussion (better than Dave's ghost town forum)</p>
-          <p><strong>Detailed Requirements:</strong></p>
-          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
-            <li>Create Discord server with channels: #job-search, #school-verification, #visa-help, #city-guides (Beijing, Shanghai, etc.)</li>
-            <li>Add Discord link to website header: "Join our community - verify schools, ask questions"</li>
-            <li>Pete moderates, answers questions, seeds discussion</li>
-            <li>Zero dev time - use existing Discord infrastructure</li>
-          </ul>
           <p><strong>Acceptance Criteria:</strong></p>
           <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
-            <li>50+ Discord members by Month 2</li>
-            <li>500+ members by Month 6</li>
+            <li>100+ Discord members by Month 3</li>
             <li>10+ messages/day (active community vs Dave's ghost town)</li>
           </ul>
-          <p><strong>Build Time:</strong> 0 days (free, Pete sets up)</p>
           <p><strong>Evidence:</strong> Discord has 500M+ users. Crypto projects, gaming communities, SaaS use Discord vs building custom forums. Zero dev time, instant moderation tools</p>
         </div>
 
@@ -346,28 +318,22 @@ export default function Overview() {
         <h4 style={{ marginTop: '25px' }}>Success Criteria</h4>
         <div style={{ padding: '15px', backgroundColor: '#dcfce7', border: '1px solid #16a34a', borderRadius: '6px', marginTop: '10px' }}>
           <p><strong>North Star Metric:</strong> Monthly Active Teachers (MAU) - demonstrates product-market fit before monetizing</p>
-          <p style={{ marginTop: '15px' }}><strong>Target Metrics (Month 6):</strong></p>
+          <p style={{ marginTop: '15px' }}><strong>Target Metrics (Month 3):</strong></p>
           <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
             <li>Jobs aggregated: 300-500 active listings (all major ESL platforms scraped)</li>
-            <li>Monthly Active Teachers: 1,000-3,000 MAU (target 1% of Dave's ESL's 350K monthly views)</li>
-            <li>Discord community: 100-200 members (active community beats Dave's ghost town)</li>
-            <li>Email subscribers: 500-1,000</li>
-            <li>Avg time on site: 5+ minutes (vs Dave's ESL ~3 min)</li>
-            <li>Mobile traffic: 60%+ (responsive design working)</li>
+            <li>Monthly Active Teachers: 500-1,500 MAU (demonstrates traction)</li>
+            <li>Discord community: 100+ members</li>
+            <li>Email subscribers: 500+</li>
           </ul>
 
           <p style={{ marginTop: '15px' }}><strong>Go/No-Go Decision (End of Month 3):</strong></p>
           <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
-            <li>✓ 200+ active jobs live on platform (Dave's ESL + SeriousTeachers minimum)</li>
+            <li>✓ 300+ active jobs live on platform</li>
             <li>✓ 500+ MAU (demonstrates teachers find value)</li>
-            <li>✓ 100+ email signups OR 50+ Discord members (early community forming)</li>
-            <li><strong>If YES:</strong> Proceed to Stage 2 (add A.4 Direct Posting)</li>
-            <li><strong>If NO:</strong> Diagnose issue (SEO? Value prop? Wrong channels?) before building more features</li>
+            <li>✓ 100+ email signups OR 50+ Discord members</li>
+            <li><strong>If YES:</strong> Proceed to Stage 2 (monetization)</li>
+            <li><strong>If NO:</strong> Diagnose issue before building more features</li>
           </ul>
-
-          <p style={{ marginTop: '15px', fontSize: '0.85em', fontStyle: 'italic', color: '#065f46' }}>
-            <strong>Evidence:</strong> Dave's ESL has 350K monthly views with 47 active jobs. We target 1% of their traffic (3.5K MAU) by Month 6 with better UX. Conservative estimate based on actual market size, not fantasy.
-          </p>
         </div>
 
         <h4 style={{ marginTop: '25px' }}>Out of Scope (Stage 1)</h4>
@@ -388,37 +354,39 @@ export default function Overview() {
         </ul>
       </Section>
 
-      <Section id="stage2-monetization" title="Stage 2: Monetization Foundation (Months 7-12)">
+      <Section id="stage2-monetization" title="Stage 2: Monetization Foundation (Months 4-6)">
         <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
           <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
           <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
-            <strong>Enable schools to post jobs directly on our platform and start generating revenue.</strong> Leverage the 10,000+ teacher audience
-            built in Stage 1 as proof of value. Revenue target: $5,000/month by Month 12.
+            <strong>Enable schools to post jobs directly on our platform and start generating revenue.</strong> Leverage the teacher audience
+            built in Stage 1 as proof of value. Revenue target: $2,500/month by Month 6.
+          </p>
+          <p style={{ fontSize: '0.85em', marginTop: '10px', color: '#92400e' }}>
+            <strong>Tier:</strong> A-Tier (Basic Utility) - Must-have features to monetize
           </p>
         </div>
 
         <h4>Problem Statement</h4>
         <p style={{ marginLeft: '20px', fontSize: '0.95em' }}>
           We have teacher traffic but zero revenue. Schools are paying $75/post on Dave's ESL for 1995-era UX. We need to enable direct posting
-          at competitive pricing ($49/post) while providing superior UX and targeting capabilities.
+          at competitive pricing ($49/post) while providing superior UX.
         </p>
 
         <h4>Target Users</h4>
         <div style={{ padding: '15px', backgroundColor: '#f0fff4', border: '1px solid #68d391', borderRadius: '6px', marginTop: '10px' }}>
-          <h5>Mr. Wang (王老师) - Training Center Director (Primary Persona)</h5>
-          <p><strong>Background:</strong> 42 years old, runs medium-sized training center in Shenzhen (150 students), needs 3-5 foreign teachers per semester, 8 years operating legally</p>
+          <h5>Schools & Training Centers (Primary Persona)</h5>
+          <p><strong>Background:</strong> Training centers and international schools in China that need 3-10 foreign teachers per year</p>
 
           <p style={{ marginTop: '15px' }}><strong>Pain Points:</strong></p>
           <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
             <li>Dave's ESL charges $75/post with 1995-era UX - expensive for questionable ROI</li>
-            <li>Applicants are low quality - many don't have proper visas, unqualified</li>
-            <li>Can't showcase school legitimacy - compete with scam schools on same platform</li>
-            <li>No applicant management tools - just emails into void</li>
+            <li>Low quality applicants - many unqualified or visa issues</li>
+            <li>Can't showcase school legitimacy</li>
+            <li>No applicant management tools</li>
           </ul>
 
           <p style={{ marginTop: '15px', fontStyle: 'italic', fontSize: '0.9em' }}>
-            <strong>What Mr. Wang Needs:</strong> Cheaper posting ($49 vs $75), access to 10,000+ qualified teachers, basic account dashboard
-            to manage postings, proof that platform drives real applicants.
+            <strong>Needs:</strong> Cheaper posting ($49 vs $75), access to qualified teachers, dashboard to manage postings.
           </p>
         </div>
 
@@ -737,12 +705,15 @@ export default function Overview() {
         </ul>
       </Section>
 
-      <Section id="stage3-trust" title="Stage 3: Trust Infrastructure (Months 13-18)">
+      <Section id="stage3-trust" title="Stage 3: Trust Infrastructure (Months 7-12)">
         <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
           <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
           <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
             <strong>Build trust through automated school verification to solve Pain Points #1 and #5.</strong> Leverage banking APIs and government data to verify schools
-            WITHOUT manual labor. Differentiate from Dave's ESL with verified badges. Revenue target: $37,000/month.
+            WITHOUT manual labor. Differentiate from Dave's ESL with verified badges.
+          </p>
+          <p style={{ fontSize: '0.85em', marginTop: '10px', color: '#92400e' }}>
+            <strong>Tier:</strong> B-Tier (Differentiators) - School verification sets us apart from competitors
           </p>
         </div>
 
@@ -912,12 +883,15 @@ export default function Overview() {
         </ul>
       </Section>
 
-      <Section id="stage4-community" title="Stage 4: Reviews & Community (Months 19-24)">
+      <Section id="stage4-community" title="Stage 4: Reviews & Community (Year 2)">
         <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
           <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
           <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
             <strong>Add peer reviews to deepen trust beyond verification badges.</strong> Enable teachers to review schools they've worked at.
-            Build network effects through community contributions. Establish MOAT against Dave's ESL (which has ghost town forum).
+            Build network effects through community contributions.
+          </p>
+          <p style={{ fontSize: '0.85em', marginTop: '10px', color: '#92400e' }}>
+            <strong>Tier:</strong> B-Tier (Differentiators) - Reviews and community content create moat
           </p>
         </div>
 
@@ -1023,12 +997,14 @@ export default function Overview() {
         </ul>
       </Section>
 
-      <Section id="stage5-discovery" title="Stage 5: Advanced Search & Discovery (Months 25-30)">
+      <Section id="stage5-discovery" title="Stage 5: Advanced Search & Discovery (Year 2-3)">
         <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
           <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
           <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
             <strong>Improve job discovery with advanced search, map view, saved searches.</strong> Solve Pain Point #8 (Job Search Friction).
-            Reduce time-to-find-job from hours to minutes. Increase engagement and retention.
+          </p>
+          <p style={{ fontSize: '0.85em', marginTop: '10px', color: '#92400e' }}>
+            <strong>Tier:</strong> B-Tier (Differentiators) - Advanced search improves retention
           </p>
         </div>
 
@@ -1120,12 +1096,15 @@ export default function Overview() {
         </div>
       </Section>
 
-      <Section id="stage6-tracking" title="Stage 6: Application Tracking (Months 31-36)">
+      <Section id="stage6-tracking" title="Stage 6: Application Tracking (Year 3)">
         <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
           <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
           <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
             <strong>Enable in-platform applications so teachers apply ON our site instead of redirecting to schools.</strong>
-            Capture conversion data (application → hire) to prove ROI to schools. Increase pricing power.
+            Capture conversion data to prove ROI to schools.
+          </p>
+          <p style={{ fontSize: '0.85em', marginTop: '10px', color: '#92400e' }}>
+            <strong>Tier:</strong> B-Tier (Differentiators) - Application tracking increases platform stickiness
           </p>
         </div>
 
@@ -1173,12 +1152,14 @@ export default function Overview() {
         </div>
       </Section>
 
-      <Section id="stage7-ai" title="Stage 7: AI Protection (Year 3)">
+      <Section id="stage7-ai" title="Stage 7: AI Protection (Year 3-4)">
         <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
           <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
           <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
             <strong>Use AI to detect scam job postings and analyze teacher contracts.</strong> Solve Pain Points #1 (Scams) and #2 (Contract Terms) at scale.
-            Differentiate with AI-powered protection that Dave's ESL can never build.
+          </p>
+          <p style={{ fontSize: '0.85em', marginTop: '10px', color: '#92400e' }}>
+            <strong>Tier:</strong> C-Tier (Excitement) - AI features create wow factor and PR opportunities
           </p>
         </div>
 
@@ -1242,12 +1223,15 @@ export default function Overview() {
         </div>
       </Section>
 
-      <Section id="stage8-moat" title="Stage 8: Moat Features (Year 3-4)">
+      <Section id="stage8-moat" title="Stage 8: Moat Features (Year 4+)">
         <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
           <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
           <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
             <strong>Build competitive moat with features competitors can't replicate.</strong> Advanced badge system (C.8), weekly teacher meetups (C.6),
-            escrow/EOR service (C.7). Create switching costs and lock-in effects.
+            escrow/EOR service (C.7).
+          </p>
+          <p style={{ fontSize: '0.85em', marginTop: '10px', color: '#92400e' }}>
+            <strong>Tier:</strong> C-Tier/D-Tier (Excitement/Transformative) - Badge gamification, meetups, escrow create unfair advantage
           </p>
         </div>
 
