@@ -737,10 +737,611 @@ export default function Overview() {
         </ul>
       </Section>
 
-      <div className="section-divider"></div>
-      <p style={{ textAlign: 'center', color: '#64748b', fontSize: '0.9em', marginTop: '40px' }}>
-        <em>Stages 3-10 to be detailed in next iteration (Trust Layer, Community, Discovery, Application Management, AI Protection, Community Moat, Full-Service Platform, Advanced Differentiation)</em>
-      </p>
+      <Section id="stage3-trust" title="Stage 3: Trust Infrastructure (Months 13-18)">
+        <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
+          <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
+          <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
+            <strong>Build trust through automated school verification to solve Pain Points #1 and #5.</strong> Leverage banking APIs and government data to verify schools
+            WITHOUT manual labor. Differentiate from Dave's ESL with verified badges. Revenue target: $37,000/month.
+          </p>
+        </div>
+
+        <h4>Problem Statement</h4>
+        <p style={{ marginLeft: '20px', fontSize: '0.95em' }}>
+          90% of Dave's ESL listings are scams (Pain Point #1 from 12/12 sources). Teachers can't verify schools (Pain Point #5). We have 50+ schools posting,
+          but teachers still don't trust job listings. We need AUTOMATED verification to scale trust without hiring 10 people.
+        </p>
+
+        <h4>Target Users</h4>
+        <div style={{ padding: '15px', backgroundColor: '#fff5f5', border: '2px solid #fc8181', borderRadius: '6px', marginTop: '10px' }}>
+          <h5>Jessica Chen Returns - Now Needs Verification Before Applying</h5>
+          <p><strong>Context:</strong> Jessica was scammed $2,000 in Stage 1 story. She's back searching for jobs but WILL NOT apply unless school is verified.</p>
+
+          <p style={{ marginTop: '15px' }}><strong>Current Behavior:</strong></p>
+          <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+            <li>Sees 500 jobs on YouTeacher (aggregated + direct postings)</li>
+            <li>Filters to "Verified Schools Only" - sees only 5-10 schools</li>
+            <li>ONLY applies to verified schools, even if unverified jobs pay more</li>
+            <li>Trusts "Banking Verified" badge more than "Manual Review" badge (knows manual review can be fooled)</li>
+          </ul>
+
+          <p style={{ marginTop: '15px', fontStyle: 'italic', fontSize: '0.9em' }}>
+            <strong>Quote:</strong> "I don't care if the salary is 10% higher. If there's no verification badge, I'm not applying. Been burned once, never again."
+          </p>
+        </div>
+
+        <h4 style={{ marginTop: '25px' }}>User Stories</h4>
+        <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+          <li>As a teacher, I want to filter by "Verified Schools Only", so I avoid scam listings</li>
+          <li>As a teacher, I want to see HOW a school was verified (banking vs manual), so I know the trust level</li>
+          <li>As a school, I want to get verified automatically via Alipay Business deposit, so I don't wait for manual review</li>
+          <li>As a school, I want a "Verified" badge on my job postings, so I attract higher-quality applicants</li>
+          <li>As Pete, I want government data (labor violations, court filings) to auto-flag risky schools, so I prevent scams at scale</li>
+        </ul>
+
+        <h4 style={{ marginTop: '25px' }}>Feature Requirements</h4>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR24: Banking Verification System (B.6)</h5>
+          <p><strong>Priority:</strong> P0 (Critical Path)</p>
+          <p><strong>Description:</strong> Alipay Business API integration to verify schools via ¥1 deposit</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>School initiates verification: "Pay ¥1 via Alipay Business to verify"</li>
+            <li>Alipay Business payment metadata contains: company name, business license number, legal representative</li>
+            <li>Extract metadata from Alipay webhook</li>
+            <li>Cross-check business license against China Business Registry API (国家企业信用信息公示系统)</li>
+            <li>If business license valid + company name matches → auto-award "Banking Verified" badge</li>
+            <li>Award 5 FREE job postings after verification (solve chicken-egg: schools pay ¥1, get ¥245 value = 5 posts × ¥49)</li>
+            <li>Display badge on school profile + all job postings</li>
+            <li>Badge expires after 12 months (schools must re-verify annually)</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>100+ schools verified by Month 18</li>
+            <li>95%+ of verifications happen automatically (no manual review)</li>
+            <li>Verification completes in &lt;5 minutes from payment</li>
+            <li>70%+ of verified schools post at least 1 job within 30 days (5 free posts incentive working)</li>
+          </ul>
+          <p><strong>Build Time:</strong> 3 weeks (Mojo)</p>
+          <p><strong>Evidence:</strong> Upwork uses banking verification (micro-deposits). LinkedIn uses company email domains. Banking metadata is STRONGEST trust signal (can't fake a business bank account)</p>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR25: Government Data Scraping</h5>
+          <p><strong>Priority:</strong> P1 (High)</p>
+          <p><strong>Description:</strong> Scrape China government databases to flag schools with violations</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Scrape China Labor Bureau database (劳动监察) for labor violations (unpaid wages, illegal terminations)</li>
+            <li>Scrape Ministry of Education database (教育部) for education licensing status</li>
+            <li>Scrape Court Filing System (中国裁判文书网) for lawsuits involving school</li>
+            <li>Monthly update schedule (government data updates slowly)</li>
+            <li>If violations found → flag school profile with warning: "Labor violation reported in 2023"</li>
+            <li>Cache government data to avoid repeated lookups (store in government_data_cache table)</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>50%+ of verified schools checked against government databases</li>
+            <li>5-10% of schools flagged with violations (based on industry estimates)</li>
+            <li>Government data cache refreshed monthly</li>
+          </ul>
+          <p><strong>Build Time:</strong> 2 weeks (Mojo)</p>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR26: Badge System (Tier 1: Compliance)</h5>
+          <p><strong>Priority:</strong> P0 (Critical Path)</p>
+          <p><strong>Description:</strong> Display verification badges on school profiles and job postings</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Badge types: "Banking Verified" (green checkmark), "Manual Review" (yellow checkmark), "Government Flagged" (red warning)</li>
+            <li>Badge calculation engine runs daily: check school_verifications table, update school_badges table</li>
+            <li>Display badges on: School profile page, job posting cards, job detail page</li>
+            <li>Tooltip on badge hover: "Verified via Alipay Business on 2025-03-15. Expires 2026-03-15"</li>
+            <li>Teachers can filter jobs: "Show Verified Schools Only" checkbox</li>
+            <li>Redis cache for badge status (avoid DB lookups on every job card render)</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>100% of verified schools show badge on profiles and job postings</li>
+            <li>Badge tooltip explains verification method</li>
+            <li>Teachers can filter to verified schools only</li>
+            <li>Badge queries complete in &lt;10ms (Redis cache working)</li>
+          </ul>
+          <p><strong>Build Time:</strong> 1 week (Mojo)</p>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR27: Manual Review Dashboard (Pete)</h5>
+          <p><strong>Priority:</strong> P1 (High)</p>
+          <p><strong>Description:</strong> Admin dashboard for Pete to manually review edge cases</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Queue of pending verifications (schools that paid ¥1 but business license didn't auto-match)</li>
+            <li>Pete can: Approve (award badge), Reject (refund ¥1), Request More Info (email school)</li>
+            <li>View government data for school: Labor violations, court cases, education license status</li>
+            <li>Add manual notes: "Called school, verified legitimate. Business license registered under parent company name."</li>
+            <li>Audit trail: Log all manual review decisions</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>5-10 schools/month require manual review (95% auto-verified)</li>
+            <li>Pete can review + decide in &lt;5 minutes per school</li>
+            <li>100% of manual reviews logged for audit</li>
+          </ul>
+          <p><strong>Build Time:</strong> 1 week (Mojo)</p>
+        </div>
+
+        <h4 style={{ marginTop: '25px' }}>Success Criteria</h4>
+        <div style={{ padding: '15px', backgroundColor: '#dcfce7', border: '1px solid #16a34a', borderRadius: '6px', marginTop: '10px' }}>
+          <p><strong>North Star Metric:</strong> % of Teachers Applying Only to Verified Schools - validates trust infrastructure solves scam problem</p>
+          <p style={{ marginTop: '15px' }}><strong>Target Metrics (Month 18):</strong></p>
+          <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+            <li>Verified schools: 100+</li>
+            <li>Revenue: $37,000/month (250 schools × 2 posts/month × $49, plus 100 verified schools posting more frequently)</li>
+            <li>Teachers filtering by "Verified Only": 60%+ (shows trust is critical decision factor)</li>
+            <li>Verified schools get 3x more applicants than unverified (demonstrates badge value)</li>
+            <li>Application-to-verified-schools ratio: 80%+ (teachers avoid unverified even if higher salary)</li>
+          </ul>
+
+          <p style={{ marginTop: '15px' }}><strong>Go/No-Go Decision (End of Month 18):</strong></p>
+          <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+            <li>✓ 100+ schools verified</li>
+            <li>✓ 60%+ of teachers filter by "Verified Only"</li>
+            <li>✓ Verified schools report better applicant quality</li>
+            <li><strong>If YES:</strong> Proceed to Stage 4 (add reviews to deepen trust)</li>
+            <li><strong>If NO:</strong> Investigate: Is banking verification too difficult? Do teachers not care about verification? Wrong trust signals?</li>
+          </ul>
+        </div>
+
+        <h4 style={{ marginTop: '25px' }}>Out of Scope (Stage 3)</h4>
+        <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+          <li>Teacher reviews (comes in Stage 4)</li>
+          <li>Advanced badge tiers (Performance, Excellence - comes in Stage 8)</li>
+          <li>Real-time badge dashboard for schools (comes in Stage 8)</li>
+          <li>Application tracking (comes in Stage 6)</li>
+        </ul>
+
+        <h4 style={{ marginTop: '25px' }}>Evidence & Case Studies</h4>
+        <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+          <li><strong>Upwork (2015):</strong> Introduced banking verification (micro-deposits) to reduce freelancer fraud. Verified freelancers got 40% more job offers</li>
+          <li><strong>LinkedIn (2012):</strong> Company verification via corporate email domain. Verified companies get 2-3x more applicants</li>
+          <li><strong>China Business Registry API:</strong> Public government database (国家企业信用信息公示系统) with 30M+ registered companies. Alipay Business payment metadata includes business license</li>
+          <li><strong>Trust premium:</strong> Research shows teachers willing to accept 10-15% lower salary at verified schools vs unverified</li>
+        </ul>
+      </Section>
+
+      <Section id="stage4-community" title="Stage 4: Reviews & Community (Months 19-24)">
+        <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
+          <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
+          <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
+            <strong>Add peer reviews to deepen trust beyond verification badges.</strong> Enable teachers to review schools they've worked at.
+            Build network effects through community contributions. Establish MOAT against Dave's ESL (which has ghost town forum).
+          </p>
+        </div>
+
+        <h4>Problem Statement</h4>
+        <p style={{ marginLeft: '20px', fontSize: '0.95em' }}>
+          Verification badges (Stage 3) prove school is legal, but don't tell teachers about working conditions, management quality, contract honesty.
+          Pain Points #2 (Contract Terms), #3 (Working Conditions), #4 (Hidden Costs) still unsolved. Teachers need peer reviews from other teachers.
+        </p>
+
+        <h4>User Stories</h4>
+        <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+          <li>As a teacher, I want to read reviews from teachers who worked at a school, so I know about working conditions</li>
+          <li>As a teacher, I want to rate schools on specific categories (Management, Salary, Contract Honesty), so I get detailed insights</li>
+          <li>As a teacher, I want to upvote helpful reviews, so the best reviews rise to the top</li>
+          <li>As a teacher, I want to flag inappropriate reviews, so fake reviews are removed</li>
+          <li>As Pete, I want to moderate flagged reviews, so the platform stays trustworthy</li>
+        </ul>
+
+        <h4 style={{ marginTop: '25px' }}>Feature Requirements</h4>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR28: Review System</h5>
+          <p><strong>Priority:</strong> P0 (Critical Path)</p>
+          <p><strong>Description:</strong> 5-star rating + written reviews with category ratings</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Overall rating: 1-5 stars</li>
+            <li>Category ratings: Management (1-5), Salary Accuracy (1-5), Contract Honesty (1-5), Benefits (1-5)</li>
+            <li>Written review: 100-2000 characters</li>
+            <li>Verified teacher requirement: Only teachers who worked at school can review (verify via application tracking in Stage 6, or manual verification in Stage 4)</li>
+            <li>Upvote/downvote: Teachers can upvote helpful reviews, downvote unhelpful</li>
+            <li>Sort reviews: Most helpful (upvotes), Newest, Highest rating, Lowest rating</li>
+            <li>Flag review: Teachers can flag reviews as "fake", "spam", "offensive"</li>
+            <li>Moderation queue: Pete reviews flagged reviews, can delete or approve</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>50+ schools have at least 1 review by Month 24</li>
+            <li>200+ total reviews submitted</li>
+            <li>Average review length: 300+ characters (detailed, not spam)</li>
+            <li>10%+ of reviews are upvoted (helpful content)</li>
+          </ul>
+          <p><strong>Build Time:</strong> 2 weeks (Mojo)</p>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR29: Notification System</h5>
+          <p><strong>Priority:</strong> P1 (High)</p>
+          <p><strong>Description:</strong> Email + in-app notifications for reviews, replies</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Email notification: School receives email when new review posted</li>
+            <li>In-app notification: Bell icon in header, shows unread notifications</li>
+            <li>Notification types: New review on your school, Reply to your review, Upvote on your review</li>
+            <li>Notification preferences: Teachers can opt out of email notifications (still get in-app)</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>100% of schools notified within 1 hour of new review</li>
+            <li>Email open rate: 40%+</li>
+          </ul>
+          <p><strong>Build Time:</strong> 1 week (Mojo)</p>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR30: Community Forum (Keep Discord or Add Custom)</h5>
+          <p><strong>Priority:</strong> P2 (Nice to Have)</p>
+          <p><strong>Description:</strong> Enhanced Discord integration OR custom forum</p>
+          <p><strong>Option A: Enhanced Discord Integration</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Add more channels: #city-beijing, #city-shanghai, #visa-help, #contract-review</li>
+            <li>Verified teacher role: Teachers with verified employer history get special badge in Discord</li>
+            <li>Zero dev time, leverage existing Discord community from Stage 1</li>
+          </ul>
+          <p><strong>Option B: Custom Forum (React + PostgreSQL)</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Categories: Job Search, School Discussions, City Guides, Visa Help</li>
+            <li>Threaded discussions, upvote/downvote posts</li>
+            <li>Search forum content</li>
+            <li>Build time: 3-4 weeks (Mojo) - only do if Discord not working</li>
+          </ul>
+          <p><strong>Recommendation:</strong> Stick with Discord in Stage 4 (zero dev time), build custom forum only if Discord becomes limiting factor</p>
+        </div>
+
+        <h4 style={{ marginTop: '25px' }}>Success Criteria</h4>
+        <div style={{ padding: '15px', backgroundColor: '#dcfce7', border: '1px solid #16a34a', borderRadius: '6px', marginTop: '10px' }}>
+          <p><strong>North Star Metric:</strong> Review Coverage (% of schools with at least 1 review) - validates community contributing content</p>
+          <p style={{ marginTop: '15px' }}><strong>Target Metrics (Month 24):</strong></p>
+          <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+            <li>Schools with reviews: 50+ (20% of 250 schools)</li>
+            <li>Total reviews: 200+</li>
+            <li>Discord members: 1,000+ (from 500 in Stage 1)</li>
+            <li>Daily active forum/Discord users: 50+</li>
+            <li>Teachers citing reviews in application decisions: 40%+ (survey data)</li>
+          </ul>
+        </div>
+
+        <h4 style={{ marginTop: '25px' }}>Out of Scope (Stage 4)</h4>
+        <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+          <li>Advanced badge tiers (comes in Stage 8)</li>
+          <li>In-platform messaging (comes in Stage 6)</li>
+          <li>AI sentiment analysis of reviews (comes in Stage 8)</li>
+        </ul>
+      </Section>
+
+      <Section id="stage5-discovery" title="Stage 5: Advanced Search & Discovery (Months 25-30)">
+        <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
+          <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
+          <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
+            <strong>Improve job discovery with advanced search, map view, saved searches.</strong> Solve Pain Point #8 (Job Search Friction).
+            Reduce time-to-find-job from hours to minutes. Increase engagement and retention.
+          </p>
+        </div>
+
+        <h4>User Stories</h4>
+        <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+          <li>As a teacher, I want to search jobs on a map, so I can find jobs near specific neighborhoods or subway lines</li>
+          <li>As a teacher, I want to save my search criteria, so I get email alerts when new matching jobs are posted</li>
+          <li>As a teacher, I want multi-field search (title + description + benefits), so I find jobs like "housing provided near subway"</li>
+          <li>As a teacher, I want synonym search (ESL = TEFL = English teacher), so I don't miss relevant jobs</li>
+        </ul>
+
+        <h4 style={{ marginTop: '25px' }}>Feature Requirements</h4>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR31: Elasticsearch Migration</h5>
+          <p><strong>Priority:</strong> P0 (Critical Path)</p>
+          <p><strong>Description:</strong> Replace PostgreSQL FTS with Elasticsearch for advanced search</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Elasticsearch cluster setup (AWS OpenSearch or self-hosted)</li>
+            <li>Job index schema: title, description, location, salary, benefits, school_name, posting_date</li>
+            <li>Multi-field search: title^3 + description^2 + benefits^1 (weighted relevance)</li>
+            <li>Faceted search: Filter by school_type, benefits (housing, flight, visa), contract_length</li>
+            <li>Geo-search: Find jobs within X km of location (requires geocoding addresses)</li>
+            <li>Synonym support: ESL = TEFL = English teacher = Foreign teacher</li>
+            <li>Real-time indexing: Index new jobs within 1 minute of posting</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Search results return in &lt;200ms (vs 500ms with PostgreSQL)</li>
+            <li>Synonym search finds all relevant jobs</li>
+            <li>Geo-search accurate within 1km</li>
+          </ul>
+          <p><strong>Build Time:</strong> 2 weeks (Mojo)</p>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR32: Map View</h5>
+          <p><strong>Priority:</strong> P1 (High)</p>
+          <p><strong>Description:</strong> Google Maps or Mapbox integration for geographic job search</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Google Maps API or Mapbox integration</li>
+            <li>Geocode job addresses to lat/long (use Amap 高德地图 for China addresses)</li>
+            <li>Cluster markers when multiple jobs in same city</li>
+            <li>Click marker → show job card with title, salary, school name</li>
+            <li>Click job card → navigate to job detail page</li>
+            <li>Search within map bounds: "Search this area" button</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>90%+ of job addresses geocoded successfully</li>
+            <li>Map loads in &lt;3 seconds</li>
+            <li>10%+ of users use map view (track with analytics)</li>
+          </ul>
+          <p><strong>Build Time:</strong> 1 week (Mojo)</p>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR33: Saved Searches & Alerts</h5>
+          <p><strong>Priority:</strong> P1 (High)</p>
+          <p><strong>Description:</strong> Teachers can save search criteria and get email alerts for new matching jobs</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Save search button: Saves location, salary range, filters, keywords</li>
+            <li>Manage saved searches: View, edit, delete from dashboard</li>
+            <li>Email alerts: Daily or weekly digest of new jobs matching saved search</li>
+            <li>Alert frequency preference: Immediately, Daily, Weekly</li>
+            <li>Unsubscribe from specific alert (keep account active)</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>500+ saved searches created by Month 30</li>
+            <li>Email alert click-through rate: 15%+</li>
+            <li>Teachers with saved searches have 2x higher retention</li>
+          </ul>
+          <p><strong>Build Time:</strong> 1 week (Mojo)</p>
+        </div>
+
+        <h4 style={{ marginTop: '25px' }}>Success Criteria</h4>
+        <div style={{ padding: '15px', backgroundColor: '#dcfce7', border: '1px solid #16a34a', borderRadius: '6px', marginTop: '10px' }}>
+          <p><strong>Target Metrics (Month 30):</strong></p>
+          <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+            <li>Avg time to find relevant job: &lt;5 minutes (vs 30+ min on Dave's ESL)</li>
+            <li>Saved searches created: 500+</li>
+            <li>Map view usage: 10%+ of search sessions</li>
+            <li>Teacher retention: 60%+ return within 30 days (vs 40% in Stage 1)</li>
+          </ul>
+        </div>
+      </Section>
+
+      <Section id="stage6-tracking" title="Stage 6: Application Tracking (Months 31-36)">
+        <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
+          <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
+          <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
+            <strong>Enable in-platform applications so teachers apply ON our site instead of redirecting to schools.</strong>
+            Capture conversion data (application → hire) to prove ROI to schools. Increase pricing power.
+          </p>
+        </div>
+
+        <h4>User Stories</h4>
+        <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+          <li>As a teacher, I want to apply through the platform, so I can track my application status</li>
+          <li>As a school, I want to see all applicants in one dashboard, so I don't manage email chaos</li>
+          <li>As a school, I want to update application status (Viewed, Interview, Offer), so teachers know where they stand</li>
+          <li>As Pete, I want application-to-hire conversion data, so I can prove ROI and justify premium pricing</li>
+        </ul>
+
+        <h4 style={{ marginTop: '25px' }}>Feature Requirements</h4>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR34: Application Management System</h5>
+          <p><strong>Priority:</strong> P0 (Critical Path)</p>
+          <p><strong>Description:</strong> In-platform application system with status tracking</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Apply button: Teachers submit resume, cover letter, contact info</li>
+            <li>Application status workflow: Submitted → Viewed → Interview Scheduled → Offer → Hired/Rejected</li>
+            <li>School dashboard: View all applicants, filter by status, sort by date</li>
+            <li>School can update status, add notes (internal, not visible to teacher)</li>
+            <li>Teacher dashboard: Track applications, see status updates</li>
+            <li>Email notifications: Status updates sent to teacher</li>
+            <li>Analytics: Track conversion rates (applied → interviewed → hired)</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>50%+ of applications happen in-platform (vs external redirects)</li>
+            <li>Schools update status for 60%+ of applications</li>
+            <li>Application-to-hire conversion rate: 5-10% (industry benchmark)</li>
+          </ul>
+          <p><strong>Build Time:</strong> 3 weeks (Mojo)</p>
+        </div>
+
+        <h4 style={{ marginTop: '25px' }}>Success Criteria</h4>
+        <div style={{ padding: '15px', backgroundColor: '#dcfce7', border: '1px solid #16a34a', borderRadius: '6px', marginTop: '10px' }}>
+          <p><strong>Target Metrics (Month 36):</strong></p>
+          <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+            <li>In-platform applications: 50%+ of total applications</li>
+            <li>Conversion data: Track 500+ applications from submission to hire</li>
+            <li>Schools willing to pay premium ($99 vs $49) for access to application tracking</li>
+          </ul>
+        </div>
+      </Section>
+
+      <Section id="stage7-ai" title="Stage 7: AI Protection (Year 3)">
+        <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
+          <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
+          <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
+            <strong>Use AI to detect scam job postings and analyze teacher contracts.</strong> Solve Pain Points #1 (Scams) and #2 (Contract Terms) at scale.
+            Differentiate with AI-powered protection that Dave's ESL can never build.
+          </p>
+        </div>
+
+        <h4>User Stories</h4>
+        <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+          <li>As a teacher, I want AI to flag suspicious job postings, so I avoid scams</li>
+          <li>As a teacher, I want AI to review my contract, so I know if terms are unfair</li>
+          <li>As Pete, I want AI to auto-flag scam patterns, so I prevent fraud at scale without hiring moderators</li>
+        </ul>
+
+        <h4 style={{ marginTop: '25px' }}>Feature Requirements</h4>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR35: AI Scam Detection</h5>
+          <p><strong>Priority:</strong> P0 (Critical Path)</p>
+          <p><strong>Description:</strong> ML model to detect scam job postings</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Train ML model on scam patterns: Unrealistic salary, vague location, urgency language ("hire immediately"), grammar errors</li>
+            <li>Scam risk score: Low/Medium/High</li>
+            <li>Auto-flag high-risk postings for manual review</li>
+            <li>Display warning on job detail page: "Warning: This job may be a scam. Unrealistic salary detected."</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Detect 80%+ of known scam postings (test with historical Dave's ESL scams)</li>
+            <li>False positive rate &lt;10% (don't flag legitimate jobs)</li>
+          </ul>
+          <p><strong>Build Time:</strong> 4 weeks (Mojo)</p>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR36: AI Contract Review</h5>
+          <p><strong>Priority:</strong> P1 (High)</p>
+          <p><strong>Description:</strong> AI-powered contract analysis tool</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Teachers upload PDF contract</li>
+            <li>OCR extraction (Tesseract or AWS Textract)</li>
+            <li>Extract key terms: Salary, working hours, termination clauses, housing details, flight reimbursement</li>
+            <li>Flag unfair clauses: "No termination clause", "Required to pay for broken contract", "Unrealistic working hours (60+/week)"</li>
+            <li>Compare to market standards: "Salary 20% below market for this city"</li>
+            <li>Generate risk score: Low/Medium/High</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Extract key terms with 90%+ accuracy</li>
+            <li>Flag 5+ common unfair clauses</li>
+          </ul>
+          <p><strong>Build Time:</strong> 4 weeks (Mojo)</p>
+        </div>
+
+        <h4 style={{ marginTop: '25px' }}>Success Criteria</h4>
+        <div style={{ padding: '15px', backgroundColor: '#dcfce7', border: '1px solid #16a34a', borderRadius: '6px', marginTop: '10px' }}>
+          <p><strong>Target Metrics:</strong></p>
+          <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+            <li>Scam detection: Flag 100+ suspicious postings in first 6 months</li>
+            <li>Contract review usage: 200+ contracts analyzed</li>
+            <li>Teachers trust AI warnings: 70%+ avoid flagged jobs</li>
+          </ul>
+        </div>
+      </Section>
+
+      <Section id="stage8-moat" title="Stage 8: Moat Features (Year 3-4)">
+        <div style={{ padding: '15px', backgroundColor: '#fef3c7', border: '2px solid #f59e0b', borderRadius: '6px', marginBottom: '20px' }}>
+          <h4 style={{ marginTop: 0 }}>Strategic Goal</h4>
+          <p style={{ fontSize: '0.95em', lineHeight: '1.8' }}>
+            <strong>Build competitive moat with features competitors can't replicate.</strong> Advanced badge system (C.8), weekly teacher meetups (C.6),
+            escrow/EOR service (C.7). Create switching costs and lock-in effects.
+          </p>
+        </div>
+
+        <h4>User Stories</h4>
+        <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+          <li>As a school, I want to track progress toward Top Rated badge, so I improve my ranking</li>
+          <li>As a teacher, I want to attend weekly meetups, so I build community in new city</li>
+          <li>As a teacher, I want escrow service, so school can't withhold my salary</li>
+          <li>As a school, I want EOR service, so I don't handle visa paperwork</li>
+        </ul>
+
+        <h4 style={{ marginTop: '25px' }}>Feature Requirements</h4>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR37: Advanced Badge System (C.8)</h5>
+          <p><strong>Priority:</strong> P0 (Critical Path)</p>
+          <p><strong>Description:</strong> Tier 2 (Performance) and Tier 3 (Excellence) badges</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Tier 2 badges: Top Rated (4.5+ stars, 20+ reviews), High Retention (70%+ teachers stay 2+ years), Fast Response (&lt;24h to applicants)</li>
+            <li>Tier 3 badges: DEI Champion (diverse teacher hiring), Well-Managed (5+ years operation, zero violations), Career Growth (teachers promoted internally)</li>
+            <li>Real-time dashboard: Schools see badge progress ("15 reviews needed for Top Rated badge")</li>
+            <li>NLP analysis of reviews: Extract sentiment, keywords to auto-award badges</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>20+ schools earn Tier 2 badges</li>
+            <li>5+ schools earn Tier 3 badges</li>
+            <li>Schools with Tier 2/3 badges get 5x more applicants than unverified</li>
+          </ul>
+          <p><strong>Build Time:</strong> 3 weeks (Mojo)</p>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR38: Weekly Teacher Meetups (C.6)</h5>
+          <p><strong>Priority:</strong> P1 (High)</p>
+          <p><strong>Description:</strong> Weekly in-person meetups in major cities (Beijing, Shanghai, Shenzhen, Chengdu)</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Timeleft API integration OR manual (Pete books restaurants)</li>
+            <li>Event RSVP system: Teachers sign up, pay $12/event or $18/month subscription</li>
+            <li>Attendance tracking: QR code check-in</li>
+            <li>Restaurant commission: Negotiate 10-15% commission on food/drinks</li>
+            <li>Net revenue: $12 ticket - $3 restaurant commission = $9 profit/teacher</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>4 cities with weekly meetups</li>
+            <li>20+ teachers/event average</li>
+            <li>Revenue: $720/week = $2,880/month (20 teachers × 4 cities × $9 profit)</li>
+          </ul>
+          <p><strong>Build Time:</strong> 2 weeks (Mojo for RSVP system, Pete for operations)</p>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR39: Escrow/EOR Service (C.7)</h5>
+          <p><strong>Priority:</strong> P2 (Nice to Have)</p>
+          <p><strong>Description:</strong> Partner with Deel/Skuad for escrow payments and Employer of Record</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Escrow: School deposits 3 months salary, released monthly after teacher confirmation</li>
+            <li>Fee: 3-5% of salary</li>
+            <li>EOR: Deel/Skuad handles visa, payroll, insurance</li>
+            <li>Fee: $200-300/teacher/month</li>
+            <li>API integration with Deel or Skuad</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+            <li>10+ schools use escrow service</li>
+            <li>5+ teachers hired via EOR</li>
+            <li>Revenue: $5K-$10K/month from fees</li>
+          </ul>
+          <p><strong>Build Time:</strong> 4 weeks (Mojo for integration, legal contracts)</p>
+        </div>
+
+        <h4 style={{ marginTop: '25px' }}>Success Criteria</h4>
+        <div style={{ padding: '15px', backgroundColor: '#dcfce7', border: '1px solid #16a34a', borderRadius: '6px', marginTop: '10px' }}>
+          <p><strong>Target Metrics:</strong></p>
+          <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+            <li>Advanced badges: 20+ schools with Tier 2/3 badges</li>
+            <li>Meetups: 80+ teachers/week across 4 cities</li>
+            <li>Escrow/EOR: $10K/month additional revenue</li>
+            <li>Competitive moat: Dave's ESL can't replicate badge system, meetups, or escrow</li>
+          </ul>
+        </div>
+
+        <h4 style={{ marginTop: '25px' }}>Evidence & Case Studies</h4>
+        <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
+          <li><strong>Yelp Elite badges:</strong> Top reviewers get special badge, exclusive events. Creates status game that drives engagement</li>
+          <li><strong>Timeleft:</strong> Weekly dinner meetups in 300+ cities. $12-18/person, 80%+ retention rate</li>
+          <li><strong>Deel:</strong> $12B valuation (2023). EOR service is $5.4B market growing 20%/year</li>
+          <li><strong>Escrow.com:</strong> Escrow payments reduce fraud 95%+. Teachers willing to pay 3-5% fee for protection</li>
+        </ul>
+      </Section>
     </Chapter>
   )
 }
