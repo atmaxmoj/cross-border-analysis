@@ -54,6 +54,24 @@ export default function Overview() {
           </p>
         </div>
 
+        <h4 style={{ marginTop: '25px' }}>User Journey</h4>
+        <div style={{ padding: '15px', backgroundColor: '#f9fafb', border: '1px solid #d1d5db', borderRadius: '6px', marginTop: '10px' }}>
+          <ol style={{ marginLeft: '20px', fontSize: '0.9em', lineHeight: '1.8' }}>
+            <li><strong>Discovery:</strong> Jessica hears about YouTeacher from Reddit r/TEFLteachers ("Finally, a site that aggregates ALL ESL jobs!")</li>
+            <li><strong>First Visit:</strong> Visits youteacher.com on her phone, sees 300+ jobs aggregated from 5 platforms (vs manually checking each site)</li>
+            <li><strong>Search & Filter:</strong> Searches "Beijing English teacher", filters by salary (&gt;¥15K/month), school type (International School)</li>
+            <li><strong>Browse Results:</strong> Sees 20 relevant jobs, each showing salary, location, school type, source platform badge</li>
+            <li><strong>Click Through:</strong> Clicks on "International School - Beijing Chaoyang" → Opens original Dave's ESL posting in new tab</li>
+            <li><strong>Email Signup:</strong> Signs up for weekly email alerts for "Beijing + International Schools" before leaving</li>
+            <li><strong>Community Engagement:</strong> Joins Discord, posts "Anyone heard of 'Beijing Sunny International School'?" → Gets 3 replies within 2 hours</li>
+            <li><strong>Return Visit:</strong> Receives weekly email with 10 new Beijing jobs → Clicks through, finds 2 interesting positions</li>
+          </ol>
+          <p style={{ marginTop: '15px', fontStyle: 'italic', fontSize: '0.85em', color: '#6b7280' }}>
+            <strong>Outcome:</strong> Jessica saves 2+ hours/week vs manually checking 5 job sites. Applies to 3 jobs in first week (vs 1/month previously).
+            Feels supported by active community.
+          </p>
+        </div>
+
         <h4 style={{ marginTop: '25px' }}>User Stories</h4>
         <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
           <li>As a teacher, I want to search thousands of jobs in one place, so I don't have to check 5+ websites daily</li>
@@ -390,9 +408,26 @@ export default function Overview() {
           </p>
         </div>
 
+        <h4 style={{ marginTop: '25px' }}>User Journey</h4>
+        <div style={{ padding: '15px', backgroundColor: '#f9fafb', border: '1px solid #d1d5db', borderRadius: '6px', marginTop: '10px' }}>
+          <ol style={{ marginLeft: '20px', fontSize: '0.9em', lineHeight: '1.8' }}>
+            <li><strong>Outbound Contact:</strong> Mr. Wang (training center director) receives cold email: "YouTeacher has 1,500+ active teachers. Post for $49 vs Dave's $75. First post FREE."</li>
+            <li><strong>Visit Landing Page:</strong> Clicks email link → Sees stats: "1,500 MAU, 500+ jobs posted, average 30 views/job in first week"</li>
+            <li><strong>Account Creation:</strong> Clicks "Post a Job" → Creates school account (email, school name, business license number)</li>
+            <li><strong>First Job Post:</strong> Fills form: "Elementary English Teacher - Shenzhen" | Salary: ¥18K-22K | Housing: Yes | Rich text editor for description</li>
+            <li><strong>Payment:</strong> Clicks "Publish for ¥49" → Alipay Business payment → Job goes live immediately</li>
+            <li><strong>Monitor Performance:</strong> Dashboard shows: 45 views, 3 email clicks, 1 Discord mention in first 3 days</li>
+            <li><strong>Receive Applications:</strong> Gets 8 applications via email (teachers clicking "Apply" redirect to school's email)</li>
+            <li><strong>Renewal:</strong> After 60 days, receives email: "Your posting expires in 7 days. Renew for $49?" → One-click renewal</li>
+          </ol>
+          <p style={{ marginTop: '15px', fontStyle: 'italic', fontSize: '0.85em', color: '#6b7280' }}>
+            <strong>Outcome:</strong> Mr. Wang hired 1 teacher from 8 applicants. ROI: $49 spend → $25K/year salary savings vs agency recruitment. Posts 3 more jobs over next 6 months.
+          </p>
+        </div>
+
         <h4 style={{ marginTop: '25px' }}>User Stories</h4>
         <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
-          <li>As a school, I want to post jobs directly on the platform, so I can reach 10,000+ teachers without paying Dave's ESL $75</li>
+          <li>As a school, I want to post jobs directly on the platform, so I can reach teachers without paying Dave's ESL $75</li>
           <li>As a school, I want to create an account, so I can manage multiple job postings from one dashboard</li>
           <li>As a school, I want to edit or delete my postings, so I can update jobs when positions are filled</li>
           <li>As a school, I want analytics on job views, so I know my posting is getting seen</li>
@@ -760,6 +795,23 @@ export default function Overview() {
 
           <p style={{ marginTop: '15px', fontStyle: 'italic', fontSize: '0.9em' }}>
             <strong>Quote:</strong> "I don't care if the salary is 10% higher. If there's no verification badge, I'm not applying. Been burned once, never again."
+          </p>
+        </div>
+
+        <h4 style={{ marginTop: '25px' }}>User Journey</h4>
+        <div style={{ padding: '15px', backgroundColor: '#f9fafb', border: '1px solid #d1d5db', borderRadius: '6px', marginTop: '10px' }}>
+          <ol style={{ marginLeft: '20px', fontSize: '0.9em', lineHeight: '1.8' }}>
+            <li><strong>Return Visit:</strong> Jessica returns to YouTeacher after being scammed 6 months ago. Sees new "Verified Schools" filter</li>
+            <li><strong>Filter Application:</strong> Checks "Verified Schools Only" → Results drop from 500 jobs to 25 jobs from 12 verified schools</li>
+            <li><strong>Browse Verified Jobs:</strong> Sees green "Banking Verified" badge on each job → Clicks badge to see tooltip</li>
+            <li><strong>View Verification Details:</strong> Tooltip shows: "Verified via Alipay Business on 2025-09-15. Business License: 91440300XXXXXXXXXX. No labor violations found."</li>
+            <li><strong>Check School Profile:</strong> Clicks school name → Sees full verification details, government data check results, 8 years in operation</li>
+            <li><strong>Apply with Confidence:</strong> Applies to 3 verified schools (vs 0 applications in previous visit due to scam fear)</li>
+            <li><strong>Community Validation:</strong> Checks Discord → Sees other teachers confirm "Beijing International Academy" is legitimate</li>
+            <li><strong>Interview & Hire:</strong> Gets interview, checks contract, accepts offer. School honored all contract terms</li>
+          </ol>
+          <p style={{ marginTop: '15px', fontStyle: 'italic', fontSize: '0.85em', color: '#6b7280' }}>
+            <strong>Outcome:</strong> Jessica got hired by verified school, zero scam risk. Recommends YouTeacher to 5 teacher friends. Platform trust increases from 20% to 85% among users.
           </p>
         </div>
 
