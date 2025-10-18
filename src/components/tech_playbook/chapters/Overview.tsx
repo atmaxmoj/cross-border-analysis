@@ -66,7 +66,7 @@ export default function Overview() {
         <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
           <h5>FR1: Job Aggregator (A.1)</h5>
           <p><strong>Priority:</strong> P0 (Critical Path)</p>
-          <p><strong>Description:</strong> Scrape 3-5 major ESL job boards to have 50,000+ jobs from day 1</p>
+          <p><strong>Description:</strong> Scrape 3-5 major ESL job boards to aggregate all available jobs (~150-300 active jobs at any time)</p>
           <p><strong>Detailed Requirements:</strong></p>
           <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
             <li>Build web scrapers for: Dave's ESL Cafe, SeriousTeachers, ESLCafe, TEFL.com, GoAbroad</li>
@@ -79,13 +79,14 @@ export default function Overview() {
           </ul>
           <p><strong>Acceptance Criteria:</strong></p>
           <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
-            <li>1,000+ jobs aggregated from 2+ platforms by Month 1</li>
-            <li>50,000+ jobs by Month 6 (scraping 5 platforms)</li>
+            <li>150-200 active jobs by Month 1 (scraping Dave's ESL + SeriousTeachers)</li>
+            <li>300-500 active jobs by Month 6 (scraping 5 platforms + some direct postings from Stage 2)</li>
+            <li>500-1,000 jobs cumulative in database (includes expired listings for historical data)</li>
             <li>Daily updates, listings marked as "expired" after 60 days</li>
             <li>100% of jobs have valid source URLs</li>
           </ul>
           <p><strong>Build Time:</strong> 2 weeks (Mojo)</p>
-          <p><strong>Evidence:</strong> Indeed (2004-2007) pure aggregator for 3 years, built 25M+ monthly visitors before monetizing</p>
+          <p><strong>Evidence:</strong> Oct 2025 scraping data: Dave's ESL 47 jobs, SeriousTeachers 10 jobs. Total ESL market ~150-300 active listings at any snapshot. Indeed (2004-2007) aggregated all available jobs, built 25M+ monthly visitors before monetizing</p>
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#f0f9ff', border: '1px solid #3b82f6', borderRadius: '6px', marginTop: '15px' }}>
@@ -321,22 +322,26 @@ export default function Overview() {
           <p><strong>North Star Metric:</strong> Monthly Active Teachers (MAU) - demonstrates product-market fit before monetizing</p>
           <p style={{ marginTop: '15px' }}><strong>Target Metrics (Month 6):</strong></p>
           <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
-            <li>Jobs aggregated: 50,000+</li>
-            <li>Monthly Active Teachers: 10,000+ (SEO + better UX than Dave's ESL)</li>
-            <li>Discord community: 500+ members</li>
-            <li>Email subscribers: 5,000+</li>
-            <li>Avg time on site: 8+ minutes (vs Dave's ESL ~3 min)</li>
+            <li>Jobs aggregated: 300-500 active listings (all major ESL platforms scraped)</li>
+            <li>Monthly Active Teachers: 1,000-3,000 MAU (target 1% of Dave's ESL's 350K monthly views)</li>
+            <li>Discord community: 100-200 members (active community beats Dave's ghost town)</li>
+            <li>Email subscribers: 500-1,000</li>
+            <li>Avg time on site: 5+ minutes (vs Dave's ESL ~3 min)</li>
             <li>Mobile traffic: 60%+ (responsive design working)</li>
           </ul>
 
           <p style={{ marginTop: '15px' }}><strong>Go/No-Go Decision (End of Month 3):</strong></p>
           <ul style={{ marginLeft: '20px', fontSize: '0.9em' }}>
-            <li>✓ 1,000+ jobs live on platform</li>
-            <li>✓ 100+ teacher email signups</li>
-            <li>✓ 50+ Discord members with 5+ messages/day</li>
+            <li>✓ 200+ active jobs live on platform (Dave's ESL + SeriousTeachers minimum)</li>
+            <li>✓ 500+ MAU (demonstrates teachers find value)</li>
+            <li>✓ 100+ email signups OR 50+ Discord members (early community forming)</li>
             <li><strong>If YES:</strong> Proceed to Stage 2 (add A.4 Direct Posting)</li>
             <li><strong>If NO:</strong> Diagnose issue (SEO? Value prop? Wrong channels?) before building more features</li>
           </ul>
+
+          <p style={{ marginTop: '15px', fontSize: '0.85em', fontStyle: 'italic', color: '#065f46' }}>
+            <strong>Evidence:</strong> Dave's ESL has 350K monthly views with 47 active jobs. We target 1% of their traffic (3.5K MAU) by Month 6 with better UX. Conservative estimate based on actual market size, not fantasy.
+          </p>
         </div>
 
         <h4 style={{ marginTop: '25px' }}>Technical Requirements</h4>
@@ -617,9 +622,38 @@ export default function Overview() {
         </div>
 
         <div style={{ padding: '15px', backgroundColor: '#fef3e7', border: '1px solid #f59e0b', borderRadius: '6px', marginTop: '15px' }}>
-          <h5>FR21: Admin Dashboard (Pete)</h5>
+          <h5>FR21: Admin API Endpoints</h5>
+          <p><strong>Priority:</strong> P0 (Critical Path)</p>
+          <p><strong>Description:</strong> Backend APIs for Pete to manually manage schools, verifications, and job postings</p>
+          <p><strong>Detailed Requirements:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Authentication: API key for Pete (environment variable, never committed to git)</li>
+            <li><code>POST /api/admin/schools/verify</code> - Manually mark a school as verified (bypass payment flow for early adopters)</li>
+            <li><code>POST /api/admin/jobs</code> - Manually create job posting on behalf of a school (for outbound sales: school pays offline, Pete posts for them)</li>
+            <li><code>PATCH /api/admin/jobs/:id</code> - Edit existing job posting</li>
+            <li><code>DELETE /api/admin/jobs/:id</code> - Delete job posting or mark as filled</li>
+            <li><code>GET /api/admin/schools?search=name</code> - Search schools by name, email, or business license</li>
+            <li><code>GET /api/admin/jobs?search=title&school_id=123</code> - Search jobs by title, school, or location</li>
+            <li><code>GET /api/admin/users?email=teacher@example.com</code> - Search users/teachers by email or name</li>
+            <li><code>POST /api/admin/payments/manual</code> - Record manual payment (school paid via WeChat/Alipay directly to Pete)</li>
+            <li>All endpoints return JSON, use standard HTTP status codes (200, 400, 401, 500)</li>
+            <li>Request logging: Log all admin API calls to audit trail (who did what, when)</li>
+          </ul>
+          <p><strong>Acceptance Criteria:</strong></p>
+          <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
+            <li>Pete can verify a school in &lt;30 seconds via Postman/curl</li>
+            <li>Pete can create job posting on behalf of school in &lt;2 minutes</li>
+            <li>100% of admin actions logged for audit trail</li>
+            <li>API key authentication blocks unauthorized access (401 error)</li>
+          </ul>
+          <p><strong>Build Time:</strong> 3 days (Mojo)</p>
+          <p><strong>Why Critical:</strong> During Month 7-12 outbound sales, schools may pay but not want to use self-service UI yet. Pete needs to manually create postings. Also enables early school verifications without waiting for payment infrastructure.</p>
+        </div>
+
+        <div style={{ padding: '15px', backgroundColor: '#fef3e7', border: '1px solid #f59e0b', borderRadius: '6px', marginTop: '15px' }}>
+          <h5>FR22: Admin Dashboard (Pete)</h5>
           <p><strong>Priority:</strong> P2 (Nice to Have)</p>
-          <p><strong>Description:</strong> Basic admin panel for Pete to manage platform</p>
+          <p><strong>Description:</strong> Web UI for Pete to manage platform (wraps FR21 admin APIs with visual interface)</p>
           <p><strong>Detailed Requirements:</strong></p>
           <ul style={{ fontSize: '0.9em', marginLeft: '20px' }}>
             <li>Admin login: Pete's email hard-coded as admin role</li>
@@ -635,7 +669,7 @@ export default function Overview() {
             <li>Pete can view all platform activity from one dashboard</li>
             <li>Manual refund process completes in &lt;2 minutes</li>
           </ul>
-          <p><strong>Build Time:</strong> 2 weeks (Mojo) - Can defer to Month 9-10 if time-constrained</p>
+          <p><strong>Build Time:</strong> 2 weeks (Mojo) - Can defer to Month 9-10 if time-constrained (use FR21 APIs via Postman instead)</p>
         </div>
 
         <h4 style={{ marginTop: '25px' }}>Success Criteria</h4>
